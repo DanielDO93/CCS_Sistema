@@ -148,8 +148,8 @@ Public Class Coaching_Agente
 
     Sub ListaCoachingPendientes()
 
-        If GetMTY(Request.Cookies("UserSettings")("Username")) = "MTY" Then
-            Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        'If GetMTY(Request.Cookies("UserSettings")("Username")) = "MTY" Then
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
             Dim strQuery As String = "SELECT a.ID,a.id_acd as 'ID Mitrol',b.nombres + ' ' + b.paterno + ' '+b.materno as Nombre,c.nombres + ' ' + c.paterno + ' '+c.materno as Supervisor,e.nombres + ' ' + e.paterno + ' '+e.materno as Analista ,d.campania as Campaña,id_guia as Guia,CONVERT(NVARCHAR(MAX),calificacion) + '%' as Calificación,CONVERT(DATE,fecha_monitoreo) as Fecha,(CASE WHEN a.id_campania <> 16 THEN 3-DATEDIFF(DD,CONVERT(DATE,fecha_monitoreo),CONVERT(DATE,GETDATE())) + QA.dbo.GET_Dias_Retro(CONVERT(DATE,fecha_monitoreo),a.id_acd) ELSE 8 END) as 'Dias para Retro' FROM QA.dbo.SYS_Monitoreos a LEFT JOIN CCS.dbo.SYS_empleados b ON a.agente=b.id LEFT JOIN CCS.dbo.SYS_empleados c ON a.supervisor=c.id LEFT JOIN CCS.dbo.SYS_campanias d ON a.id_campania=d.id LEFT JOIN CCS.dbo.SYS_empleados e ON a.analista=e.id WHERE (CASE WHEN a.id_campania <> 16 THEN 3-DATEDIFF(DD,CONVERT(DATE,fecha_monitoreo),CONVERT(DATE,GETDATE())) + QA.dbo.GET_Dias_Retro(CONVERT(DATE,fecha_monitoreo),a.id_acd) ELSE 8 END) > 0  AND retro IS NULL AND a.agente =" & x.GetUserID(Request.Cookies("Usersettings")("Username"))
             Dim con As New SqlConnection(strConnString)
             Dim cmd As New SqlCommand()
@@ -166,25 +166,25 @@ Public Class Coaching_Agente
 
             con.Close()
             con.Dispose()
-        Else
-            Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-            Dim strQuery As String = "SELECT a.ID,a.id_acd as 'ID Mitrol',b.nombres + ' ' + b.paterno + ' '+b.materno as Nombre,c.nombres + ' ' + c.paterno + ' '+c.materno as Supervisor,e.nombres + ' ' + e.paterno + ' '+e.materno as Analista ,d.campania as Campaña,id_guia as Guia,CONVERT(NVARCHAR(MAX),calificacion) + '%' as Calificación,CONVERT(DATE,fecha_monitoreo) as Fecha,(CASE WHEN a.id_campania <> 16 THEN 3-DATEDIFF(DD,CONVERT(DATE,fecha_monitoreo),CONVERT(DATE,GETDATE())) + QA.dbo.GET_Dias_Retro(CONVERT(DATE,fecha_monitoreo),a.id_acd) ELSE 8 END) as 'Dias para Retro' FROM QA.dbo.SYS_Monitoreos a LEFT JOIN CCS.dbo.SYS_empleados b ON a.agente=b.id LEFT JOIN CCS.dbo.SYS_empleados c ON a.supervisor=c.id LEFT JOIN CCS.dbo.SYS_campanias d ON a.id_campania=d.id LEFT JOIN CCS.dbo.SYS_empleados e ON a.analista=e.id WHERE (CASE WHEN a.id_campania <> 16 THEN 3-DATEDIFF(DD,CONVERT(DATE,fecha_monitoreo),CONVERT(DATE,GETDATE())) + QA.dbo.GET_Dias_Retro(CONVERT(DATE,fecha_monitoreo),a.id_acd) ELSE 8 END) > 0 AND calificacion >= 80 AND retro IS NULL AND a.agente =" & x.GetUserID(Request.Cookies("Usersettings")("Username"))
-            Dim con As New SqlConnection(strConnString)
-            Dim cmd As New SqlCommand()
+        'Else
+        'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        'Dim strQuery As String = "SELECT a.ID,a.id_acd as 'ID Mitrol',b.nombres + ' ' + b.paterno + ' '+b.materno as Nombre,c.nombres + ' ' + c.paterno + ' '+c.materno as Supervisor,e.nombres + ' ' + e.paterno + ' '+e.materno as Analista ,d.campania as Campaña,id_guia as Guia,CONVERT(NVARCHAR(MAX),calificacion) + '%' as Calificación,CONVERT(DATE,fecha_monitoreo) as Fecha,(CASE WHEN a.id_campania <> 16 THEN 3-DATEDIFF(DD,CONVERT(DATE,fecha_monitoreo),CONVERT(DATE,GETDATE())) + QA.dbo.GET_Dias_Retro(CONVERT(DATE,fecha_monitoreo),a.id_acd) ELSE 8 END) as 'Dias para Retro' FROM QA.dbo.SYS_Monitoreos a LEFT JOIN CCS.dbo.SYS_empleados b ON a.agente=b.id LEFT JOIN CCS.dbo.SYS_empleados c ON a.supervisor=c.id LEFT JOIN CCS.dbo.SYS_campanias d ON a.id_campania=d.id LEFT JOIN CCS.dbo.SYS_empleados e ON a.analista=e.id WHERE (CASE WHEN a.id_campania <> 16 THEN 3-DATEDIFF(DD,CONVERT(DATE,fecha_monitoreo),CONVERT(DATE,GETDATE())) + QA.dbo.GET_Dias_Retro(CONVERT(DATE,fecha_monitoreo),a.id_acd) ELSE 8 END) > 0 AND calificacion >= 80 AND retro IS NULL AND a.agente =" & x.GetUserID(Request.Cookies("Usersettings")("Username"))
+        'Dim con As New SqlConnection(strConnString)
+        'Dim cmd As New SqlCommand()
 
 
-            cmd.CommandType = CommandType.Text
-            cmd.CommandText = strQuery
-            cmd.Connection = con
+        'cmd.CommandType = CommandType.Text
+        'cmd.CommandText = strQuery
+        'cmd.Connection = con
 
-            con.Open()
+        'con.Open()
 
-            GridView1.DataSource = cmd.ExecuteReader()
-            GridView1.DataBind()
+        'GridView1.DataSource = cmd.ExecuteReader()
+        'GridView1.DataBind()
 
-            con.Close()
-            con.Dispose()
-        End If
+        'con.Close()
+        'con.Dispose()
+        'End If
 
 
 
@@ -262,7 +262,9 @@ Public Class Coaching_Agente
             Panel3.Visible = False
             Panel2.CssClass = "margencitofull"
         Else
-
+            FirmaAnalista.Visible = False
+            Panel3.Visible = False
+            Panel2.CssClass = "margencitofull"
 
         End If
 
@@ -461,10 +463,10 @@ Public Class Coaching_Agente
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        If GetMTY(Request.Cookies("UserSettings")("Username")) = "MTY" Then
+        'If GetMTY(Request.Cookies("UserSettings")("Username")) = "MTY" Then
 
 
-            If CInt(HiddenField2.Value) = 1 Then
+        If CInt(HiddenField2.Value) = 1 Then
 
                 GuardaRetro()
                 If Session("X") = "X" Then
@@ -482,24 +484,24 @@ Public Class Coaching_Agente
 
             ListaCoachingPendientes()
 
-        Else
+        ' Else
 
-            If (CInt(HiddenField1.Value) + CInt(HiddenField2.Value)) = 2 Then
+        ' If (CInt(HiddenField1.Value) + CInt(HiddenField2.Value)) = 2 Then
 
-                GuardaRetro()
+        'GuardaRetro()
 
-                msgtipo(0) = 1
-                msgmensaje(0) = "¡Retroalimentación Guardada!"
-                Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
-            Else
-                msgtipo(0) = 3
-                msgmensaje(0) = "¡La retroalimentación debe ser firmada por el analista y por el agente!"
-                Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
-            End If
+        'msgtipo(0) = 1
+        'msgmensaje(0) = "¡Retroalimentación Guardada!"
+        'Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+        'Else
+        'msgtipo(0) = 3
+        'msgmensaje(0) = "¡La retroalimentación debe ser firmada por el analista y por el agente!"
+        'Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+        'End If
 
-            ListaCoachingPendientes()
+        'ListaCoachingPendientes()
 
-        End If
+        ' End If
 
 
     End Sub
@@ -524,11 +526,11 @@ Public Class Coaching_Agente
                         "</span></b></p> </td> </tr> </table>  <p class=MsoNormal align=center style='text-align:center'><b><span style='font-size:14.0pt;line-height:107%;font-family:'Calibri Light',sans-serif; color:white'>&nbsp;</span></b></p>  <p class=MsoNormal align=center style='text-align:center'><b><span style='font-size:14.0pt;line-height:107%;font-family:'Calibri Light',sans-serif; color:white'>&nbsp;</span></b></p>  <p class=MsoNormal align=center style='text-align:center'><b><span style='font-size:14.0pt;line-height:107%;font-family:'Calibri Light',sans-serif; color:white'>&nbsp;</span></b></p>  <p class=MsoNormal align=center style='text-align:center'><b><span style='font-size:14.0pt;line-height:107%;font-family:'Calibri Light',sans-serif; color:white'>&nbsp;</span></b></p>  <p class=MsoNormal align=center style='text-align:center'><b><span style='font-size:14.0pt;line-height:107%;font-family:'Calibri Light',sans-serif; color:white'>&nbsp;</span></b></p>  </div>  </body>  </html> "
 
 
-            If GetMTY(Request.Cookies("UserSettings")("Username")) = "MTY" Then
+            'If GetMTY(Request.Cookies("UserSettings")("Username")) = "MTY" Then
 
 
 
-                Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+            Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
                 Dim strQuery As String = "UPDATE QA.dbo.SYS_monitoreos SET compromisos_agente = '" & TextBox3.Text & "', Q1= '" & TextBox20.Text & "',  Q2= '" & TextBox21.Text & "', retro = 2 WHERE id = " & Session("idSeleccion")
                 Dim con As New SqlConnection(strConnString)
                 Dim cmd As New SqlCommand()
@@ -541,30 +543,30 @@ Public Class Coaching_Agente
                 con.Close()
                 con.Dispose()
 
-                'Alerta.EnviarMail(Alerta.GetCorreoSupervisor(Valor6.Text), Alerta.GetListaNotificacion(1, x.GetUserIDACD(Valor6.Text)), "***Retroalimentación: Coaching***", MensajeCoaching)
+            'Alerta.EnviarMail(Alerta.GetCorreoSupervisor(Valor6.Text), Alerta.GetListaNotificacion(1, x.GetUserIDACD(Valor6.Text)), "***Retroalimentación: Coaching***", MensajeCoaching)
 
 
 
-            Else
+            'Else
 
 
-                Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-                Dim strQuery As String = "UPDATE QA.dbo.SYS_monitoreos SET fecha_retro_qa = GETDATE(), compromisos_analista = '" & TextBox4.Text & "', compromisos_agente = '" & TextBox3.Text & "', Q1= '" & TextBox20.Text & "',  Q2= '" & TextBox21.Text & "', retro = 1 WHERE id = " & Session("idSeleccion")
-                Dim con As New SqlConnection(strConnString)
-                Dim cmd As New SqlCommand()
-                cmd.CommandType = CommandType.Text
-                cmd.CommandText = strQuery
-                cmd.Connection = con
+            ' Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+            ' Dim strQuery As String = "UPDATE QA.dbo.SYS_monitoreos SET fecha_retro_qa = GETDATE(), compromisos_analista = '" & TextBox4.Text & "', compromisos_agente = '" & TextBox3.Text & "', Q1= '" & TextBox20.Text & "',  Q2= '" & TextBox21.Text & "', retro = 1 WHERE id = " & Session("idSeleccion")
+            ' Dim con As New SqlConnection(strConnString)
+            ' Dim cmd As New SqlCommand()
+            ' cmd.CommandType = CommandType.Text
+            ' cmd.CommandText = strQuery
+            ' cmd.Connection = con
 
-                con.Open()
-                cmd.ExecuteNonQuery()
-                con.Close()
-                con.Dispose()
+            'con.Open()
+            'cmd.ExecuteNonQuery()
+            'con.Close()
+            'con.Dispose()
 
-                Alerta.EnviarMail(Alerta.GetCorreoSupervisor(Valor6.Text), Alerta.GetListaNotificacion(1, x.GetUserIDACD(Valor6.Text)), "***Retroalimentación: Coaching***", MensajeCoaching)
+            'Alerta.EnviarMail(Alerta.GetCorreoSupervisor(Valor6.Text), Alerta.GetListaNotificacion(1, x.GetUserIDACD(Valor6.Text)), "***Retroalimentación: Coaching***", MensajeCoaching)
 
 
-            End If
+            'End If
 
 
 
