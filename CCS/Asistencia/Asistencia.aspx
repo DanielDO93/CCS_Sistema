@@ -62,7 +62,7 @@
             <tr >
                 <td ><asp:Label ID="Label19" runat="server" Text="Faltas Justificadas: " Width="110px" CssClass="tablaresumen"></asp:Label></td>
                 <td  ><asp:Label ID="Label20" runat="server" Text="0" Width="50px" CssClass="tablaresumen"></asp:Label></td>
-                <td ><asp:Label ID="Label25" runat="server" Text="Pago Jornada: " Width="110px" CssClass="tablaresumen"></asp:Label></td>
+                <td ><asp:Label ID="Label25" runat="server" Text="Descanso Laborado: " Width="110px" CssClass="tablaresumen"></asp:Label></td>
                 <td class="auto-style2"  ><asp:Label ID="Label26" runat="server" Text="0" Width="50px" CssClass="tablaresumen"></asp:Label></td>
                 <td ><asp:Label ID="Label5" runat="server" Text="PCG: " Width="110px" CssClass="tablaresumen"></asp:Label></td>
                 <td class="auto-style2"  ><asp:Label ID="Label10" runat="server" Text="0" Width="50px" CssClass="tablaresumen"></asp:Label></td>

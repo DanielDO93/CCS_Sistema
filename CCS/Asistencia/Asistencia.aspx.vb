@@ -6,7 +6,7 @@ Public Class Asistencia
     Dim msgtipo(20) As Integer
     Dim msgmensaje(20) As String
 
-    Public Asistencias, Descansos, Faltas, Faltas_Justificadas, Incapacidades, PCG, PSG, Vacaciones, Pago_Jornada, Otros, Vacios, Horas_Extra, Count As Integer
+    Public Asistencias, Descansos, Faltas, Faltas_Justificadas, Incapacidades, PCG, PSG, Vacaciones, Descanso_Laborado, Otros, Vacios, Horas_Extra, Count As Integer
 
     Public Function GetPassStatus(UserName As String) As Boolean
 
@@ -226,7 +226,7 @@ Public Class Asistencia
         PCG = 0
         PSG = 0
         Vacaciones = 0
-        Pago_Jornada = 0
+        Descanso_Laborado = 0
         Otros = 0
         Faltas_Justificadas = 0
         Vacios = 0
@@ -252,7 +252,7 @@ Public Class Asistencia
             ElseIf ctrl.Seleccion.Value = "V" Then
                 Vacaciones = Vacaciones + 1
             ElseIf ctrl.Seleccion.Value = "PJ" Then
-                Pago_Jornada = Pago_Jornada + 1
+                Descanso_Laborado = Descanso_Laborado + 1
             ElseIf ctrl.Seleccion.Value = "O" Then
                 Otros = Otros + 1
             Else
@@ -272,7 +272,7 @@ Public Class Asistencia
         Label16.Text = Vacios
         Label20.Text = Faltas_Justificadas
         Label24.Text = Vacaciones
-        Label26.Text = Pago_Jornada
+        Label26.Text = Descanso_Laborado
 
 
         For x = 0 To GetAgentes() - 1

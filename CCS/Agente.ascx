@@ -13,7 +13,7 @@
                 <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">PC</asp:TableCell>
                 <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">PS</asp:TableCell>
                 <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">V</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">PJ</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">DL</asp:TableCell>
                 <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">HE</asp:TableCell>
                 <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Comentarios</asp:TableCell>
             </asp:TableRow>
@@ -33,7 +33,7 @@
                 <asp:TableCell runat="server" Width="35px" BorderStyle="Solid" BorderColor="#EEEEEE" BorderWidth="1px" HorizontalAlign="Center"><asp:RadioButton ID="RadioButton6" runat="server" Groupname="Agente" AutoPostBack="True"/></asp:TableCell>
                 <asp:TableCell runat="server" Width="35px" BorderStyle="Solid" BorderColor="#EEEEEE" BorderWidth="1px" HorizontalAlign="Center"><asp:RadioButton ID="RadioButton7" runat="server" Groupname="Agente" AutoPostBack="True"/></asp:TableCell>
                 <asp:TableCell runat="server" Width="35px" BorderStyle="Solid" BorderColor="#EEEEEE" BorderWidth="1px" HorizontalAlign="Center"><asp:RadioButton ID="RadioButton8" runat="server" Groupname="Agente" AutoPostBack="True"/></asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" BorderStyle="Solid" BorderColor="#EEEEEE" BorderWidth="1px" HorizontalAlign="Center"><asp:RadioButton ID="RadioButton9" runat="server" Groupname="Agente" Enabled="False" AutoPostBack="True"/></asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" BorderStyle="Solid" BorderColor="#EEEEEE" BorderWidth="1px" HorizontalAlign="Center"><asp:RadioButton ID="RadioButton9" runat="server" Groupname="Agente" Enabled="True" AutoPostBack="True"/></asp:TableCell>
                 <asp:TableCell runat="server" Width="35px" BorderStyle="Solid" BorderColor="#EEEEEE" BorderWidth="1px" HorizontalAlign="Center"><asp:TextBox ID="TextBox1" runat="server" width="35px" Font-Names="Arial" Font-Size="Small"></asp:TextBox></asp:TableCell>
                 <asp:TableCell runat="server" Width="250px" BorderStyle="Solid" BorderColor="#EEEEEE" BorderWidth="1px"  HorizontalAlign="Center"><asp:TextBox ID="TextBox2" runat="server" Width="230px" Font-Names="Arial" Font-Size="Small"></asp:TextBox> <asp:Label ID="Label4" runat="server" Text="A" Font-Names="Arial" Font-Size="Small" Width="10px" ForeColor="#009900" Font-Bold="True" Visible="false"></asp:Label></asp:TableCell>
             </asp:TableRow>

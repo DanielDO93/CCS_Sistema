@@ -125,7 +125,7 @@
 
     Protected Sub RadioButton9_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton9.CheckedChanged
         TextBox1.Enabled = True
-        HiddenField1.Value = "PJ"
+        HiddenField1.Value = "DL"
     End Sub
 
 
