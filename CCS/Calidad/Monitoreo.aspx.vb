@@ -548,7 +548,7 @@ Public Class Monitoreo
             Dim conexion As New SqlConnection(ConfigurationManager.ConnectionStrings("db").ToString)
             Dim da As New System.Data.SqlClient.SqlDataAdapter
             Dim ds As New System.Data.DataSet
-            Dim cmd As SqlCommand = New SqlCommand("SELECT a.id,a.nombres + ' ' + a.paterno + ' ' + a.materno as Nombre, b.Nombres+' '+b.paterno as Supervisor FROM [CCS].[dbo].[SYS_empleados] a LEFT JOIN [CCS].[dbo].[SYS_empleados] b ON a.jefe_directo=b.id LEFT JOIN CCS.dbo.SYS_Score_Card c ON a.id =c.agente WHERE  a.puesto = 0 AND (a.id_acd1 ='" & TextBox1.Text & "' OR c.id_acd = '" & TextBox1.Text & "')", conexion)
+            Dim cmd As SqlCommand = New SqlCommand("SELECT a.id,a.nombres + ' ' + a.paterno + ' ' + a.materno as Nombre, b.Nombres+' '+b.paterno as Supervisor FROM [CCS].[dbo].[SYS_empleados] a LEFT JOIN [CCS].[dbo].[SYS_empleados] b ON a.jefe_directo=b.id LEFT JOIN CCS.dbo.SYS_Score_Card c ON a.id =c.agente WHERE  a.puesto = 0 AND (a.id_acd1 ='" & TextBox1.Text & "' OR c.id_acd = '" & TextBox1.Text & " ORDER BY id DESC')", conexion)
             conexion.Open()
             cmd.CommandType = CommandType.Text
             da.SelectCommand = cmd
@@ -578,8 +578,8 @@ Public Class Monitoreo
             msgmensaje(0) = "¡El agente no está dado de alta en el sistema!"
             Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
 
-            Limpiar()
-            LimpiarAdicionales()
+            'Limpiar()
+            'LimpiarAdicionales()
         End Try
 
     End Sub
@@ -622,8 +622,8 @@ Public Class Monitoreo
                 msgmensaje(0) = "¡El ID es incorrecto o no pertenece a un agente valido!"
 
                 Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
-                Limpiar()
-                LimpiarAdicionales()
+                ''Limpiar()
+                ''LimpiarAdicionales()
             End Try
 
         End If
@@ -684,13 +684,7 @@ Public Class Monitoreo
                     If Session("TipoMonitoreo") = 4 Or Session("TipoMonitoreo") = 5 Then
                         InsertaMonitoreo()
                     Else
-                        If Label21.Text = 0 Then
-                            msgtipo(0) = 4
-                            msgmensaje(0) = "¡Ya se ha cubierto la cuota de monitoreo de este agente!"
-                            Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
-                            Limpiar()
-                            LimpiarAdicionales()
-                        ElseIf x.GetMonitoreosHoy(Session("IDAgente"), Session("GuiaSeleccionada")) >= MaximoDiario Then
+                        If x.GetMonitoreosHoy(Session("IDAgente"), Session("GuiaSeleccionada")) >= MaximoDiario Then
                             msgtipo(0) = 4
                             msgmensaje(0) = "¡Solo puedes hacer un monitoreo diario por agente!"
                             Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
