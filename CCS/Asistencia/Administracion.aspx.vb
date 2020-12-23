@@ -1906,7 +1906,7 @@ Public Class Administracion
         Dim da As New System.Data.SqlClient.SqlDataAdapter
         Dim ds As New System.Data.DataSet
 
-        Dim cmd As SqlCommand = New SqlCommand("SELECT a.Nombres,a.Paterno,a.Materno,a.no_empleado,b.nombres+' '+b.paterno+' '+b.Materno as Supervisor,c.campania,a.curp,a.rfc,a.nss,a.sexo,a.fecha_nacimiento,a.estado_civil,CASE WHEN DATEPART(HOUR,a.entrada) >=11 THEN CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.entrada))+':00' ELSE '0'+CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.entrada))+':00' END as 'Entrada',CASE WHEN DATEPART(HOUR,a.salida) >=11 THEN CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.salida))+':00' ELSE '0'+CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.salida))+':00' END as 'Salida',DATEDIFF(HOUR,a.entrada,a.salida) as Jornada,a.telefono,a.celular,a.calle,a.estado,a.delegacion_municipio,a.cp FROM SYS_empleados a LEFT JOIN SYS_empleados b ON a.jefe_directo = b.id LEFT JOIN SYS_campanias c On a.campaña = c.id  WHERE a.status = 4 AND a.ID = " & Session("idSeleccionRHBaja"), conexion)
+        Dim cmd As SqlCommand = New SqlCommand("SELECT a.Nombres,a.Paterno,a.Materno,a.no_empleado,b.nombres+' '+b.paterno+' '+b.Materno as Supervisor,c.campania,a.curp,a.rfc,a.nss,a.sexo,a.fecha_nacimiento,a.estado_civil,CASE WHEN DATEPART(HOUR,a.entrada) >=10 THEN CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.entrada))+':00' ELSE '0'+CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.entrada))+':00' END as 'Entrada',CASE WHEN DATEPART(HOUR,a.salida) >=10 THEN CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.salida))+':00' ELSE '0'+CONVERT(NVARCHAR(MAX),DATEPART(HOUR,a.salida))+':00' END as 'Salida',DATEDIFF(HOUR,a.entrada,a.salida) as Jornada,a.telefono,a.celular,a.calle,a.estado,a.delegacion_municipio,a.cp FROM SYS_empleados a LEFT JOIN SYS_empleados b ON a.jefe_directo = b.id LEFT JOIN SYS_campanias c On a.campaña = c.id  WHERE a.status = 4 AND a.ID = " & Session("idSeleccionRHBaja"), conexion)
         cmd.CommandType = CommandType.Text
         conexion.Open()
         da.SelectCommand = cmd
@@ -2995,5 +2995,11 @@ Public Class Administracion
 
     End Sub
 
+    Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
 
+    End Sub
+
+    Protected Sub GridView7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView7.SelectedIndexChanged
+
+    End Sub
 End Class
