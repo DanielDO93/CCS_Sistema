@@ -283,8 +283,9 @@ Public Class Funciones
         Dim da As New System.Data.SqlClient.SqlDataAdapter
         Dim ds As New System.Data.DataSet
 
-        Dim cmd As SqlCommand = New SqlCommand("SELECT id FROM SYS_empleados WHERE id_ccs = '" & username & "'", conexion)
+        Dim cmd As SqlCommand = New SqlCommand("SELECT id FROM SYS_empleados WHERE id_ccs = '" & username & "' and status not in (3,5) order by id desc", conexion)
         cmd.CommandType = CommandType.Text
+        conexion.Close()
         conexion.Open()
         da.SelectCommand = cmd
         da.Fill(ds)
