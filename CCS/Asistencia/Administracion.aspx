@@ -1892,7 +1892,7 @@
                         <table style="width: 100%;" class="Buscador">
 
                             <tr>
-                                <td class="auto-style49">ID o # Nómina:</td>
+                                <td class="auto-style49">ID o # Nómina o&nbsp; ID CCS:</td>
                                 <td class="auto-style7">
                                     <asp:TextBox ID="TextBox67" runat="server" AutoPostBack="True" CssClass="textos"> </asp:TextBox>
                                 </td>
@@ -1911,9 +1911,9 @@
                             <tr>
                                 <td colspan="6" class="auto-style10">
                                     <strong>
-                                        <asp:Button ID="Button27" runat="server" Font-Bold="True" Font-Size="13px" Text="Buscar" ValidationGroup="Requeridos" Height="22px" Width="85px" CssClass="Button" Style="margin-left: 390px;" />
+                                        <asp:Button ID="Button27" runat="server" Font-Bold="True" Font-Size="13px" Text="Buscar" ValidationGroup="Requeridos" Height="22px" Width="85px" CssClass="Button" Style="margin-left: 390px;" />          
                                     </strong>
-                                </td>
+                                
                             </tr>
 
                             <tr>
@@ -1922,12 +1922,12 @@
 
                         </table>
                         <div style="overflow: auto; width: 888px; height: 100px; margin-left:25px;">
-                            <asp:GridView ID="GridView8" runat="server" Font-Names="Arial" Font-Size="13px" HorizontalAlign="Center" Width="880px" CssClass="grids">
-                                <AlternatingRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                <EditRowStyle HorizontalAlign="Center" VerticalAlign="Middle" Width="100px" />
-                                <EmptyDataRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                            <asp:GridView ID="GridView8" runat="server" Font-Names="Arial" Font-Size="13px" HorizontalAlign="Left" Width="880px" CssClass="grids">
+                                <AlternatingRowStyle HorizontalAlign="Left" VerticalAlign="Middle" />
+                                <EditRowStyle HorizontalAlign="Left" VerticalAlign="Middle" Width="100px" />
+                                <EmptyDataRowStyle HorizontalAlign="Left" VerticalAlign="Middle" />
                                 <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                                <RowStyle Height="15px" Wrap="false" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                <RowStyle Height="15px" Wrap="false" HorizontalAlign="Left" VerticalAlign="Middle" />
                             </asp:GridView>
                         </div>
                

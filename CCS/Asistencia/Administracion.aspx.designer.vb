@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Administracion
-    
+
     '''<summary>
     '''Control ToolkitScriptManager1.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ToolkitScriptManager1 As Global.AjaxControlToolkit.ToolkitScriptManager
-    
+
     '''<summary>
     '''Control UpdatePanel2.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel2 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel2.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel2 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label1.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control GridView1.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control UpdatePanel1.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel1.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label2.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TextBox1.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator1.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox2.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator2.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator2 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox3.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator3.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator3 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList1.
     '''</summary>
@@ -147,7 +147,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator4.
     '''</summary>
@@ -156,7 +156,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator4 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox4.
     '''</summary>
@@ -165,7 +165,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox4 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox4_CalendarExtender.
     '''</summary>
@@ -174,7 +174,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox4_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton1.
     '''</summary>
@@ -183,7 +183,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton1 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator5.
     '''</summary>
@@ -192,7 +192,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator5 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox5.
     '''</summary>
@@ -201,7 +201,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox5 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox5_CalendarExtender.
     '''</summary>
@@ -210,7 +210,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox5_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton2.
     '''</summary>
@@ -219,7 +219,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton2 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator6.
     '''</summary>
@@ -228,7 +228,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator6 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox45.
     '''</summary>
@@ -237,7 +237,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox45 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator13.
     '''</summary>
@@ -246,7 +246,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator13 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control CalendarExtender1.
     '''</summary>
@@ -255,7 +255,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents CalendarExtender1 As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control TextBox9.
     '''</summary>
@@ -264,7 +264,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox9 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator15.
     '''</summary>
@@ -273,7 +273,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator15 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox10.
     '''</summary>
@@ -282,7 +282,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox10 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator14.
     '''</summary>
@@ -291,7 +291,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator14 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control CalendarExtender2.
     '''</summary>
@@ -300,7 +300,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents CalendarExtender2 As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control TextBox56.
     '''</summary>
@@ -309,7 +309,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox56 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator83.
     '''</summary>
@@ -318,7 +318,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator83 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox70.
     '''</summary>
@@ -327,7 +327,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox70 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator84.
     '''</summary>
@@ -336,7 +336,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator84 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox6.
     '''</summary>
@@ -345,7 +345,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox6 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator7.
     '''</summary>
@@ -354,7 +354,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator7 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox7.
     '''</summary>
@@ -363,7 +363,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox7 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator8.
     '''</summary>
@@ -372,7 +372,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator8 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList2.
     '''</summary>
@@ -381,7 +381,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList2 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator9.
     '''</summary>
@@ -390,7 +390,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator9 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList4.
     '''</summary>
@@ -399,7 +399,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList4 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator10.
     '''</summary>
@@ -408,7 +408,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator10 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList3.
     '''</summary>
@@ -417,7 +417,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList3 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator11.
     '''</summary>
@@ -426,7 +426,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator11 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList5.
     '''</summary>
@@ -435,7 +435,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList5 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator12.
     '''</summary>
@@ -444,7 +444,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator12 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList7.
     '''</summary>
@@ -453,7 +453,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList7 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator16.
     '''</summary>
@@ -462,7 +462,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator16 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control Button4.
     '''</summary>
@@ -471,7 +471,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button4 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control Button2.
     '''</summary>
@@ -480,7 +480,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control UpdatePanel3.
     '''</summary>
@@ -489,7 +489,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel3 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel3.
     '''</summary>
@@ -498,7 +498,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel3 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label3.
     '''</summary>
@@ -507,7 +507,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control DropDownList8.
     '''</summary>
@@ -516,7 +516,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList8 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator17.
     '''</summary>
@@ -525,7 +525,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator17 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control GridView2.
     '''</summary>
@@ -534,7 +534,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView2 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control ImageButton3.
     '''</summary>
@@ -543,7 +543,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton3 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control GridView3.
     '''</summary>
@@ -552,7 +552,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView3 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control UpdatePanel4.
     '''</summary>
@@ -561,7 +561,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel4 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel4.
     '''</summary>
@@ -570,7 +570,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel4 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label5.
     '''</summary>
@@ -579,7 +579,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control GridView4.
     '''</summary>
@@ -588,7 +588,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView4 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control UpdatePanel5.
     '''</summary>
@@ -597,7 +597,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel5 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel5.
     '''</summary>
@@ -606,7 +606,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel5 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label4.
     '''</summary>
@@ -615,7 +615,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TextBox8.
     '''</summary>
@@ -624,7 +624,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox8 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator18.
     '''</summary>
@@ -633,7 +633,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator18 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox11.
     '''</summary>
@@ -642,7 +642,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox11 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator19.
     '''</summary>
@@ -651,7 +651,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator19 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox12.
     '''</summary>
@@ -660,7 +660,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox12 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator20.
     '''</summary>
@@ -669,7 +669,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator20 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox19.
     '''</summary>
@@ -678,7 +678,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox19 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator21.
     '''</summary>
@@ -687,7 +687,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator21 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox13.
     '''</summary>
@@ -696,7 +696,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox13 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator22.
     '''</summary>
@@ -705,7 +705,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator22 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList17.
     '''</summary>
@@ -714,7 +714,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList17 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator42.
     '''</summary>
@@ -723,7 +723,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator42 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox20.
     '''</summary>
@@ -732,7 +732,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox20 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator34.
     '''</summary>
@@ -741,7 +741,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator34 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox15.
     '''</summary>
@@ -750,7 +750,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox15 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator25.
     '''</summary>
@@ -759,7 +759,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator25 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox16.
     '''</summary>
@@ -768,7 +768,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox16 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator26.
     '''</summary>
@@ -777,7 +777,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator26 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList14.
     '''</summary>
@@ -786,7 +786,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList14 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator36.
     '''</summary>
@@ -795,7 +795,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator36 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox21.
     '''</summary>
@@ -804,7 +804,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox21 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox21_CalendarExtender.
     '''</summary>
@@ -813,7 +813,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox21_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton5.
     '''</summary>
@@ -822,7 +822,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton5 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator35.
     '''</summary>
@@ -831,7 +831,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator35 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList15.
     '''</summary>
@@ -840,7 +840,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList15 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator37.
     '''</summary>
@@ -849,7 +849,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator37 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList9.
     '''</summary>
@@ -858,7 +858,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList9 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator23.
     '''</summary>
@@ -867,7 +867,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator23 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList10.
     '''</summary>
@@ -876,7 +876,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList10 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator24.
     '''</summary>
@@ -885,7 +885,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator24 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox22.
     '''</summary>
@@ -894,7 +894,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox22 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator38.
     '''</summary>
@@ -903,7 +903,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator38 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox51.
     '''</summary>
@@ -912,7 +912,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox51 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control DropDownList21.
     '''</summary>
@@ -921,7 +921,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList21 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator48.
     '''</summary>
@@ -930,7 +930,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator48 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList22.
     '''</summary>
@@ -939,7 +939,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList22 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator51.
     '''</summary>
@@ -948,7 +948,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator51 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox17.
     '''</summary>
@@ -957,7 +957,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox17 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator27.
     '''</summary>
@@ -966,7 +966,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator27 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox18.
     '''</summary>
@@ -975,7 +975,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox18 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator28.
     '''</summary>
@@ -984,7 +984,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator28 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox23.
     '''</summary>
@@ -993,7 +993,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox23 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator39.
     '''</summary>
@@ -1002,7 +1002,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator39 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList16.
     '''</summary>
@@ -1011,7 +1011,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList16 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator40.
     '''</summary>
@@ -1020,7 +1020,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator40 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList13.
     '''</summary>
@@ -1029,7 +1029,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList13 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator31.
     '''</summary>
@@ -1038,7 +1038,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator31 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox24.
     '''</summary>
@@ -1047,7 +1047,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox24 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator41.
     '''</summary>
@@ -1056,7 +1056,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator41 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control Button8.
     '''</summary>
@@ -1065,7 +1065,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button8 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control Button9.
     '''</summary>
@@ -1074,7 +1074,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button9 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control UpdatePanel6.
     '''</summary>
@@ -1083,7 +1083,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel6 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel6.
     '''</summary>
@@ -1092,7 +1092,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel6 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label6.
     '''</summary>
@@ -1101,7 +1101,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control GridView5.
     '''</summary>
@@ -1110,7 +1110,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView5 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control ImageButton6.
     '''</summary>
@@ -1119,7 +1119,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton6 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control GridView6.
     '''</summary>
@@ -1128,7 +1128,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView6 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control ImageButton7.
     '''</summary>
@@ -1137,7 +1137,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton7 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control UpdatePanel7.
     '''</summary>
@@ -1146,7 +1146,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel7 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel7.
     '''</summary>
@@ -1155,7 +1155,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel7 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label7.
     '''</summary>
@@ -1164,7 +1164,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control GridView7.
     '''</summary>
@@ -1173,7 +1173,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView7 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control UpdatePanel8.
     '''</summary>
@@ -1182,7 +1182,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel8 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel8.
     '''</summary>
@@ -1191,7 +1191,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel8 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label8.
     '''</summary>
@@ -1200,7 +1200,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TextBox14.
     '''</summary>
@@ -1209,7 +1209,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox14 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox25.
     '''</summary>
@@ -1218,7 +1218,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox25 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox26.
     '''</summary>
@@ -1227,7 +1227,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox26 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox27.
     '''</summary>
@@ -1236,7 +1236,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox27 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox28.
     '''</summary>
@@ -1245,7 +1245,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox28 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox40.
     '''</summary>
@@ -1254,7 +1254,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox40 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox29.
     '''</summary>
@@ -1263,7 +1263,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox29 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox30.
     '''</summary>
@@ -1272,7 +1272,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox30 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox31.
     '''</summary>
@@ -1281,7 +1281,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox31 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control DropDownList12.
     '''</summary>
@@ -1290,7 +1290,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList12 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control TextBox32.
     '''</summary>
@@ -1299,7 +1299,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox32 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control DropDownList18.
     '''</summary>
@@ -1308,7 +1308,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList18 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control DropDownList19.
     '''</summary>
@@ -1317,7 +1317,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList19 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control DropDownList20.
     '''</summary>
@@ -1326,7 +1326,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList20 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control TextBox33.
     '''</summary>
@@ -1335,7 +1335,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox33 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox34.
     '''</summary>
@@ -1344,7 +1344,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox34 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox35.
     '''</summary>
@@ -1353,7 +1353,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox35 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox36.
     '''</summary>
@@ -1362,7 +1362,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox36 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox38.
     '''</summary>
@@ -1371,7 +1371,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox38 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox39.
     '''</summary>
@@ -1380,7 +1380,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox39 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox37.
     '''</summary>
@@ -1389,7 +1389,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox37 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox52.
     '''</summary>
@@ -1398,7 +1398,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox52 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator55.
     '''</summary>
@@ -1407,7 +1407,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator55 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList23.
     '''</summary>
@@ -1416,7 +1416,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList23 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator43.
     '''</summary>
@@ -1425,7 +1425,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator43 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox53.
     '''</summary>
@@ -1434,7 +1434,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox53 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox53_CalendarExtender.
     '''</summary>
@@ -1443,7 +1443,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox53_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton8.
     '''</summary>
@@ -1452,7 +1452,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton8 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator56.
     '''</summary>
@@ -1461,7 +1461,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator56 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control Button13.
     '''</summary>
@@ -1470,7 +1470,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button13 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control Button14.
     '''</summary>
@@ -1479,7 +1479,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button14 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control UpdatePanel9.
     '''</summary>
@@ -1488,7 +1488,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel9 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel9.
     '''</summary>
@@ -1497,7 +1497,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel9 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label9.
     '''</summary>
@@ -1506,7 +1506,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TextBox41.
     '''</summary>
@@ -1515,7 +1515,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox41 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator29.
     '''</summary>
@@ -1524,7 +1524,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator29 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox42.
     '''</summary>
@@ -1533,7 +1533,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox42 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator30.
     '''</summary>
@@ -1542,7 +1542,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator30 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox43.
     '''</summary>
@@ -1551,7 +1551,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox43 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator32.
     '''</summary>
@@ -1560,7 +1560,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator32 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList11.
     '''</summary>
@@ -1569,7 +1569,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList11 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator33.
     '''</summary>
@@ -1578,7 +1578,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator33 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList28.
     '''</summary>
@@ -1587,7 +1587,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList28 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator44.
     '''</summary>
@@ -1596,7 +1596,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator44 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList27.
     '''</summary>
@@ -1605,7 +1605,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList27 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator45.
     '''</summary>
@@ -1614,7 +1614,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator45 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList29.
     '''</summary>
@@ -1623,7 +1623,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList29 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator47.
     '''</summary>
@@ -1632,7 +1632,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator47 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox50.
     '''</summary>
@@ -1641,7 +1641,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox50 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator46.
     '''</summary>
@@ -1650,7 +1650,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator46 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control altaCalidad.
     '''</summary>
@@ -1659,7 +1659,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents altaCalidad As Global.System.Web.UI.HtmlControls.HtmlTableRow
-    
+
     '''<summary>
     '''Control TextBox71.
     '''</summary>
@@ -1668,7 +1668,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox71 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox71_CalendarExtender.
     '''</summary>
@@ -1677,7 +1677,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox71_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton12.
     '''</summary>
@@ -1686,7 +1686,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton12 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator85.
     '''</summary>
@@ -1695,7 +1695,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator85 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox72.
     '''</summary>
@@ -1704,7 +1704,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox72 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator86.
     '''</summary>
@@ -1713,7 +1713,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator86 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox73.
     '''</summary>
@@ -1722,7 +1722,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox73 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator87.
     '''</summary>
@@ -1731,7 +1731,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator87 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox48.
     '''</summary>
@@ -1740,7 +1740,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox48 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator49.
     '''</summary>
@@ -1749,7 +1749,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator49 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox49.
     '''</summary>
@@ -1758,7 +1758,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox49 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator50.
     '''</summary>
@@ -1767,7 +1767,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator50 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList25.
     '''</summary>
@@ -1776,7 +1776,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList25 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator53.
     '''</summary>
@@ -1785,7 +1785,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator53 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList26.
     '''</summary>
@@ -1794,7 +1794,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList26 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator54.
     '''</summary>
@@ -1803,7 +1803,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator54 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control Button16.
     '''</summary>
@@ -1812,7 +1812,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button16 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control Button17.
     '''</summary>
@@ -1821,7 +1821,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button17 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control UpdatePanel13.
     '''</summary>
@@ -1830,7 +1830,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel13 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel13.
     '''</summary>
@@ -1839,7 +1839,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel13 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label10.
     '''</summary>
@@ -1848,7 +1848,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TextBox67.
     '''</summary>
@@ -1857,7 +1857,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox67 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox68.
     '''</summary>
@@ -1866,7 +1866,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox68 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control Button27.
     '''</summary>
@@ -1875,7 +1875,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button27 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control GridView8.
     '''</summary>
@@ -1884,7 +1884,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView8 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control UpdatePanel12.
     '''</summary>
@@ -1893,7 +1893,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel12 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel12.
     '''</summary>
@@ -1902,7 +1902,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel12 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label11.
     '''</summary>
@@ -1911,7 +1911,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TextBox46.
     '''</summary>
@@ -1920,7 +1920,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox46 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator52.
     '''</summary>
@@ -1929,7 +1929,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator52 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox47.
     '''</summary>
@@ -1938,7 +1938,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox47 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator58.
     '''</summary>
@@ -1947,7 +1947,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator58 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox54.
     '''</summary>
@@ -1956,7 +1956,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox54 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator59.
     '''</summary>
@@ -1965,7 +1965,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator59 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox55.
     '''</summary>
@@ -1974,7 +1974,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox55 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator60.
     '''</summary>
@@ -1983,7 +1983,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator60 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList38.
     '''</summary>
@@ -1992,7 +1992,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList38 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator61.
     '''</summary>
@@ -2001,7 +2001,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator61 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList6.
     '''</summary>
@@ -2010,7 +2010,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList6 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator62.
     '''</summary>
@@ -2019,7 +2019,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator62 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox57.
     '''</summary>
@@ -2028,7 +2028,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox57 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator63.
     '''</summary>
@@ -2037,7 +2037,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator63 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox58.
     '''</summary>
@@ -2046,7 +2046,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox58 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator64.
     '''</summary>
@@ -2055,7 +2055,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator64 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox59.
     '''</summary>
@@ -2064,7 +2064,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox59 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator65.
     '''</summary>
@@ -2073,7 +2073,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator65 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList30.
     '''</summary>
@@ -2082,7 +2082,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList30 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator66.
     '''</summary>
@@ -2091,7 +2091,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator66 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox60.
     '''</summary>
@@ -2100,7 +2100,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox60 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox60_CalendarExtender.
     '''</summary>
@@ -2109,7 +2109,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox60_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton4.
     '''</summary>
@@ -2118,7 +2118,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton4 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator67.
     '''</summary>
@@ -2127,7 +2127,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator67 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList31.
     '''</summary>
@@ -2136,7 +2136,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList31 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator68.
     '''</summary>
@@ -2145,7 +2145,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator68 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList32.
     '''</summary>
@@ -2154,7 +2154,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList32 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator69.
     '''</summary>
@@ -2163,7 +2163,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator69 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList33.
     '''</summary>
@@ -2172,7 +2172,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList33 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator70.
     '''</summary>
@@ -2181,7 +2181,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator70 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox61.
     '''</summary>
@@ -2190,7 +2190,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox61 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator71.
     '''</summary>
@@ -2199,7 +2199,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator71 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox62.
     '''</summary>
@@ -2208,7 +2208,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox62 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox62_CalendarExtender.
     '''</summary>
@@ -2217,7 +2217,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox62_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton10.
     '''</summary>
@@ -2226,7 +2226,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton10 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator80.
     '''</summary>
@@ -2235,7 +2235,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator80 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList34.
     '''</summary>
@@ -2244,7 +2244,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList34 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator72.
     '''</summary>
@@ -2253,7 +2253,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator72 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList35.
     '''</summary>
@@ -2262,7 +2262,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList35 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator73.
     '''</summary>
@@ -2271,7 +2271,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator73 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList39.
     '''</summary>
@@ -2280,7 +2280,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList39 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator81.
     '''</summary>
@@ -2289,7 +2289,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator81 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox69.
     '''</summary>
@@ -2298,7 +2298,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox69 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox63.
     '''</summary>
@@ -2307,7 +2307,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox63 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator74.
     '''</summary>
@@ -2316,7 +2316,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator74 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox64.
     '''</summary>
@@ -2325,7 +2325,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox64 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator75.
     '''</summary>
@@ -2334,7 +2334,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator75 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox65.
     '''</summary>
@@ -2343,7 +2343,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox65 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator76.
     '''</summary>
@@ -2352,7 +2352,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator76 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList36.
     '''</summary>
@@ -2361,7 +2361,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList36 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator77.
     '''</summary>
@@ -2370,7 +2370,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator77 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList37.
     '''</summary>
@@ -2379,7 +2379,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList37 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator78.
     '''</summary>
@@ -2388,7 +2388,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator78 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control TextBox66.
     '''</summary>
@@ -2397,7 +2397,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox66 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control RequiredFieldValidator79.
     '''</summary>
@@ -2406,7 +2406,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator79 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control Button24.
     '''</summary>
@@ -2415,7 +2415,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button24 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control Button25.
     '''</summary>
@@ -2424,7 +2424,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button25 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control UpdatePanel14.
     '''</summary>
@@ -2433,7 +2433,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel14 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel14.
     '''</summary>
@@ -2442,7 +2442,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel14 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label12.
     '''</summary>
@@ -2451,7 +2451,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label12 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control DropDownList40.
     '''</summary>
@@ -2460,7 +2460,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList40 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control DropDownList41.
     '''</summary>
@@ -2469,7 +2469,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList41 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control RequiredFieldValidator82.
     '''</summary>
@@ -2478,7 +2478,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator82 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control GridView9.
     '''</summary>
@@ -2487,7 +2487,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView9 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control ImageButton11.
     '''</summary>
@@ -2496,7 +2496,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton11 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control GridView10.
     '''</summary>
@@ -2505,7 +2505,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView10 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''Control UpdatePanel10.
     '''</summary>
@@ -2514,7 +2514,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel10 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel10.
     '''</summary>
@@ -2523,7 +2523,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel10 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label13.
     '''</summary>
@@ -2532,7 +2532,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label13 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TextBox44.
     '''</summary>
@@ -2541,7 +2541,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox44 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control TextBox44_CalendarExtender.
     '''</summary>
@@ -2550,7 +2550,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TextBox44_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''Control ImageButton9.
     '''</summary>
@@ -2559,7 +2559,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ImageButton9 As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''Control RequiredFieldValidator57.
     '''</summary>
@@ -2568,7 +2568,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator57 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control DropDownList24.
     '''</summary>
@@ -2577,7 +2577,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList24 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control Aspirante1.
     '''</summary>
@@ -2586,7 +2586,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante1 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante2.
     '''</summary>
@@ -2595,7 +2595,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante2 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante3.
     '''</summary>
@@ -2604,7 +2604,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante3 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante4.
     '''</summary>
@@ -2613,7 +2613,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante4 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante5.
     '''</summary>
@@ -2622,7 +2622,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante5 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante6.
     '''</summary>
@@ -2631,7 +2631,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante6 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante7.
     '''</summary>
@@ -2640,7 +2640,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante7 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante8.
     '''</summary>
@@ -2649,7 +2649,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante8 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante9.
     '''</summary>
@@ -2658,7 +2658,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante9 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante10.
     '''</summary>
@@ -2667,7 +2667,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante10 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante11.
     '''</summary>
@@ -2676,7 +2676,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante11 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante12.
     '''</summary>
@@ -2685,7 +2685,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante12 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante13.
     '''</summary>
@@ -2694,7 +2694,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante13 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante14.
     '''</summary>
@@ -2703,7 +2703,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante14 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante15.
     '''</summary>
@@ -2712,7 +2712,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante15 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante16.
     '''</summary>
@@ -2721,7 +2721,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante16 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante17.
     '''</summary>
@@ -2730,7 +2730,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante17 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante18.
     '''</summary>
@@ -2739,7 +2739,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante18 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante19.
     '''</summary>
@@ -2748,7 +2748,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante19 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Aspirante20.
     '''</summary>
@@ -2757,7 +2757,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Aspirante20 As Global.CCS.Aspirante1
-    
+
     '''<summary>
     '''Control Button19.
     '''</summary>
@@ -2766,7 +2766,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button19 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control Button20.
     '''</summary>
@@ -2775,7 +2775,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button20 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control UpdatePanel11.
     '''</summary>
@@ -2784,7 +2784,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel11 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''Control Panel11.
     '''</summary>
@@ -2793,7 +2793,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Panel11 As Global.System.Web.UI.WebControls.Panel
-    
+
     '''<summary>
     '''Control Label14.
     '''</summary>
@@ -2802,7 +2802,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label14 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control TroncoComun1.
     '''</summary>
@@ -2811,7 +2811,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun1 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun2.
     '''</summary>
@@ -2820,7 +2820,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun2 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun3.
     '''</summary>
@@ -2829,7 +2829,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun3 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun4.
     '''</summary>
@@ -2838,7 +2838,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun4 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun5.
     '''</summary>
@@ -2847,7 +2847,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun5 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun6.
     '''</summary>
@@ -2856,7 +2856,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun6 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun7.
     '''</summary>
@@ -2865,7 +2865,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun7 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun8.
     '''</summary>
@@ -2874,7 +2874,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun8 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun9.
     '''</summary>
@@ -2883,7 +2883,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun9 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun10.
     '''</summary>
@@ -2892,7 +2892,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun10 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun11.
     '''</summary>
@@ -2901,7 +2901,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun11 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun12.
     '''</summary>
@@ -2910,7 +2910,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun12 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun13.
     '''</summary>
@@ -2919,7 +2919,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun13 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun14.
     '''</summary>
@@ -2928,7 +2928,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun14 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun15.
     '''</summary>
@@ -2937,7 +2937,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun15 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun16.
     '''</summary>
@@ -2946,7 +2946,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun16 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun17.
     '''</summary>
@@ -2955,7 +2955,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun17 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun18.
     '''</summary>
@@ -2964,7 +2964,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun18 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun19.
     '''</summary>
@@ -2973,7 +2973,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun19 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun20.
     '''</summary>
@@ -2982,7 +2982,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun20 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun21.
     '''</summary>
@@ -2991,7 +2991,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun21 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun22.
     '''</summary>
@@ -3000,7 +3000,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun22 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun23.
     '''</summary>
@@ -3009,7 +3009,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun23 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun24.
     '''</summary>
@@ -3018,7 +3018,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun24 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun25.
     '''</summary>
@@ -3027,7 +3027,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun25 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun26.
     '''</summary>
@@ -3036,7 +3036,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun26 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun27.
     '''</summary>
@@ -3045,7 +3045,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun27 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun28.
     '''</summary>
@@ -3054,7 +3054,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun28 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun29.
     '''</summary>
@@ -3063,7 +3063,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun29 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun30.
     '''</summary>
@@ -3072,7 +3072,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun30 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun31.
     '''</summary>
@@ -3081,7 +3081,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun31 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun32.
     '''</summary>
@@ -3090,7 +3090,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun32 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun33.
     '''</summary>
@@ -3099,7 +3099,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun33 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun34.
     '''</summary>
@@ -3108,7 +3108,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun34 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun35.
     '''</summary>
@@ -3117,7 +3117,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun35 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun36.
     '''</summary>
@@ -3126,7 +3126,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun36 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun37.
     '''</summary>
@@ -3135,7 +3135,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun37 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun38.
     '''</summary>
@@ -3144,7 +3144,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun38 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun39.
     '''</summary>
@@ -3153,7 +3153,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun39 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun40.
     '''</summary>
@@ -3162,7 +3162,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun40 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun41.
     '''</summary>
@@ -3171,7 +3171,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun41 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun42.
     '''</summary>
@@ -3180,7 +3180,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun42 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun43.
     '''</summary>
@@ -3189,7 +3189,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun43 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun44.
     '''</summary>
@@ -3198,7 +3198,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun44 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun45.
     '''</summary>
@@ -3207,7 +3207,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun45 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun46.
     '''</summary>
@@ -3216,7 +3216,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun46 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun47.
     '''</summary>
@@ -3225,7 +3225,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun47 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun48.
     '''</summary>
@@ -3234,7 +3234,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun48 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun49.
     '''</summary>
@@ -3243,7 +3243,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun49 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun50.
     '''</summary>
@@ -3252,7 +3252,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun50 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun51.
     '''</summary>
@@ -3261,7 +3261,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun51 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun52.
     '''</summary>
@@ -3270,7 +3270,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun52 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun53.
     '''</summary>
@@ -3279,7 +3279,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun53 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun54.
     '''</summary>
@@ -3288,7 +3288,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun54 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun55.
     '''</summary>
@@ -3297,7 +3297,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun55 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun56.
     '''</summary>
@@ -3306,7 +3306,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun56 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun57.
     '''</summary>
@@ -3315,7 +3315,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun57 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun58.
     '''</summary>
@@ -3324,7 +3324,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun58 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun59.
     '''</summary>
@@ -3333,7 +3333,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun59 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun60.
     '''</summary>
@@ -3342,7 +3342,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun60 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun61.
     '''</summary>
@@ -3351,7 +3351,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun61 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun62.
     '''</summary>
@@ -3360,7 +3360,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun62 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun63.
     '''</summary>
@@ -3369,7 +3369,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun63 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun64.
     '''</summary>
@@ -3378,7 +3378,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun64 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun65.
     '''</summary>
@@ -3387,7 +3387,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun65 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun66.
     '''</summary>
@@ -3396,7 +3396,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun66 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun67.
     '''</summary>
@@ -3405,7 +3405,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun67 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun68.
     '''</summary>
@@ -3414,7 +3414,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun68 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun69.
     '''</summary>
@@ -3423,7 +3423,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun69 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun70.
     '''</summary>
@@ -3432,7 +3432,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun70 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun71.
     '''</summary>
@@ -3441,7 +3441,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun71 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun72.
     '''</summary>
@@ -3450,7 +3450,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun72 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun73.
     '''</summary>
@@ -3459,7 +3459,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun73 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun74.
     '''</summary>
@@ -3468,7 +3468,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun74 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun75.
     '''</summary>
@@ -3477,7 +3477,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun75 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun76.
     '''</summary>
@@ -3486,7 +3486,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun76 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun77.
     '''</summary>
@@ -3495,7 +3495,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun77 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun78.
     '''</summary>
@@ -3504,7 +3504,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun78 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun79.
     '''</summary>
@@ -3513,7 +3513,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun79 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun80.
     '''</summary>
@@ -3522,7 +3522,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun80 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun81.
     '''</summary>
@@ -3531,7 +3531,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun81 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun82.
     '''</summary>
@@ -3540,7 +3540,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun82 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun83.
     '''</summary>
@@ -3549,7 +3549,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun83 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun84.
     '''</summary>
@@ -3558,7 +3558,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun84 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun85.
     '''</summary>
@@ -3567,7 +3567,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun85 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun86.
     '''</summary>
@@ -3576,7 +3576,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun86 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun87.
     '''</summary>
@@ -3585,7 +3585,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun87 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun88.
     '''</summary>
@@ -3594,7 +3594,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun88 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun89.
     '''</summary>
@@ -3603,7 +3603,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun89 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun90.
     '''</summary>
@@ -3612,7 +3612,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun90 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun91.
     '''</summary>
@@ -3621,7 +3621,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun91 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun92.
     '''</summary>
@@ -3630,7 +3630,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun92 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun93.
     '''</summary>
@@ -3639,7 +3639,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun93 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun94.
     '''</summary>
@@ -3648,7 +3648,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun94 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun95.
     '''</summary>
@@ -3657,7 +3657,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun95 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun96.
     '''</summary>
@@ -3666,7 +3666,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun96 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun97.
     '''</summary>
@@ -3675,7 +3675,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun97 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun98.
     '''</summary>
@@ -3684,7 +3684,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun98 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun99.
     '''</summary>
@@ -3693,7 +3693,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun99 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control TroncoComun100.
     '''</summary>
@@ -3702,7 +3702,7 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents TroncoComun100 As Global.CCS.TroncoComun
-    
+
     '''<summary>
     '''Control Button23.
     '''</summary>

@@ -516,28 +516,28 @@ Public Class Monitoreo
 
     Protected Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
 
-        ConsultaMitrol()
+        'ConsultaMitrol()
 
-        If CheckBox3.Checked = True Then
-            Session("Segmento") = TextBox10.Text
-        Else
-            Session("Segmento") = 1
-        End If
+        'If CheckBox3.Checked = True Then
+        '    Session("Segmento") = TextBox10.Text
+        'Else
+        '    Session("Segmento") = 1
+        'End If
 
-        'MsgBox(Session("CampaniaSeleccionada"))
-        If Session("CampaniaSeleccionada") = "CV Directo" Then
-            'MsgBox("HOLA")
-        Else
-            Try
-                Dim script As String = "<script type='text/javascript'> cambiarTrack('" & x.BuildString(TextBox2.Text, x.GetServidorCampania(Session("IDCampaniaSeleccionada")), Session("Segmento")) & "'); </script>"
-                ScriptManager.RegisterStartupScript(Me, GetType(Page), "cambiarTrack('" & x.BuildString(TextBox2.Text, x.GetServidorCampania(Session("IDCampaniaSeleccionada")), Session("Segmento")) & "');", script, False)
+        ''MsgBox(Session("CampaniaSeleccionada"))
+        'If Session("CampaniaSeleccionada") = "CV Directo" Then
+        '    'MsgBox("HOLA")
+        'Else
+        '    Try
+        '        Dim script As String = "<script type='text/javascript'> cambiarTrack('" & x.BuildString(TextBox2.Text, x.GetServidorCampania(Session("IDCampaniaSeleccionada")), Session("Segmento")) & "'); </script>"
+        '        ScriptManager.RegisterStartupScript(Me, GetType(Page), "cambiarTrack('" & x.BuildString(TextBox2.Text, x.GetServidorCampania(Session("IDCampaniaSeleccionada")), Session("Segmento")) & "');", script, False)
 
-            Catch ex As Exception
-                msgtipo(0) = 3
-                msgmensaje(0) = "¡El ID no existe o no pertenece a la campaña seleccionada!"
-                Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
-            End Try
-        End If
+        '    Catch ex As Exception
+        '        msgtipo(0) = 3
+        '        msgmensaje(0) = "¡El ID no existe o no pertenece a la campaña seleccionada!"
+        '        Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+        '    End Try
+        'End If
 
     End Sub
 
@@ -1159,6 +1159,9 @@ Public Class Monitoreo
         Limpiar()
     End Sub
 
+    Protected Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+
+    End Sub
 
     Function GetPendientes(ByVal IDAnalista As String) As Boolean
 
