@@ -470,7 +470,7 @@
     var key, numeros, teclado, especiales, teclado_especial, i;
     key = event.keyCode || event.which;
                 teclado = String.fromCharCode(key);
-                numeros = '0123456789';
+                numeros = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_.-';
         especiales = [8, 9, 37, 38, 39, 40, 46];
         shiif=[16, 17, 18]
      teclado_especial = false;
