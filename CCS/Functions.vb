@@ -387,8 +387,9 @@ Public Class Funciones
         Dim da As New System.Data.SqlClient.SqlDataAdapter
         Dim ds As New System.Data.DataSet
 
-        Dim cmd As SqlCommand = New SqlCommand("SELECT jefe_directo FROM SYS_empleados WHERE id_ccs = '" & username & "'", conexion)
+        Dim cmd As SqlCommand = New SqlCommand("SELECT jefe_directo FROM SYS_empleados WHERE id_ccs = '" & username & "' AND (status in (2,7,8,9))", conexion)
         cmd.CommandType = CommandType.Text
+        conexion.Close()
         conexion.Open()
         da.SelectCommand = cmd
         da.Fill(ds)
