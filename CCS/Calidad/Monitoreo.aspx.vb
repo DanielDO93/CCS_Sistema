@@ -561,16 +561,38 @@ Public Class Monitoreo
             Label15.Text = x.GetNivelAgente(ds.Tables(0).Rows(0).Item(0).ToString, 4)
             Label17.Text = x.GetNivelAgente(ds.Tables(0).Rows(0).Item(0).ToString, 5)
 
+            ' Si no funciona comento desde este punto
 
-
-            If x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5) < 0 Then
-                Label21.Text = 0
-                msgtipo(0) = 2
-                msgmensaje(0) = "¡Ya está cubierta la cuota de este agente!"
-                Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+            If Session("CampaniaSeleccionada") = "Sodexo MC" Then
+                If 4 - x.GetMonitoreosAgente(Session("IDAgente"), 5) < 0 Then
+                    Label21.Text = 0
+                    msgtipo(0) = 2
+                    msgmensaje(0) = "¡Ya está cubierta la cuota de este agente!"
+                    Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+                Else
+                    Label21.Text = 4 - x.GetMonitoreosAgente(Session("IDAgente"), 5)
+                End If
             Else
-                Label21.Text = x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5)
+                If x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5) < 0 Then
+                    Label21.Text = 0
+                    msgtipo(0) = 2
+                    msgmensaje(0) = "¡Ya está cubierta la cuota de este agente!"
+                    Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+                Else
+                    Label21.Text = x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5)
+                End If
             End If
+
+            ' Hasta este punto y quito comentarios de abajo 
+
+            'If x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5) < 0 Then
+            '    Label21.Text = 0
+            '    msgtipo(0) = 2
+            '    msgmensaje(0) = "¡Ya está cubierta la cuota de este agente!"
+            '    Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+            'Else
+            '    Label21.Text = x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5)
+            'End If
 
 
         Catch ex As Exception
@@ -883,7 +905,7 @@ Public Class Monitoreo
         cmd1.CommandType = CommandType.Text
         cmd1.CommandText = strQuery1
         cmd1.Connection = con1
-
+        con1.Close()
         con1.Open()
         cmd1.ExecuteNonQuery()
         con1.Close()

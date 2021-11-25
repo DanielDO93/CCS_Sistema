@@ -943,6 +943,8 @@ Public Class Funciones
         da2.Fill(ds2)
         conexion.Close()
 
+        
+
 
         Return ds2.Tables(0).Rows(0).Item(0).ToString
 
