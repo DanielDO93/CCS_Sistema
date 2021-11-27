@@ -42,6 +42,17 @@ Public Class Maestra
         HOCAP.Visible = False
         HOEntrega.Visible = False
 
+        'CCGeneral.Visible = False
+        'SemaforoIN.Visible = False
+
+        'REPGeneral.Visible = False
+        'REP_General.Visible = False
+        'REP_Calidad.Visible = False
+        'REP_Campanias.Visible = False
+
+        'AdminGeneral.Visible = False
+
+
         If Request.Cookies("Usersettings")("SU") = True Then
 
             MonitoreoQA.Visible = True
@@ -77,9 +88,28 @@ Public Class Maestra
             MisEvaluaciones.Visible = True
             NuevaEvaluacion.Visible = True
 
+            CCGeneral.Visible = True
+            SemaforoIN.Visible = True
+
+            REPGeneral.Visible = True
+            REP_General.Visible = True
+            REP_Calidad.Visible = True
+            REP_Campanias.Visible = True
+
+            AdminGeneral.Visible = True
+
         ElseIf Request.Cookies("Usersettings")("Area") = 0 And Request.Cookies("Usersettings")("Puesto") = 0 Then
             RetroAG.Visible = True
             MisEvaluaciones.Visible = True
+            CCGeneral.Visible = False
+            SemaforoIN.Visible = False
+
+            REPGeneral.Visible = False
+            REP_General.Visible = False
+            REP_Calidad.Visible = False
+            REP_Campanias.Visible = False
+
+            AdminGeneral.Visible = False
             If Request.Cookies("Usersettings")("MTY") = "True" Or Request.Cookies("Usersettings")("ARA") = "True" Then
                 QAGeneral.Visible = False
                 CCGeneral.Visible = False
@@ -123,7 +153,7 @@ Public Class Maestra
             MonitoreoQA.Visible = True
             RetroQA.Visible = True
             ResumenQA.Visible = True
-            Alta.Visible = True
+            Alta.Visible = False
 
         ElseIf Request.Cookies("Usersettings")("Campania") = 80 Then
             RetroQA.Visible = True
@@ -163,6 +193,8 @@ Public Class Maestra
             HOEntrega.Visible = True
             MisEvaluaciones.Visible = True
             NuevaEvaluacion.Visible = True
+            Operaciones.Visible = False
+
         ElseIf Request.Cookies("Usersettings")("Area") = 3 And Request.Cookies("Usersettings")("Puesto") >= 3 Then
             Asistencia.Visible = True
             Capacitacion.Visible = True
@@ -175,6 +207,7 @@ Public Class Maestra
             HOEntrega.Visible = True
             MisEvaluaciones.Visible = True
             NuevaEvaluacion.Visible = True
+            Operaciones.Visible = False
         ElseIf Request.Cookies("Usersettings")("Area") = 4 And Request.Cookies("Usersettings")("Puesto") >= 3 Then
             Nomina.Visible = True
             Alta.Visible = True
