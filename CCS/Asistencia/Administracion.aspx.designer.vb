@@ -3704,6 +3704,906 @@ Partial Public Class Administracion
     Protected WithEvents TroncoComun100 As Global.CCS.TroncoComun
 
     '''<summary>
+    '''Control TroncoComun101.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun101 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun102.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun102 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun103.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun103 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun104.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun104 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun105.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun105 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun106.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun106 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun107.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun107 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun108.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun108 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun109.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun109 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun110.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun110 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun111.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun111 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun112.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun112 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun113.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun113 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun114.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun114 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun115.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun115 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun116.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun116 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun117.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun117 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun118.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun118 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun119.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun119 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun120.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun120 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun121.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun121 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun122.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun122 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun123.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun123 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun124.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun124 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun125.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun125 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun126.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun126 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun127.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun127 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun128.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun128 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun129.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun129 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun130.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun130 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun131.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun131 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun132.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun132 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun133.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun133 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun134.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun134 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun135.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun135 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun136.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun136 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun137.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun137 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun138.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun138 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun139.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun139 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun140.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun140 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun141.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun141 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun142.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun142 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun143.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun143 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun144.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun144 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun145.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun145 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun146.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun146 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun147.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun147 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun148.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun148 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun149.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun149 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun150.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun150 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun151.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun151 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun152.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun152 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun153.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun153 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun154.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun154 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun155.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun155 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun156.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun156 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun157.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun157 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun158.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun158 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun159.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun159 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun160.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun160 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun161.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun161 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun162.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun162 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun163.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun163 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun164.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun164 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun165.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun165 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun166.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun166 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun167.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun167 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun168.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun168 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun169.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun169 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun170.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun170 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun171.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun171 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun172.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun172 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun173.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun173 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun174.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun174 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun175.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun175 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun176.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun176 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun177.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun177 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun178.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun178 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun179.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun179 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun180.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun180 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun181.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun181 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun182.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun182 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun183.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun183 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun184.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun184 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun185.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun185 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun186.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun186 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun187.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun187 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun188.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun188 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun189.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun189 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun190.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun190 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun191.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun191 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun192.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun192 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun193.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun193 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun194.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun194 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun195.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun195 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun196.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun196 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun197.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun197 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun198.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun198 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun199.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun199 As Global.CCS.TroncoComun
+
+    '''<summary>
+    '''Control TroncoComun200.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TroncoComun200 As Global.CCS.TroncoComun
+
+    '''<summary>
     '''Control Button23.
     '''</summary>
     '''<remarks>
