@@ -52,20 +52,18 @@ Public Class Asistencia
 
 
     Protected Sub ImageButton1_Click(sender As Object, e As EventArgs) Handles ImageButton1.Click
+        Dim dias = CInt(ConfigurationManager.AppSettings("diasAsistencia"))
 
         If CDate(Fecha.Text) = Today Then
             ImageButton2.Enabled = True
             Fecha.Text = DateAdd(DateInterval.Day, -1, CDate(Fecha.Text))
-            LoadConexion()
             CleanControls(Controls)
-        ElseIf CDate(Fecha.Text) = DateAdd(DateInterval.Day, -2, Today) Then
+        ElseIf CDate(Fecha.Text) = DateAdd(DateInterval.Day, -dias, Today) Then
             ImageButton1.Enabled = False
             Fecha.Text = DateAdd(DateInterval.Day, -1, CDate(Fecha.Text))
-            LoadConexion()
             CleanControls(Controls)
         Else
             Fecha.Text = DateAdd(DateInterval.Day, -1, CDate(Fecha.Text))
-            LoadConexion()
             CleanControls(Controls)
         End If
 
@@ -74,16 +72,16 @@ Public Class Asistencia
 
     Protected Sub ImageButton2_Click(sender As Object, e As EventArgs) Handles ImageButton2.Click
 
+        Dim dias = CInt(ConfigurationManager.AppSettings("diasAsistencia"))
+
         If CDate(Fecha.Text) = Today Then
             ImageButton2.Enabled = False
-        ElseIf CDate(Fecha.Text) < DateAdd(DateInterval.Day, -2, Today)
+        ElseIf CDate(Fecha.Text) < DateAdd(DateInterval.Day, -dias, Today) Then
             ImageButton1.Enabled = True
             Fecha.Text = DateAdd(DateInterval.Day, 1, CDate(Fecha.Text))
-            LoadConexion()
             CleanControls(Controls)
         Else
             Fecha.Text = DateAdd(DateInterval.Day, 1, CDate(Fecha.Text))
-            LoadConexion()
             CleanControls(Controls)
         End If
 
@@ -117,7 +115,7 @@ Public Class Asistencia
         Dim conexion As New SqlConnection(ConfigurationManager.ConnectionStrings("db").ToString)
         Dim da As New System.Data.SqlClient.SqlDataAdapter
         Dim ds As New System.Data.DataSet
-        Dim cmd As SqlCommand = New SqlCommand("SELECT Nombre=[nombres] + ' ' +paterno + ' ' +materno, Conexión=ISNULL(CONVERT(DECIMAL(4,1),b.Conexión),0), id_acd1 as 'ID',Segundos=ISNULL(b.Segundos,0) FROM Plantilla a LEFT JOIN (SELECT * FROM Conexion WHERE Fecha = '" & Fecha.Text & "') b ON CONVERT(NVARCHAR(MAX),a.server) +'-'+a.id_acd1 = b.server WHERE (status = 'Activo' OR status= 'En Capacitacion' OR status ='Pendiente de Baja' OR status = 'Preingreso' OR status ='Secundarias') AND id_super = '" & Request.Cookies("Usersettings")("Username") & "'", conexion)
+        Dim cmd As SqlCommand = New SqlCommand("SELECT Nombre=[nombres] + ' ' +paterno + ' ' +materno, Conexión=0, id_acd1 as 'ID',Segundos=0 FROM Plantilla a WHERE (status = 'Activo' OR status= 'En Capacitacion' OR status ='Pendiente de Baja' OR status = 'Preingreso' OR status ='Secundarias') AND id_super = '" & Request.Cookies("Usersettings")("Username") & "'", conexion)
 
 
         conexion.Open()
@@ -140,31 +138,6 @@ Public Class Asistencia
             ctrl.Conexion.Text = ds.Tables(0).Rows(x).Item(1).ToString
             ctrl.CNXSegundos.Value = ds.Tables(0).Rows(x).Item(3).ToString
 
-        Next
-
-
-    End Sub
-
-    Sub LoadConexion()
-
-        Dim conexion As New SqlConnection(ConfigurationManager.ConnectionStrings("db").ToString)
-        Dim da As New System.Data.SqlClient.SqlDataAdapter
-        Dim ds As New System.Data.DataSet
-        Dim cmd As SqlCommand = New SqlCommand("SELECT Nombre=[nombres] + ' ' +paterno + ' ' +materno,Conexión=ISNULL(CONVERT(DECIMAL(4,1),b.Conexión),0), id_acd1 as 'ID',Segundos=ISNULL(b.Segundos,0) FROM Plantilla a LEFT JOIN (SELECT * FROM Conexion WHERE Fecha = '" & Fecha.Text & "') b ON a.id_acd1 = b.ID WHERE id_super = '" & Request.Cookies("Usersettings")("Username") & "'", conexion)
-
-        conexion.Open()
-
-        cmd.CommandType = CommandType.Text
-        da.SelectCommand = cmd
-        da.Fill(ds)
-        conexion.Close()
-        Dim ctrl As Agente
-        For x = 0 To GetAgentes() - 1
-
-            Session("GrupoCount") = x + 1
-            ctrl = CType(Agente1.Parent.FindControl("Agente" & Session("GrupoCount")), Agente)
-            ctrl.Conexion.Text = ds.Tables(0).Rows(x).Item(1).ToString
-            ctrl.CNXSegundos.Value = ds.Tables(0).Rows(x).Item(2).ToString
         Next
 
 
