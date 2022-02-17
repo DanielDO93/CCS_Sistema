@@ -131,13 +131,13 @@ Public Class Asistencia
         For x = 0 To GetAgentes() - 1
             Session("GrupoCount") = x + 1
 
-            ctrl = CType(Agente1.Parent.FindControl("Agente" & Session("GrupoCount")), Agente)
-            ctrl.Visible = True
-            ctrl.IDACD.Text = ds.Tables(0).Rows(x).Item(2).ToString
-            ctrl.Nombre.Text = StrConv(ds.Tables(0).Rows(x).Item(0).ToString, vbProperCase)
-            ctrl.Conexion.Text = ds.Tables(0).Rows(x).Item(1).ToString
-            ctrl.CNXSegundos.Value = ds.Tables(0).Rows(x).Item(3).ToString
+            Dim control as Agente = CType(Page.LoadControl("../Agente.ascx"),Agente)
+            control.IDACD.Text = ds.Tables(0).Rows(x).Item(2).ToString
+            control.Nombre.Text = StrConv(ds.Tables(0).Rows(x).Item(0).ToString, vbProperCase)
+            control.Conexion.Text = ds.Tables(0).Rows(x).Item(1).ToString
+            control.CNXSegundos.Value = ds.Tables(0).Rows(x).Item(3).ToString
 
+            TablaAsistencia.Controls.Add(control)
         Next
 
 
