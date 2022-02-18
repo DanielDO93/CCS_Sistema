@@ -107,6 +107,7 @@
                                 </div>
                                 <br />
                                 <div id="TablaAsistencia" runat="server" style="width:960px; margin-left:1%;" visible="True">
+                                   
 
                                 </div>
                                 <br />

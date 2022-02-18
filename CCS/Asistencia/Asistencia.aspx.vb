@@ -124,14 +124,12 @@ Public Class Asistencia
         da.SelectCommand = cmd
         da.Fill(ds)
         conexion.Close()
-        Agente1.Tablita.Rows(0).Visible = True
 
-
-        Dim ctrl As Agente
         For x = 0 To GetAgentes() - 1
             Session("GrupoCount") = x + 1
 
-            Dim control as Agente = CType(Page.LoadControl("../Agente.ascx"),Agente)
+            Dim control As Agente = CType(Page.LoadControl("../Agente.ascx"), Agente)
+            control.ID = "Agente" & Session("GrupoCount")
             control.IDACD.Text = ds.Tables(0).Rows(x).Item(2).ToString
             control.Nombre.Text = StrConv(ds.Tables(0).Rows(x).Item(0).ToString, vbProperCase)
             control.Conexion.Text = ds.Tables(0).Rows(x).Item(1).ToString
@@ -140,6 +138,8 @@ Public Class Asistencia
             TablaAsistencia.Controls.Add(control)
         Next
 
+        Dim header = CType(TablaAsistencia.FindControl("Agente1"), Agente)
+        header.Tablita.Rows(0).Visible = True
 
     End Sub
 
@@ -165,7 +165,7 @@ Public Class Asistencia
         For x = 0 To GetAgentes() - 1
             Session("GrupoCount") = x + 1
 
-            ctrl = CType(Agente1.Parent.FindControl("Agente" & Session("GrupoCount")), Agente)
+            ctrl = CType(TablaAsistencia.FindControl("Agente" & Session("GrupoCount")), Agente)
 
             ctrl.Seleccion.Value = Nothing
             ctrl.Horas.Text = Nothing
@@ -206,7 +206,7 @@ Public Class Asistencia
 
         For x = 0 To GetAgentes() - 1
             Session("GrupoCount") = x + 1
-            ctrl = CType(Agente1.Parent.FindControl("Agente" & Session("GrupoCount")), Agente)
+            ctrl = CType(TablaAsistencia.FindControl("Agente" & Session("GrupoCount")), Agente)
 
             If ctrl.Seleccion.Value = "A" Then
                 Asistencias = Asistencias + 1
@@ -250,7 +250,7 @@ Public Class Asistencia
 
         For x = 0 To GetAgentes() - 1
             Session("GrupoCount") = x + 1
-            ctrl = CType(Agente1.Parent.FindControl("Agente" & Session("GrupoCount")), Agente)
+            ctrl = CType(TablaAsistencia.FindControl("Agente" & Session("GrupoCount")), Agente)
 
             If ctrl.Horas.Text = "" Then
                 Count = 0
@@ -292,7 +292,7 @@ Public Class Asistencia
 
 
 
-                ctrl = CType(Agente1.Parent.FindControl("Agente" & Session("GrupoCount")), Agente)
+                ctrl = CType(TablaAsistencia.FindControl("Agente" & Session("GrupoCount")), Agente)
 
                 If Funcion.CompruebaAsitencia(Fecha.Text, ctrl.Nombre.Text) = False Then
 
