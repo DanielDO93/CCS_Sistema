@@ -1913,24 +1913,6 @@ Partial Public Class Administracion
     Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control TextBox46.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents TextBox46 As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control RequiredFieldValidator52.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents RequiredFieldValidator52 As Global.System.Web.UI.WebControls.RequiredFieldValidator
-
-    '''<summary>
     '''Control TextBox47.
     '''</summary>
     '''<remarks>
@@ -1965,6 +1947,24 @@ Partial Public Class Administracion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RequiredFieldValidator59 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''Control TextBox46.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TextBox46 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control RequiredFieldValidator52.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator52 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control TextBox55.

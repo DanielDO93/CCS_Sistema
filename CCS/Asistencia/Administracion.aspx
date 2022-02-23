@@ -1950,16 +1950,16 @@
                         <table style="width: 100%;" class="Buscador">
 
                             <tr>
-                                <td>Nombres:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox46" runat="server" Wrap="True" CssClass="textos" Width="140px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator52" runat="server" ErrorMessage="*" ControlToValidate="TextBox46" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
                                 <td class="auto-style9">Apellido Paterno:</td>
                                 <td class="auto-style10">
                                     <asp:TextBox ID="TextBox47" runat="server" CssClass="textos" Wrap="True" Width="150px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator58" runat="server" ErrorMessage="*" ControlToValidate="TextBox47" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
                                 <td class="auto-style16">Apellido Materno:</td>
                                 <td class="auto-style17">
                                     <asp:TextBox ID="TextBox54" runat="server" CssClass="textos" Wrap="True" Width="140px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator59" runat="server" ErrorMessage="*" ControlToValidate="TextBox54" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
+                                 <td>Nombres:</td>
+                                <td class="auto-style17">
+                                    <asp:TextBox ID="TextBox46" runat="server" Wrap="True" CssClass="textos" Width="140px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator52" runat="server" ErrorMessage="*" ControlToValidate="TextBox46" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
                             </tr>
 
                             <tr>
