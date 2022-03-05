@@ -11,27 +11,30 @@ Public Class Administracion
 
     Sub EnviarMail(Destinatario As String, Asunto As String, Mensaje As String)
 
-        Dim correo As New MailMessage
-        Dim smtp As New SmtpClient()
+        Try
+            Dim correo As New MailMessage
+            Dim smtp As New SmtpClient()
 
-        correo.From = New MailAddress("ccs.notificaciones@ccscontactcenter.com", "Notificaciones CCS", System.Text.Encoding.UTF8)
-        correo.To.Add(Destinatario)
-        correo.Bcc.Add("isaac.contreras@ccscontactcenter.com")
-        correo.SubjectEncoding = System.Text.Encoding.UTF8
-        correo.Subject = Asunto
-        correo.Body = Mensaje
-        correo.BodyEncoding = System.Text.Encoding.UTF8
-        correo.IsBodyHtml = True '(formato tipo web o normal:   true = web)
-        correo.Priority = MailPriority.High '>> prioridad
+            correo.From = New MailAddress("ccs.notificaciones@ccscontactcenter.com", "Notificaciones CCS", System.Text.Encoding.UTF8)
+            correo.To.Add(Destinatario)
+            correo.Bcc.Add("isaac.contreras@ccscontactcenter.com")
+            correo.SubjectEncoding = System.Text.Encoding.UTF8
+            correo.Subject = Asunto
+            correo.Body = Mensaje
+            correo.BodyEncoding = System.Text.Encoding.UTF8
+            correo.IsBodyHtml = True '(formato tipo web o normal:   true = web)
+            correo.Priority = MailPriority.High '>> prioridad
 
-        smtp.Credentials = New System.Net.NetworkCredential("ccs.notificaciones@ccscontactcenter.com", "Pow25925")
-        smtp.Port = 587
-        smtp.Host = "smtp.office365.com"
-        smtp.EnableSsl = True
+            smtp.Credentials = New System.Net.NetworkCredential("ccs.notificaciones@ccscontactcenter.com", "Pow25925")
+            smtp.Port = 587
+            smtp.Host = "smtp.office365.com"
+            smtp.EnableSsl = True
 
-        smtp.Send(correo)
+            smtp.Send(correo)
 
-
+        Catch ex As Exception
+            Console.Write(ex)
+        End Try
 
     End Sub
 
