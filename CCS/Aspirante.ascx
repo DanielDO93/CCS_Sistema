@@ -2,10 +2,9 @@
 
 <asp:Table ID="Table1" runat="server" Font-Names="Arial">
             <asp:TableRow Visible="false">
-
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="100px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Nombres</asp:TableCell>
                 <asp:TableCell runat="server" HorizontalAlign="Center" Width="100px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Paterno</asp:TableCell>
                 <asp:TableCell runat="server" HorizontalAlign="Center" Width="100px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Materno</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="100px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Nombres</asp:TableCell>
                 <asp:TableCell runat="server" HorizontalAlign="Center" Width="85px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Entrada OP</asp:TableCell>
                 <asp:TableCell runat="server" HorizontalAlign="Center" Width="85px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Salida OP</asp:TableCell>
                 <asp:TableCell runat="server" HorizontalAlign="Center" Width="85px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Entrada CAP</asp:TableCell>
