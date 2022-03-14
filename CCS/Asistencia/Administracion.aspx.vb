@@ -307,6 +307,9 @@ Public Class Administracion
             ComboStatus()
             ComboInstructores()
             ComboInstructoresActivo()
+            CampaniaAspirantes()
+            SuperAspirantes()
+            EstadosAspirantes()
 
             DropDownList7.Items.Add(New ListItem("-Selecciona-", 0))
 
@@ -338,144 +341,399 @@ Public Class Administracion
 
     '########################################################### MODULO RECLUTAMIENTO ###########################################################
 
-    Sub LoadAspirantes(NumeroAgentes As Integer)
+    Sub EstadosAspirantes()
 
-        Aspirante1.Tablita.Rows(0).Visible = True
-
-        Dim ctrl As Aspirante1
-        For x = 0 To NumeroAgentes - 1
-            Session("CuentaCosaesta") = x + 1
-
-            ctrl = CType(Aspirante1.Parent.FindControl("Aspirante" & Session("CuentaCosaesta")), Aspirante1)
-            ctrl.Visible = True
-        Next
-    End Sub
-
-    Private Sub DropDownList24_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList24.SelectedIndexChanged
-
-        Aspirante1.Visible = False
-        Aspirante2.Visible = False
-        Aspirante3.Visible = False
-        Aspirante4.Visible = False
-        Aspirante5.Visible = False
-        Aspirante6.Visible = False
-        Aspirante7.Visible = False
-        Aspirante8.Visible = False
-        Aspirante9.Visible = False
-        Aspirante10.Visible = False
-        Aspirante11.Visible = False
-        Aspirante12.Visible = False
-        Aspirante13.Visible = False
-        Aspirante14.Visible = False
-        Aspirante15.Visible = False
-        Aspirante16.Visible = False
-        Aspirante17.Visible = False
-        Aspirante18.Visible = False
-        Aspirante19.Visible = False
-        Aspirante20.Visible = False
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("cats").ConnectionString
+        Dim strQuery As String = "SELECT ID,Estado FROM edos_mx ORDER BY Estado"
+        Dim con As New SqlConnection(strConnString)
+        Dim cmd As New SqlCommand()
 
 
-        LoadAspirantes(DropDownList24.SelectedValue)
+        If Not IsPostBack Then
 
-    End Sub
+            DropDownList49.Items.Add(New ListItem("-Selecciona-", 0))
+            DropDownList49.AppendDataBoundItems = True
 
-    Public Sub CleanControls()
-
-        TextBox44.Text = Nothing
-
-        Dim ctrl As Aspirante1
-        For x = 0 To DropDownList24.SelectedValue - 1
-            Session("CuentaCosaesta") = x + 1
-
-            ctrl = CType(Aspirante1.Parent.FindControl("Aspirante" & Session("CuentaCosaesta")), Aspirante1)
-
-            ctrl.Nombre.Text = Nothing
-            ctrl.Paterno.Text = Nothing
-            ctrl.Materno.Text = Nothing
-            ctrl.Entrada.SelectedValue = 0
-            ctrl.Salida.SelectedValue = 0
-            ctrl.EntradaCAP.SelectedValue = 0
-            ctrl.SalidaCAP.SelectedValue = 0
-            ctrl.Telefono.Text = Nothing
-            ctrl.Campania.SelectedValue = 0
-
-        Next
-    End Sub
-
-    Sub GuardarReclu()
-
-        Dim user As String
-
-        'Se genera el cuerpo del correo a enviar cuando se apriete guardar
-        Dim MensajeHTML As String
-        MensajeHTML = "<html><head><style>p.MsoNormal, li.MsoNormal, div.MsoNormal{mso-style-unhide:no;mso-style-qformat:yes;mso-style-parent:'';margin:0cm;margin-bottom:.0001pt;mso-pagination:widow-orphan;font-size:11.0pt;font-family:'Calibri',sans-serif;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:'Times New Roman';mso-bidi-theme-font:minor-bidi;mso-fareast-language:EN-US;}a:link, span.MsoHyperlink{mso-style-noshow:yes;mso-style-priority:99;color:#0563C1;mso-themecolor:hyperlink;text-decoration:underline;text-underline:single;}a:visited, span.MsoHyperlinkFollowed{mso-style-noshow:yes;mso-style-priority:99;color:#954F72;mso-themecolor:followedhyperlink;text-decoration:underline;text-underline:single;}</style></head><body><p class=MsoNormal>Reclutamiento ha ingresado nuevos agentes:</p><br>" &
-                      "<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p><p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Reclutador: </b>" &
-                      Request.Cookies("Usersettings")("Username") &
-                      "<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p><br><p class=MsoNormal><span style='mso-bookmark:_MailAutoSig'><span style='mso-fareast-font-family:'Times New Roman';mso-fareast-theme-font:minor-fareast;mso-fareast-language:ES-MX;mso-no-proof:yes'>Los agentes ya se encuentran disponibles para asignacion de instructor <a href='http://10.0.0.40/Asistencia/'>aqui</a> para continuar con el proceso.<o:p></o:p></span></span></p></body></html>"
-
-
-        'Se instancian las clases que vamos a utilizar  (Funciones generales, base de datos y clase "Agente"
-        Dim Funcion As New Funciones
-        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-        Dim ctrl As Aspirante1
-
-        'Se recorre el numero de veces indicado en dropdownlist24  
-        For x = 0 To DropDownList24.SelectedValue - 1
-
-
-
-            Session("CuentaReclu") = x + 1
-
-            ctrl = CType(Aspirante1.Parent.FindControl("Aspirante" & Session("CuentaReclu")), Aspirante1)
-
-
-            '##### Se genera el usuario con la primera letra del nombre, 4 del apellido paterno y 4 del materno 
-            user = StrConv(Mid(Replace(ctrl.Nombre.Text, " ", ""), 1, 1) & Mid(Replace(ctrl.Paterno.Text, " ", ""), 1, 4) & Mid(Replace(ctrl.Materno.Text, " ", ""), 1, 3), vbLowerCase)
-
-
-            Dim strQuery As String = "INSERT INTO SYS_empleados ([status],id_ccs,pass_ccs,reclutador,fecha_tronco,entrada_capa,salida_capa,salida,entrada,area,puesto,nombres,paterno,materno,celular,campaña) VALUES (0,'" & user & "','" & Funcion.Passcrypt(user) & "' ,'" & Request.Cookies("Usersettings")("Username") & "', '" & CDate(TextBox44.Text) & "', '" & ctrl.EntradaCAP.SelectedItem.Text & "', '" & ctrl.SalidaCAP.SelectedItem.Text & "', '" & ctrl.Entrada.SelectedItem.Text & "', '" & ctrl.Salida.SelectedItem.Text & "', '0', '0', '" & StrConv(ctrl.Nombre.Text, vbUpperCase) & "', '" & StrConv(ctrl.Paterno.Text, vbUpperCase) & "', '" & StrConv(ctrl.Materno.Text, vbUpperCase) & "', '" & ctrl.Telefono.Text & "', '" & ctrl.Campania.SelectedItem.Value & "')"
-
-            Dim con As New SqlConnection(strConnString)
-            Dim cmd As New SqlCommand()
             cmd.CommandType = CommandType.Text
             cmd.CommandText = strQuery
             cmd.Connection = con
 
             con.Open()
 
-            'Se ejecuta la insercion en la base de datos
-            cmd.ExecuteNonQuery()
+            DropDownList49.DataSource = cmd.ExecuteReader()
+            DropDownList49.DataTextField = "estado"
+            DropDownList49.DataValueField = "estado"
+            DropDownList49.DataBind()
+
             con.Close()
             con.Dispose()
-            'Se cierra la conexion
 
-            'Se repite el numero de veces que indique el DropDownList24
-        Next
+        End If
+
+    End Sub
+
+    Private Sub DropDownList49_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList49.SelectedIndexChanged
+        DropDownList50.Items.Clear()
+        DelMunAspirantes()
+    End Sub
+
+    Sub DelMunAspirantes()
+
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("cats").ConnectionString
+        Dim strQuery As String = "SELECT UPPER([delmun]) as delmun FROM delmun_mx WHERE edo = '" & DropDownList49.SelectedItem.Text & "' ORDER BY delmun"
+        Dim con As New SqlConnection(strConnString)
+        Dim cmd As New SqlCommand()
 
 
-        'Se lanza notificacio
+
+
+        DropDownList50.Items.Add(New ListItem("-Selecciona-", 0))
+        DropDownList50.AppendDataBoundItems = True
+
+        cmd.CommandType = CommandType.Text
+        cmd.CommandText = strQuery
+        cmd.Connection = con
+
+        con.Open()
+
+        DropDownList50.DataSource = cmd.ExecuteReader()
+        DropDownList50.DataTextField = "delmun"
+        DropDownList50.DataValueField = "delmun"
+        DropDownList50.DataBind()
+
+        con.Close()
+        con.Dispose()
+
+
+
+    End Sub
+    Sub CampaniaAspirantes()
+
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        Dim strQuery As String = "SELECT id,campania FROM SYS_campanias WHERE status=1 ORDER BY campania ASC"
+        Dim con As New SqlConnection(strConnString)
+        Dim cmd As New SqlCommand()
+
+
+        If Not IsPostBack Then
+
+            DropDownList42.Items.Add(New ListItem("-Selecciona-", 0))
+            DropDownList42.AppendDataBoundItems = True
+
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = strQuery
+            cmd.Connection = con
+
+            con.Open()
+
+            DropDownList42.DataSource = cmd.ExecuteReader()
+            DropDownList42.DataTextField = "campania"
+            DropDownList42.DataValueField = "id"
+            DropDownList42.DataBind()
+
+            con.Close()
+            con.Dispose()
+
+        End If
+
+    End Sub
+
+    Sub SuperAspirantes()
+
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        Dim strQuery As String = "SELECT id,[nombres]+ ' ' +[paterno]+ ' '+[materno] as Nombre FROM SYS_Empleados WHERE puesto >= '1' AND status=2 ORDER BY [nombres]+ ' ' +[paterno]+ ' '+[materno]"
+        Dim con As New SqlConnection(strConnString)
+        Dim cmd As New SqlCommand()
+
+
+        If Not IsPostBack Then
+
+            DropDownList24.Items.Add(New ListItem("-Selecciona-", 0))
+            DropDownList24.AppendDataBoundItems = True
+
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = strQuery
+            cmd.Connection = con
+
+            con.Open()
+
+            DropDownList24.DataSource = cmd.ExecuteReader()
+            DropDownList24.DataTextField = "Nombre"
+            DropDownList24.DataValueField = "id"
+            DropDownList24.DataBind()
+
+            con.Close()
+            con.Dispose()
+
+        End If
+
+    End Sub
+    Sub LoadAspirantes(NumeroAgentes As Integer)
+
+        'Aspirante1.Tablita.Rows(0).Visible = True
+
+        'Dim ctrl As Aspirante1
+        'For x = 0 To NumeroAgentes - 1
+        '    Session("CuentaCosaesta") = x + 1
+
+        '    ctrl = CType(Aspirante1.Parent.FindControl("Aspirante" & Session("CuentaCosaesta")), Aspirante1)
+        '    ctrl.Visible = True
+        'Next
+    End Sub
+
+    ' Private Sub DropDownList24_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList24.SelectedIndexChanged
+
+    'Aspirante1.Visible = False
+    'Aspirante2.Visible = False
+    'Aspirante3.Visible = False
+    'Aspirante4.Visible = False
+    'Aspirante5.Visible = False
+    'Aspirante6.Visible = False
+    'Aspirante7.Visible = False
+    'Aspirante8.Visible = False
+    'Aspirante9.Visible = False
+    'Aspirante10.Visible = False
+    'Aspirante11.Visible = False
+    'Aspirante12.Visible = False
+    'Aspirante13.Visible = False
+    'Aspirante14.Visible = False
+    'Aspirante15.Visible = False
+    'Aspirante16.Visible = False
+    'Aspirante17.Visible = False
+    'Aspirante18.Visible = False
+    'Aspirante19.Visible = False
+    'Aspirante20.Visible = False
+
+
+    'LoadAspirantes(DropDownList24.SelectedValue)
+
+    'End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        CleanControls()
+    End Sub
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        GuardarReclutamiento()
+    End Sub
+
+    Public Sub CleanControls()
+
+        TextBox74.Text = ""
+        TextBox75.Text = ""
+        TextBox76.Text = ""
+        TextBox77.Text = ""
+        TextBox79.Text = ""
+        TextBox80.Text = ""
+        TextBox81.Text = ""
+        TextBox82.Text = ""
+        TextBox78.Text = ""
+        TextBox44.Text = ""
+        TextBox85.Text = ""
+        TextBox86.Text = ""
+        TextBox87.Text = ""
+        TextBox88.Text = ""
+
+        DropDownList24.SelectedValue = 0
+        DropDownList42.SelectedValue = 0
+        DropDownList43.SelectedValue = 0
+        DropDownList44.SelectedValue = 0
+        DropDownList45.SelectedValue = 0
+        DropDownList46.SelectedValue = 0
+        DropDownList51.SelectedValue = 0
+        DropDownList52.SelectedValue = 0
+        DropDownList47.SelectedValue = 0
+        DropDownList48.SelectedValue = 0
+        DropDownList49.SelectedValue = 0
+        DropDownList50.SelectedValue = 0
+
+        'TextBox44.Text = Nothing
+
+        'Dim ctrl As Aspirante1
+        'For x = 0 To DropDownList24.SelectedValue - 1
+        '    Session("CuentaCosaesta") = x + 1
+
+        '    ctrl = CType(Aspirante1.Parent.FindControl("Aspirante" & Session("CuentaCosaesta")), Aspirante1)
+
+        '    ctrl.Nombre.Text = Nothing
+        '    ctrl.Paterno.Text = Nothing
+        '    ctrl.Materno.Text = Nothing
+        '    ctrl.Entrada.SelectedValue = 0
+        '    ctrl.Salida.SelectedValue = 0
+        '    ctrl.EntradaCAP.SelectedValue = 0
+        '    ctrl.SalidaCAP.SelectedValue = 0
+        '    ctrl.Telefono.Text = Nothing
+        '    ctrl.Campania.SelectedValue = 0
+
+        ' Next
+    End Sub
+
+    Sub GuardarReclutamiento()
+        Dim Funcion As New Funciones
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+
+        Dim User = StrConv(Mid(Replace(TextBox74.Text, " ", ""), 1, 1) & Mid(Replace(TextBox75.Text, " ", ""), 1, 4) & Mid(Replace(TextBox76.Text, " ", ""), 1, 3), vbLowerCase)
+
+        Dim strQuery As String = "INSERT INTO SYS_empleados (
+                [status],
+                no_empleado,
+                jefe_directo,
+                curp,
+                rfc,
+                nss,
+                sexo,
+                fecha_nacimiento,
+                estado_civil,
+                fecha_alta,
+                dependientes_economicos,
+                escolaridad,
+                telefono,
+                calle,
+                estado,
+                delegacion_municipio,
+                cp,
+                id_ccs,
+                pass_ccs,
+                reclutador,
+                fecha_tronco,
+                entrada_capa,
+                salida_capa,
+                salida,
+                entrada,
+                area,
+                puesto,
+                nombres,
+                paterno,
+                materno,
+                celular,
+                campaña)
+            VALUES (
+                0,
+                '" & TextBox77.Text & "',
+                '" & DropDownList24.SelectedItem.Value & "', 
+                '" & TextBox79.Text & "',
+                '" & TextBox80.Text & "',
+                '" & TextBox81.Text & "',
+                '" & DropDownList43.SelectedItem.Text & "', 
+                '" & CDate(TextBox82.Text) & "',
+                '" & DropDownList44.SelectedItem.Text & "', 
+                '" & CDate(TextBox44.Text) & "',
+                '" & DropDownList47.SelectedItem.Text & "', 
+                '" & DropDownList48.SelectedItem.Text & "', 
+                '" & TextBox85.Text & "',
+                '" & TextBox87.Text & "',
+                '" & DropDownList49.SelectedItem.Text & "', 
+                '" & DropDownList50.SelectedItem.Text & "', 
+                '" & TextBox88.Text & "',
+                '" & User & "',
+                '" & Funcion.Passcrypt(User) & "' ,
+                '" & Request.Cookies("Usersettings")("Username") & "', 
+                '" & CDate(TextBox78.Text) & "',
+                '" & DropDownList51.SelectedItem.Value & "', 
+                '" & DropDownList52.SelectedItem.Value & "', 
+                '" & DropDownList46.SelectedItem.Value & "', 
+                '" & DropDownList45.SelectedItem.Value & "',
+                '0',
+                '0',
+                '" & StrConv(TextBox74.Text, vbUpperCase) & "',
+                '" & StrConv(TextBox75.Text, vbUpperCase) & "', 
+                '" & StrConv(TextBox76.Text, vbUpperCase) & "', 
+                '" & TextBox86.Text & "',
+                '" & DropDownList42.SelectedItem.Value & "')"
+
+        Dim con As New SqlConnection(strConnString)
+        Dim cmd As New SqlCommand()
+        cmd.CommandType = CommandType.Text
+        cmd.CommandText = strQuery
+        cmd.Connection = con
+
+        con.Open()
+
+        cmd.ExecuteNonQuery()
+        con.Close()
+        con.Dispose()
+
+
         msgtipo(0) = 1
         msgmensaje(0) = "¡Aspirantes Ingresados Correctamente!"
-        msgtipo(1) = 2
-        msgmensaje(1) = "!Notificación Enviada a Capacitación!"
+
         Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
 
-        'Se resetean los campos
-        CleanControls()
-
-
-        'Se envía mail de notificacion de acuerdo a la campaña seleccionada y al instructor asignado
-        EnviarMail(GetListaNotificacion(3, 2), "***Nuevos Agentes para Tronco Común***", MensajeHTML)
-
-    End Sub
-
-    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
         CleanControls()
     End Sub
+    Sub GuardarReclu()
 
-    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        GuardarReclu()
+        'Dim user As String
+
+        ''Se genera el cuerpo del correo a enviar cuando se apriete guardar
+        'Dim MensajeHTML As String
+        'MensajeHTML = "<html><head><style>p.MsoNormal, li.MsoNormal, div.MsoNormal{mso-style-unhide:no;mso-style-qformat:yes;mso-style-parent:'';margin:0cm;margin-bottom:.0001pt;mso-pagination:widow-orphan;font-size:11.0pt;font-family:'Calibri',sans-serif;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:'Times New Roman';mso-bidi-theme-font:minor-bidi;mso-fareast-language:EN-US;}a:link, span.MsoHyperlink{mso-style-noshow:yes;mso-style-priority:99;color:#0563C1;mso-themecolor:hyperlink;text-decoration:underline;text-underline:single;}a:visited, span.MsoHyperlinkFollowed{mso-style-noshow:yes;mso-style-priority:99;color:#954F72;mso-themecolor:followedhyperlink;text-decoration:underline;text-underline:single;}</style></head><body><p class=MsoNormal>Reclutamiento ha ingresado nuevos agentes:</p><br>" &
+        '              "<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p><p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Reclutador: </b>" &
+        '              Request.Cookies("Usersettings")("Username") &
+        '              "<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p><br><p class=MsoNormal><span style='mso-bookmark:_MailAutoSig'><span style='mso-fareast-font-family:'Times New Roman';mso-fareast-theme-font:minor-fareast;mso-fareast-language:ES-MX;mso-no-proof:yes'>Los agentes ya se encuentran disponibles para asignacion de instructor <a href='http://10.0.0.40/Asistencia/'>aqui</a> para continuar con el proceso.<o:p></o:p></span></span></p></body></html>"
+
+
+        ''Se instancian las clases que vamos a utilizar  (Funciones generales, base de datos y clase "Agente"
+        'Dim Funcion As New Funciones
+        'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        'Dim ctrl As Aspirante1
+
+        ''Se recorre el numero de veces indicado en dropdownlist24  
+        'For x = 0 To DropDownList24.SelectedValue - 1
+
+
+
+        '    Session("CuentaReclu") = x + 1
+
+        '    ctrl = CType(Aspirante1.Parent.FindControl("Aspirante" & Session("CuentaReclu")), Aspirante1)
+
+
+        '    '##### Se genera el usuario con la primera letra del nombre, 4 del apellido paterno y 4 del materno 
+        '    user = StrConv(Mid(Replace(ctrl.Nombre.Text, " ", ""), 1, 1) & Mid(Replace(ctrl.Paterno.Text, " ", ""), 1, 4) & Mid(Replace(ctrl.Materno.Text, " ", ""), 1, 3), vbLowerCase)
+
+
+        '    Dim strQuery As String = "INSERT INTO SYS_empleados ([status],id_ccs,pass_ccs,reclutador,fecha_tronco,entrada_capa,salida_capa,salida,entrada,area,puesto,nombres,paterno,materno,celular,campaña) VALUES (0,'" & user & "','" & Funcion.Passcrypt(user) & "' ,'" & Request.Cookies("Usersettings")("Username") & "', '" & CDate(TextBox44.Text) & "', '" & ctrl.EntradaCAP.SelectedItem.Text & "', '" & ctrl.SalidaCAP.SelectedItem.Text & "', '" & ctrl.Entrada.SelectedItem.Text & "', '" & ctrl.Salida.SelectedItem.Text & "', '0', '0', '" & StrConv(ctrl.Nombre.Text, vbUpperCase) & "', '" & StrConv(ctrl.Paterno.Text, vbUpperCase) & "', '" & StrConv(ctrl.Materno.Text, vbUpperCase) & "', '" & ctrl.Telefono.Text & "', '" & ctrl.Campania.SelectedItem.Value & "')"
+
+        '    Dim con As New SqlConnection(strConnString)
+        '    Dim cmd As New SqlCommand()
+        '    cmd.CommandType = CommandType.Text
+        '    cmd.CommandText = strQuery
+        '    cmd.Connection = con
+
+        '    con.Open()
+
+        '    'Se ejecuta la insercion en la base de datos
+        '    cmd.ExecuteNonQuery()
+        '    con.Close()
+        '    con.Dispose()
+        '    'Se cierra la conexion
+
+        '    'Se repite el numero de veces que indique el DropDownList24
+        'Next
+
+
+        ''Se lanza notificacio
+        'msgtipo(0) = 1
+        'msgmensaje(0) = "¡Aspirantes Ingresados Correctamente!"
+        'msgtipo(1) = 2
+        'msgmensaje(1) = "!Notificación Enviada a Capacitación!"
+        'Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+
+        ''Se resetean los campos
+        'CleanControls()
+
+
+        ''Se envía mail de notificacion de acuerdo a la campaña seleccionada y al instructor asignado
+        'EnviarMail(GetListaNotificacion(3, 2), "***Nuevos Agentes para Tronco Común***", MensajeHTML)
+
     End Sub
+
+    'Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+    ' CleanControls()
+    'End Sub
+
+    'Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+    '    GuardarReclu()
+    'End Sub
 
     '########################################################### MODULO DE CAPACITACION ###########################################################
 
@@ -2054,9 +2312,9 @@ Public Class Administracion
 
     Sub Buscador_Edicion()
 
-        Dim nombresearch As String
-        Dim vacio As Integer = 0
-        Dim strQuery As String
+        ' Dim nombresearch As String
+        ' Dim vacio As Integer = 0
+        'Dim strQuery As String
         'If TextBox68.Text = "" Then
         '    nombresearch = ""
         'Else
@@ -2065,43 +2323,43 @@ Public Class Administracion
 
         'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
         'Dim strQuery As String = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "')"
-        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
 
-        If TextBox68.Text = "" Then
-            nombresearch = ""
-            If TextBox67.Text = "" Then
-                vacio = 0
-            Else
-                vacio = 1
-                strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.id_ccs = '" & TextBox67.Text & "') order by a.paterno, a.materno, a.nombres"
-            End If
-        Else
-            vacio = 1
-            nombresearch = "%" & TextBox68.Text & "%"
-            strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "') order by a.paterno, a.materno, a.nombres"
-        End If
-
-
+        'If TextBox68.Text = "" Then
+        '    nombresearch = ""
+        '    If TextBox67.Text = "" Then
+        '        vacio = 0
+        '    Else
+        '        vacio = 1
+        '        strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.id_ccs = '" & TextBox67.Text & "') order by a.paterno, a.materno, a.nombres"
+        '    End If
+        'Else
+        '    vacio = 1
+        '    nombresearch = "%" & TextBox68.Text & "%"
+        '    strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "') order by a.paterno, a.materno, a.nombres"
+        'End If
 
 
-        If vacio <> 0 Then
-            Dim con As New SqlConnection(strConnString)
-            Dim cmd As New SqlCommand()
 
 
-            cmd.CommandType = CommandType.Text
-            cmd.CommandText = strQuery
-            cmd.Connection = con
+        'If vacio <> 0 Then
+        '    Dim con As New SqlConnection(strConnString)
+        '    Dim cmd As New SqlCommand()
 
-            con.Open()
 
-            GridView8.DataSource = cmd.ExecuteReader()
-            GridView8.DataBind()
-            'GridView8.Columns(3).ItemStyle.HorizontalAlign = HorizontalAlign.Left
+        '    cmd.CommandType = CommandType.Text
+        '    cmd.CommandText = strQuery
+        '    cmd.Connection = con
 
-            con.Close()
-            con.Dispose()
-        End If
+        '    con.Open()
+
+        '    GridView8.DataSource = cmd.ExecuteReader()
+        '    GridView8.DataBind()
+        '    'GridView8.Columns(3).ItemStyle.HorizontalAlign = HorizontalAlign.Left
+
+        '    con.Close()
+        '    con.Dispose()
+        'End If
     End Sub
 
     Sub ComboEstados2()
