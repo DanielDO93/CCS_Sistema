@@ -575,7 +575,6 @@ Public Class Administracion
 
         Dim strQuery As String = "INSERT INTO SYS_empleados (
                 [status],
-                no_empleado,
                 jefe_directo,
                 curp,
                 rfc,
@@ -608,7 +607,6 @@ Public Class Administracion
                 campaña)
             VALUES (
                 0,
-                '" & TextBox77.Text & "',
                 '" & DropDownList24.SelectedItem.Value & "', 
                 '" & TextBox79.Text & "',
                 '" & TextBox80.Text & "',

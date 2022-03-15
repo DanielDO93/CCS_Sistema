@@ -2389,10 +2389,10 @@
                             </tr>
 
                             <tr>
-                                <td class="auto-style82">Empleado:</td>
+                               <td class="auto-style82"></td>
                                 <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox77" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator91" runat="server" ErrorMessage="*" ControlToValidate="TextBox19" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
+                                   <!--  <asp:TextBox ID="TextBox77" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator91" runat="server" ErrorMessage="*" ControlToValidate="TextBox19" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>-->
                                 </td>
                                 <td class="auto-style81">Supervisor:</td>
                                 <td class="auto-style10">
