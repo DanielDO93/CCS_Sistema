@@ -2310,54 +2310,54 @@ Public Class Administracion
 
     Sub Buscador_Edicion()
 
-        ' Dim nombresearch As String
-        ' Dim vacio As Integer = 0
-        'Dim strQuery As String
-        'If TextBox68.Text = "" Then
-        '    nombresearch = ""
-        'Else
-        '    nombresearch = "%" & TextBox68.Text & "%"
-        'End If
+        Dim nombresearch As String
+        Dim vacio As Integer = 0
+        Dim strQuery As String
+        If TextBox68.Text = "" Then
+            nombresearch = ""
+        Else
+            nombresearch = "%" & TextBox68.Text & "%"
+        End If
 
-        'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-        'Dim strQuery As String = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "')"
-        'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        Dim strQueryEmp As String = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "')"
+        Dim strConnStringEmp As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
 
-        'If TextBox68.Text = "" Then
-        '    nombresearch = ""
-        '    If TextBox67.Text = "" Then
-        '        vacio = 0
-        '    Else
-        '        vacio = 1
-        '        strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.id_ccs = '" & TextBox67.Text & "') order by a.paterno, a.materno, a.nombres"
-        '    End If
-        'Else
-        '    vacio = 1
-        '    nombresearch = "%" & TextBox68.Text & "%"
-        '    strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "') order by a.paterno, a.materno, a.nombres"
-        'End If
-
-
+        If TextBox68.Text = "" Then
+            nombresearch = ""
+            If TextBox67.Text = "" Then
+                vacio = 0
+            Else
+                vacio = 1
+                strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.id_ccs = '" & TextBox67.Text & "') order by a.paterno, a.materno, a.nombres"
+            End If
+        Else
+            vacio = 1
+            nombresearch = "%" & TextBox68.Text & "%"
+            strQuery = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "') order by a.paterno, a.materno, a.nombres"
+        End If
 
 
-        'If vacio <> 0 Then
-        '    Dim con As New SqlConnection(strConnString)
-        '    Dim cmd As New SqlCommand()
 
 
-        '    cmd.CommandType = CommandType.Text
-        '    cmd.CommandText = strQuery
-        '    cmd.Connection = con
+        If vacio <> 0 Then
+            Dim con As New SqlConnection(strConnStringEmp)
+            Dim cmd As New SqlCommand()
 
-        '    con.Open()
 
-        '    GridView8.DataSource = cmd.ExecuteReader()
-        '    GridView8.DataBind()
-        '    'GridView8.Columns(3).ItemStyle.HorizontalAlign = HorizontalAlign.Left
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = strQueryEmp
+            cmd.Connection = con
 
-        '    con.Close()
-        '    con.Dispose()
-        'End If
+            con.Open()
+
+            GridView8.DataSource = cmd.ExecuteReader()
+            GridView8.DataBind()
+            'GridView8.Columns(3).ItemStyle.HorizontalAlign = HorizontalAlign.Left
+
+            con.Close()
+            con.Dispose()
+        End If
     End Sub
 
     Sub ComboEstados2()
