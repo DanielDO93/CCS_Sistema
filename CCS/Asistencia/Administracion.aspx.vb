@@ -440,32 +440,32 @@ Public Class Administracion
 
     Sub SuperAspirantes()
 
-        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-        Dim strQuery As String = "SELECT id,[nombres]+ ' ' +[paterno]+ ' '+[materno] as Nombre FROM SYS_Empleados WHERE puesto >= '1' AND status=2 ORDER BY [nombres]+ ' ' +[paterno]+ ' '+[materno]"
-        Dim con As New SqlConnection(strConnString)
-        Dim cmd As New SqlCommand()
+        'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        'Dim strQuery As String = "SELECT id,[nombres]+ ' ' +[paterno]+ ' '+[materno] as Nombre FROM SYS_Empleados WHERE puesto >= '1' AND status=2 ORDER BY [nombres]+ ' ' +[paterno]+ ' '+[materno]"
+        'Dim con As New SqlConnection(strConnString)
+        'Dim cmd As New SqlCommand()
 
 
-        If Not IsPostBack Then
+        'If Not IsPostBack Then
 
-            DropDownList24.Items.Add(New ListItem("-Selecciona-", 0))
-            DropDownList24.AppendDataBoundItems = True
+        'DropDownList24.Items.Add(New ListItem("-Selecciona-", 0))
+        'DropDownList24.AppendDataBoundItems = True
 
-            cmd.CommandType = CommandType.Text
-            cmd.CommandText = strQuery
-            cmd.Connection = con
+        'cmd.CommandType = CommandType.Text
+        'cmd.CommandText = strQuery
+        'cmd.Connection = con
 
-            con.Open()
+        'con.Open()
 
-            DropDownList24.DataSource = cmd.ExecuteReader()
-            DropDownList24.DataTextField = "Nombre"
-            DropDownList24.DataValueField = "id"
-            DropDownList24.DataBind()
+        'DropDownList24.DataSource = cmd.ExecuteReader()
+        'DropDownList24.DataTextField = "Nombre"
+        'DropDownList24.DataValueField = "id"
+        'DropDownList24.DataBind()
 
-            con.Close()
-            con.Dispose()
+        'con.Close()
+        'con.Dispose()
 
-        End If
+        'End If
 
     End Sub
     Sub LoadAspirantes(NumeroAgentes As Integer)
@@ -527,13 +527,13 @@ Public Class Administracion
         TextBox81.Text = ""
         TextBox82.Text = ""
         TextBox78.Text = ""
-        TextBox44.Text = ""
+        'TextBox44.Text = ""
         TextBox85.Text = ""
         TextBox86.Text = ""
         TextBox87.Text = ""
         TextBox88.Text = ""
 
-        DropDownList24.SelectedValue = 0
+        'DropDownList24.SelectedValue = 0
         DropDownList42.SelectedValue = 0
         DropDownList43.SelectedValue = 0
         DropDownList44.SelectedValue = 0
@@ -575,14 +575,12 @@ Public Class Administracion
 
         Dim strQuery As String = "INSERT INTO SYS_empleados (
                 [status],
-                jefe_directo,
                 curp,
                 rfc,
                 nss,
                 sexo,
                 fecha_nacimiento,
                 estado_civil,
-                fecha_alta,
                 dependientes_economicos,
                 escolaridad,
                 telefono,
@@ -607,14 +605,12 @@ Public Class Administracion
                 campaña)
             VALUES (
                 0,
-                '" & DropDownList24.SelectedItem.Value & "', 
                 '" & TextBox79.Text & "',
                 '" & TextBox80.Text & "',
                 '" & TextBox81.Text & "',
                 '" & DropDownList43.SelectedItem.Text & "', 
                 '" & CDate(TextBox82.Text) & "',
                 '" & DropDownList44.SelectedItem.Text & "', 
-                '" & CDate(TextBox44.Text) & "',
                 '" & DropDownList47.SelectedItem.Text & "', 
                 '" & DropDownList48.SelectedItem.Text & "', 
                 '" & TextBox85.Text & "',

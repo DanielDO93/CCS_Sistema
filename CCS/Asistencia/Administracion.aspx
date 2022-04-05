@@ -2394,11 +2394,11 @@
                                    <!--  <asp:TextBox ID="TextBox77" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator91" runat="server" ErrorMessage="*" ControlToValidate="TextBox19" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>-->
                                 </td>
-                                <td class="auto-style81">Supervisor:</td>
+                                <td class="auto-style81"></td>
                                 <td class="auto-style10">
-                                     <asp:DropDownList ID="DropDownList24" runat="server" AutoPostBack="True" Width="140px">
+                                    <!-- <asp:DropDownList ID="DropDownList24" runat="server" AutoPostBack="True" Width="140px">
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator57" runat="server" ControlToValidate="DropDownList17" InitialValue="0" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator57" runat="server" ControlToValidate="DropDownList17" InitialValue="0" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>-->
                                 </td>
                                 <td class="auto-style11">Campaña:</td>
                                 <td class="auto-style17">
@@ -2697,13 +2697,13 @@
                             </tr>
 
                             <tr>
-                                <td class="auto-style82">Alta:</td>
+                                <td class="auto-style82"></td>
                                 <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox44" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
+                                    <!--<asp:TextBox ID="TextBox44" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
                                     <asp:CalendarExtender ID="CalendarExtender4" runat="server" Enabled="True" PopupButtonID="ImageButton5" TargetControlID="TextBox44" Format="dd/MM/yyyy">
                                     </asp:CalendarExtender>
                                     <asp:ImageButton ID="ImageButton9" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator92" runat="server" ControlToValidate="TextBox21" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator92" runat="server" ControlToValidate="TextBox21" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>-->
                                 </td>
                                 <td class="auto-style81">Dep. Economicos:</td>
                                 <td class="auto-style22">
