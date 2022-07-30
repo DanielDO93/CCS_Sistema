@@ -155,10 +155,6 @@
 
 
 
-        .auto-style46 {
-            text-align: right;
-        }
-
         .auto-style47 {
             width: 274px;
         }
@@ -465,26 +461,26 @@
                                     </asp:CalendarExtender>
                                 </td>
                             </tr>
-<script>
-    function solonumeros(e) {
-    var key, numeros, teclado, especiales, teclado_especial, i;
-    key = event.keyCode || event.which;
-                teclado = String.fromCharCode(key);
-                numeros = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_.-';
-        especiales = [8, 9, 37, 38, 39, 40, 46];
-        shiif=[16, 17, 18]
-     teclado_especial = false;
+                            <script>
+                                function solonumeros(e) {
+                                    var key, numeros, teclado, especiales, teclado_especial, i;
+                                    key = event.keyCode || event.which;
+                                    teclado = String.fromCharCode(key);
+                                    numeros = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_.-';
+                                    especiales = [8, 9, 37, 38, 39, 40, 46];
+                                    shiif = [16, 17, 18]
+                                    teclado_especial = false;
 
-                for ( i in especiales ) {
-                    if ( key == especiales[i] && !shiif ) {
-                        teclado_especial = true;
-                    }
-                }
-                if ( numeros.indexOf(teclado) == -1 && !teclado_especial ) {
-                    return false;
-                }
-    }
-</script>
+                                    for (i in especiales) {
+                                        if (key == especiales[i] && !shiif) {
+                                            teclado_especial = true;
+                                        }
+                                    }
+                                    if (numeros.indexOf(teclado) == -1 && !teclado_especial) {
+                                        return false;
+                                    }
+                                }
+                            </script>
                         </table>
 
 
@@ -1697,28 +1693,28 @@
 
                                 <td class="auto-style17">&nbsp;</td>
                                 <tr id="altaCalidad" runat="server">
-                               
+
                                     <td class="auto-style81">Fecha de Nacimiento:</td>
-                                <td class="auto-style19">
-                                    <asp:TextBox ID="TextBox71" runat="server" CssClass="textos" Width="100px" Wrap="True" Enabled="False"></asp:TextBox>
-                                    <asp:CalendarExtender ID="TextBox71_CalendarExtender" runat="server" Enabled="True" PopupButtonID="ImageButton12" TargetControlID="TextBox71" Format="dd/MM/yyyy">
-                                    </asp:CalendarExtender>
-                                    <asp:ImageButton ID="ImageButton12" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator85" runat="server" ControlToValidate="TextBox71" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaAdmin"></asp:RequiredFieldValidator>
-                                </td>
+                                    <td class="auto-style19">
+                                        <asp:TextBox ID="TextBox71" runat="server" CssClass="textos" Width="100px" Wrap="True" Enabled="False"></asp:TextBox>
+                                        <asp:CalendarExtender ID="TextBox71_CalendarExtender" runat="server" Enabled="True" PopupButtonID="ImageButton12" TargetControlID="TextBox71" Format="dd/MM/yyyy">
+                                        </asp:CalendarExtender>
+                                        <asp:ImageButton ID="ImageButton12" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator85" runat="server" ControlToValidate="TextBox71" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaAdmin"></asp:RequiredFieldValidator>
+                                    </td>
 
                                     <td class="auto-style22">ID ACD</td>
-                                <td class="auto-style11">
-                                    <asp:TextBox ID="TextBox72" runat="server" Width="100px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator86" runat="server" ErrorMessage="*"  ForeColor="Red" ControlToValidate="TextBox72" ValidationGroup="ValidaAdmin"></asp:RequiredFieldValidator>
-                                </td>
+                                    <td class="auto-style11">
+                                        <asp:TextBox ID="TextBox72" runat="server" Width="100px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator86" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TextBox72" ValidationGroup="ValidaAdmin"></asp:RequiredFieldValidator>
+                                    </td>
                                     <td class="auto-style22">Núm. Empleado</td>
-                                <td class="auto-style11">
-                                    <asp:TextBox ID="TextBox73" runat="server" Width="100px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator87" runat="server" ErrorMessage="*"  ForeColor="Red" ControlToValidate="TextBox73" ValidationGroup="ValidaAdmin"></asp:RequiredFieldValidator>
-                                </td>
+                                    <td class="auto-style11">
+                                        <asp:TextBox ID="TextBox73" runat="server" Width="100px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator87" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TextBox73" ValidationGroup="ValidaAdmin"></asp:RequiredFieldValidator>
+                                    </td>
 
-                                    </tr>
+                                </tr>
                             </tr>
 
                         </table>
@@ -1911,9 +1907,8 @@
                             <tr>
                                 <td colspan="6" class="auto-style10">
                                     <strong>
-                                        <asp:Button ID="Button27" runat="server" Font-Bold="True" Font-Size="13px" Text="Buscar" ValidationGroup="Requeridos" Height="22px" Width="85px" CssClass="Button" Style="margin-left: 390px;" />          
+                                        <asp:Button ID="Button27" runat="server" Font-Bold="True" Font-Size="13px" Text="Buscar" ValidationGroup="Requeridos" Height="22px" Width="85px" CssClass="Button" Style="margin-left: 390px;" />
                                     </strong>
-                                
                             </tr>
 
                             <tr>
@@ -1921,7 +1916,7 @@
                             </tr>
 
                         </table>
-                        <div style="overflow: auto; width: 888px; height: 100px; margin-left:25px;">
+                        <div style="overflow: auto; width: 888px; height: 100px; margin-left: 25px;">
                             <asp:GridView ID="GridView8" runat="server" Font-Names="Arial" Font-Size="13px" HorizontalAlign="Left" Width="880px" CssClass="grids">
                                 <AlternatingRowStyle HorizontalAlign="Left" VerticalAlign="Middle" />
                                 <EditRowStyle HorizontalAlign="Left" VerticalAlign="Middle" Width="100px" />
@@ -1930,7 +1925,7 @@
                                 <RowStyle Height="15px" Wrap="false" HorizontalAlign="Left" VerticalAlign="Middle" />
                             </asp:GridView>
                         </div>
-               
+
 
                     </asp:Panel>
 
@@ -1939,331 +1934,332 @@
                     <asp:UpdatePanel ID="UpdatePanel12" runat="server">
                         <ContentTemplate>
 
-              
-
-                    <asp:Panel ID="Panel12" runat="server" CssClass="Panel">
-
-                        <h2><asp:Label ID="Label11" runat="server" Text="Editar"></asp:Label></h2>
-
-                        <br />
-
-                        <table style="width: 100%;" class="Buscador">
-
-                            <tr>
-                                <td class="auto-style9">Apellido Paterno:</td>
-                                <td class="auto-style10">
-                                    <asp:TextBox ID="TextBox47" runat="server" CssClass="textos" Wrap="True" Width="150px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator58" runat="server" ErrorMessage="*" ControlToValidate="TextBox47" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
-                                <td class="auto-style16">Apellido Materno:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox54" runat="server" CssClass="textos" Wrap="True" Width="140px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator59" runat="server" ErrorMessage="*" ControlToValidate="TextBox54" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
-                                 <td>Nombres:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox46" runat="server" Wrap="True" CssClass="textos" Width="140px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator52" runat="server" ErrorMessage="*" ControlToValidate="TextBox46" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
-                            </tr>
-
-                            <tr>
-                                <td>Empleado:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox55" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator60" runat="server" ErrorMessage="*" ControlToValidate="TextBox55" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style9">Supervisor:</td>
-                                <td class="auto-style10">
-                                    <asp:DropDownList ID="DropDownList38" runat="server" AutoPostBack="True" Width="140px">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator61" runat="server" ErrorMessage="*" ControlToValidate="DropDownList38" ForeColor="Red" ValidationGroup="ValidaCambios" InitialValue="0"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">Campaña:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList6" runat="server" AutoPostBack="True" Width="140px">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator62" runat="server" ControlToValidate="DropDownList6" InitialValue="0" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>CURP:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox57" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator63" runat="server" ControlToValidate="TextBox57" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style9">RFC:</td>
-                                <td class="auto-style19">
-                                    <asp:TextBox ID="TextBox58" runat="server" CssClass="textos" Width="150px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator64" runat="server" ControlToValidate="TextBox58" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">NSS:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox59" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator65" runat="server" ControlToValidate="TextBox59" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Area:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList30" runat="server" Width="80px">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator66" runat="server" ControlToValidate="DropDownList30" ErrorMessage="*" ForeColor="Red" InitialValue="X" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style9">Fecha de Nacimiento:</td>
-                                <td class="auto-style19">
-                                    <asp:TextBox ID="TextBox60" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
-
-                                    <asp:CalendarExtender ID="TextBox60_CalendarExtender" runat="server" Enabled="True" TargetControlID="TextBox60" PopupButtonID="ImageButton4" Format="dd/MM/yyyy">
-                                    </asp:CalendarExtender>
-
-                                    <asp:ImageButton ID="ImageButton4" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator67" runat="server" ControlToValidate="TextBox60" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">Puesto:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList31" runat="server" Width="140px">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator68" runat="server" ControlToValidate="DropDownList31" ErrorMessage="*" ForeColor="Red" InitialValue="X" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Entrada:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList32" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem>00:00</asp:ListItem>
-                                        <asp:ListItem>00:30</asp:ListItem>
-                                        <asp:ListItem>01:00</asp:ListItem>
-                                        <asp:ListItem>01:30</asp:ListItem>
-                                        <asp:ListItem>02:00</asp:ListItem>
-                                        <asp:ListItem>02:30</asp:ListItem>
-                                        <asp:ListItem>03:00</asp:ListItem>
-                                        <asp:ListItem>03:30</asp:ListItem>
-                                        <asp:ListItem>04:00</asp:ListItem>
-                                        <asp:ListItem>04:30</asp:ListItem>
-                                        <asp:ListItem>05:00</asp:ListItem>
-                                        <asp:ListItem>05:30</asp:ListItem>
-                                        <asp:ListItem>06:00</asp:ListItem>
-                                        <asp:ListItem>06:30</asp:ListItem>
-                                        <asp:ListItem>07:00</asp:ListItem>
-                                        <asp:ListItem>07:30</asp:ListItem>
-                                        <asp:ListItem>08:00</asp:ListItem>
-                                        <asp:ListItem>08:30</asp:ListItem>
-                                        <asp:ListItem>09:00</asp:ListItem>
-                                        <asp:ListItem>09:30</asp:ListItem>
-                                        <asp:ListItem>10:00</asp:ListItem>
-                                        <asp:ListItem>10:30</asp:ListItem>
-                                        <asp:ListItem>11:00</asp:ListItem>
-                                        <asp:ListItem>11:30</asp:ListItem>
-                                        <asp:ListItem>12:00</asp:ListItem>
-                                        <asp:ListItem>12:30</asp:ListItem>
-                                        <asp:ListItem>13:00</asp:ListItem>
-                                        <asp:ListItem>13:30</asp:ListItem>
-                                        <asp:ListItem>14:00</asp:ListItem>
-                                        <asp:ListItem>14:30</asp:ListItem>
-                                        <asp:ListItem>15:00</asp:ListItem>
-                                        <asp:ListItem>15:30</asp:ListItem>
-                                        <asp:ListItem>16:00</asp:ListItem>
-                                        <asp:ListItem>16:30</asp:ListItem>
-                                        <asp:ListItem>17:00</asp:ListItem>
-                                        <asp:ListItem>17:30</asp:ListItem>
-                                        <asp:ListItem>18:00</asp:ListItem>
-                                        <asp:ListItem>18:30</asp:ListItem>
-                                        <asp:ListItem>19:00</asp:ListItem>
-                                        <asp:ListItem>19:30</asp:ListItem>
-                                        <asp:ListItem>20:00</asp:ListItem>
-                                        <asp:ListItem>20:30</asp:ListItem>
-                                        <asp:ListItem>21:00</asp:ListItem>
-                                        <asp:ListItem>21:30</asp:ListItem>
-                                        <asp:ListItem>22:00</asp:ListItem>
-                                        <asp:ListItem>22:30</asp:ListItem>
-                                        <asp:ListItem>23:00</asp:ListItem>
-                                        <asp:ListItem>23:30</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator69" runat="server" ControlToValidate="DropDownList32" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style9">Salida:</td>
-                                <td class="auto-style22">
-
-                                    <asp:DropDownList ID="DropDownList33" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem>00:00</asp:ListItem>
-                                        <asp:ListItem>00:30</asp:ListItem>
-                                        <asp:ListItem>01:00</asp:ListItem>
-                                        <asp:ListItem>01:30</asp:ListItem>
-                                        <asp:ListItem>02:00</asp:ListItem>
-                                        <asp:ListItem>02:30</asp:ListItem>
-                                        <asp:ListItem>03:00</asp:ListItem>
-                                        <asp:ListItem>03:30</asp:ListItem>
-                                        <asp:ListItem>04:00</asp:ListItem>
-                                        <asp:ListItem>04:30</asp:ListItem>
-                                        <asp:ListItem>05:00</asp:ListItem>
-                                        <asp:ListItem>05:30</asp:ListItem>
-                                        <asp:ListItem>06:00</asp:ListItem>
-                                        <asp:ListItem>06:30</asp:ListItem>
-                                        <asp:ListItem>07:00</asp:ListItem>
-                                        <asp:ListItem>07:30</asp:ListItem>
-                                        <asp:ListItem>08:00</asp:ListItem>
-                                        <asp:ListItem>08:30</asp:ListItem>
-                                        <asp:ListItem>09:00</asp:ListItem>
-                                        <asp:ListItem>09:30</asp:ListItem>
-                                        <asp:ListItem>10:00</asp:ListItem>
-                                        <asp:ListItem>10:30</asp:ListItem>
-                                        <asp:ListItem>11:00</asp:ListItem>
-                                        <asp:ListItem>11:30</asp:ListItem>
-                                        <asp:ListItem>12:00</asp:ListItem>
-                                        <asp:ListItem>12:30</asp:ListItem>
-                                        <asp:ListItem>13:00</asp:ListItem>
-                                        <asp:ListItem>13:30</asp:ListItem>
-                                        <asp:ListItem>14:00</asp:ListItem>
-                                        <asp:ListItem>14:30</asp:ListItem>
-                                        <asp:ListItem>15:00</asp:ListItem>
-                                        <asp:ListItem>15:30</asp:ListItem>
-                                        <asp:ListItem>16:00</asp:ListItem>
-                                        <asp:ListItem>16:30</asp:ListItem>
-                                        <asp:ListItem>17:00</asp:ListItem>
-                                        <asp:ListItem>17:30</asp:ListItem>
-                                        <asp:ListItem>18:00</asp:ListItem>
-                                        <asp:ListItem>18:30</asp:ListItem>
-                                        <asp:ListItem>19:00</asp:ListItem>
-                                        <asp:ListItem>19:30</asp:ListItem>
-                                        <asp:ListItem>20:00</asp:ListItem>
-                                        <asp:ListItem>20:30</asp:ListItem>
-                                        <asp:ListItem>21:00</asp:ListItem>
-                                        <asp:ListItem>21:30</asp:ListItem>
-                                        <asp:ListItem>22:00</asp:ListItem>
-                                        <asp:ListItem>22:30</asp:ListItem>
-                                        <asp:ListItem>23:00</asp:ListItem>
-                                        <asp:ListItem>23:30</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator70" runat="server" ControlToValidate="DropDownList33" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">ID ACD:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox61" runat="server" Width="80px" CssClass="textos"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator71" runat="server" ControlToValidate="TextBox61" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Alta:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox62" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
-
-                                    <asp:CalendarExtender ID="TextBox62_CalendarExtender" runat="server" Enabled="True" PopupButtonID="ImageButton10" TargetControlID="TextBox62" Format="dd/MM/yyyy">
-                                    </asp:CalendarExtender>
-
-                                    <asp:ImageButton ID="ImageButton10" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator80" runat="server" ControlToValidate="TextBox62" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style9">Dep. Economicos:</td>
-                                <td class="auto-style22">
-
-                                    <asp:DropDownList ID="DropDownList34" runat="server" Width="120px">
-                                        <asp:ListItem Value="X">-Selecciona-</asp:ListItem>
-                                        <asp:ListItem Value="0">0</asp:ListItem>
-                                        <asp:ListItem>1</asp:ListItem>
-                                        <asp:ListItem>2</asp:ListItem>
-                                        <asp:ListItem>3</asp:ListItem>
-                                        <asp:ListItem>4</asp:ListItem>
-                                        <asp:ListItem>5</asp:ListItem>
-                                        <asp:ListItem>6</asp:ListItem>
-                                        <asp:ListItem>7</asp:ListItem>
-                                        <asp:ListItem>8</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator72" runat="server" ControlToValidate="DropDownList34" ErrorMessage="*" ForeColor="Red" InitialValue="X" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">Escolaridad:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList35" runat="server" Width="120px">
-                                        <asp:ListItem Value="0">-Selecciona-</asp:ListItem>
-                                        <asp:ListItem Value="Secundaria">Secundaria</asp:ListItem>
-                                        <asp:ListItem>Bachillerato Trunco</asp:ListItem>
-                                        <asp:ListItem Value="Bachillerato">Bachillerato</asp:ListItem>
-                                        <asp:ListItem Value="Licenciatura Trunca">Licenciatura Trunca</asp:ListItem>
-                                        <asp:ListItem Value="Licenciatura">Licenciatura</asp:ListItem>
-                                        <asp:ListItem>Carrera Tecnica</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator73" runat="server" ControlToValidate="DropDownList35" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                        </table>
 
 
-                        <table class="auto-style58">
+                            <asp:Panel ID="Panel12" runat="server" CssClass="Panel">
 
-                            <tr>
-                                <td class="auto-style67">Status:</td>
-                                <td class="auto-style51">
-                                    <asp:DropDownList ID="DropDownList39" runat="server" Width="140px"></asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator81" runat="server" ErrorMessage="*" ControlToValidate="DropDownList39" ForeColor="Red" ValidationGroup="ValidaCambios" InitialValue="X"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style52">Mail CCS:</td>
-                                <td class="auto-style53">
-                                    <asp:TextBox ID="TextBox69" runat="server" Width="140px" Height="20px"></asp:TextBox>
-                                </td>
-                            </tr>
+                                <h2>
+                                    <asp:Label ID="Label11" runat="server" Text="Editar"></asp:Label></h2>
 
-                            <tr>
-                                <td class="auto-style67">Telefono Casa:</td>
-                                <td class="auto-style51">
-                                    <asp:TextBox ID="TextBox63" CssClass="Textos " runat="server" Width="140px" Height="20px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator74" runat="server" ErrorMessage="*" ControlToValidate="TextBox63" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style52">Telefono Móvil:</td>
-                                <td class="auto-style53">
-                                    <asp:TextBox ID="TextBox64" runat="server" Width="140px" Height="20px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator75" runat="server" ErrorMessage="*" ControlToValidate="TextBox64" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
+                                <br />
 
-                            <tr>
-                                <td class="auto-style63">Calle y Número:</td>
-                                <td class="auto-style64">
-                                    <asp:TextBox ID="TextBox65" runat="server" CssClass="Textos " Height="20px" Width="140px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator76" runat="server" ControlToValidate="TextBox65" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style65">Estado:</td>
-                                <td class="auto-style66">
-                                    <asp:DropDownList ID="DropDownList36" runat="server" Width="140px" AutoPostBack="True" Height="20px">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator77" runat="server" ControlToValidate="DropDownList36" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
+                                <table style="width: 100%;" class="Buscador">
 
-                            <tr>
-                                <td class="auto-style59">Delegacion/Municipio:</td>
-                                <td class="auto-style60">
-                                    <asp:DropDownList ID="DropDownList37" runat="server" Width="140px" Height="20px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator78" runat="server" ErrorMessage="*" ControlToValidate="DropDownList37" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style61">CP:</td>
-                                <td class="auto-style62">
-                                    <asp:TextBox ID="TextBox66" runat="server" Width="50px" Height="20px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator79" runat="server" ControlToValidate="TextBox66" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
+                                    <tr>
+                                        <td class="auto-style9">Apellido Paterno:</td>
+                                        <td class="auto-style10">
+                                            <asp:TextBox ID="TextBox47" runat="server" CssClass="textos" Wrap="True" Width="150px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator58" runat="server" ErrorMessage="*" ControlToValidate="TextBox47" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
+                                        <td class="auto-style16">Apellido Materno:</td>
+                                        <td class="auto-style17">
+                                            <asp:TextBox ID="TextBox54" runat="server" CssClass="textos" Wrap="True" Width="140px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator59" runat="server" ErrorMessage="*" ControlToValidate="TextBox54" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
+                                        <td>Nombres:</td>
+                                        <td class="auto-style17">
+                                            <asp:TextBox ID="TextBox46" runat="server" Wrap="True" CssClass="textos" Width="140px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator52" runat="server" ErrorMessage="*" ControlToValidate="TextBox46" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator></td>
+                                    </tr>
 
-                            <tr>
-                                <td colspan="4"></td>
-                            </tr>
+                                    <tr>
+                                        <td>Empleado:</td>
+                                        <td class="auto-style17">
+                                            <asp:TextBox ID="TextBox55" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator60" runat="server" ErrorMessage="*" ControlToValidate="TextBox55" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style9">Supervisor:</td>
+                                        <td class="auto-style10">
+                                            <asp:DropDownList ID="DropDownList38" runat="server" AutoPostBack="True" Width="140px">
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator61" runat="server" ErrorMessage="*" ControlToValidate="DropDownList38" ForeColor="Red" ValidationGroup="ValidaCambios" InitialValue="0"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style11">Campaña:</td>
+                                        <td class="auto-style17">
+                                            <asp:DropDownList ID="DropDownList6" runat="server" AutoPostBack="True" Width="140px">
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator62" runat="server" ControlToValidate="DropDownList6" InitialValue="0" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>CURP:</td>
+                                        <td class="auto-style17">
+                                            <asp:TextBox ID="TextBox57" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator63" runat="server" ControlToValidate="TextBox57" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style9">RFC:</td>
+                                        <td class="auto-style19">
+                                            <asp:TextBox ID="TextBox58" runat="server" CssClass="textos" Width="150px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator64" runat="server" ControlToValidate="TextBox58" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style11">NSS:</td>
+                                        <td class="auto-style17">
+                                            <asp:TextBox ID="TextBox59" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator65" runat="server" ControlToValidate="TextBox59" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Area:</td>
+                                        <td class="auto-style17">
+                                            <asp:DropDownList ID="DropDownList30" runat="server" Width="80px">
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator66" runat="server" ControlToValidate="DropDownList30" ErrorMessage="*" ForeColor="Red" InitialValue="X" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style9">Fecha de Nacimiento:</td>
+                                        <td class="auto-style19">
+                                            <asp:TextBox ID="TextBox60" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
+
+                                            <asp:CalendarExtender ID="TextBox60_CalendarExtender" runat="server" Enabled="True" TargetControlID="TextBox60" PopupButtonID="ImageButton4" Format="dd/MM/yyyy">
+                                            </asp:CalendarExtender>
+
+                                            <asp:ImageButton ID="ImageButton4" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator67" runat="server" ControlToValidate="TextBox60" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style11">Puesto:</td>
+                                        <td class="auto-style17">
+                                            <asp:DropDownList ID="DropDownList31" runat="server" Width="140px">
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator68" runat="server" ControlToValidate="DropDownList31" ErrorMessage="*" ForeColor="Red" InitialValue="X" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Entrada:</td>
+                                        <td class="auto-style17">
+                                            <asp:DropDownList ID="DropDownList32" runat="server" Width="80px">
+                                                <asp:ListItem Value="0">-</asp:ListItem>
+                                                <asp:ListItem>00:00</asp:ListItem>
+                                                <asp:ListItem>00:30</asp:ListItem>
+                                                <asp:ListItem>01:00</asp:ListItem>
+                                                <asp:ListItem>01:30</asp:ListItem>
+                                                <asp:ListItem>02:00</asp:ListItem>
+                                                <asp:ListItem>02:30</asp:ListItem>
+                                                <asp:ListItem>03:00</asp:ListItem>
+                                                <asp:ListItem>03:30</asp:ListItem>
+                                                <asp:ListItem>04:00</asp:ListItem>
+                                                <asp:ListItem>04:30</asp:ListItem>
+                                                <asp:ListItem>05:00</asp:ListItem>
+                                                <asp:ListItem>05:30</asp:ListItem>
+                                                <asp:ListItem>06:00</asp:ListItem>
+                                                <asp:ListItem>06:30</asp:ListItem>
+                                                <asp:ListItem>07:00</asp:ListItem>
+                                                <asp:ListItem>07:30</asp:ListItem>
+                                                <asp:ListItem>08:00</asp:ListItem>
+                                                <asp:ListItem>08:30</asp:ListItem>
+                                                <asp:ListItem>09:00</asp:ListItem>
+                                                <asp:ListItem>09:30</asp:ListItem>
+                                                <asp:ListItem>10:00</asp:ListItem>
+                                                <asp:ListItem>10:30</asp:ListItem>
+                                                <asp:ListItem>11:00</asp:ListItem>
+                                                <asp:ListItem>11:30</asp:ListItem>
+                                                <asp:ListItem>12:00</asp:ListItem>
+                                                <asp:ListItem>12:30</asp:ListItem>
+                                                <asp:ListItem>13:00</asp:ListItem>
+                                                <asp:ListItem>13:30</asp:ListItem>
+                                                <asp:ListItem>14:00</asp:ListItem>
+                                                <asp:ListItem>14:30</asp:ListItem>
+                                                <asp:ListItem>15:00</asp:ListItem>
+                                                <asp:ListItem>15:30</asp:ListItem>
+                                                <asp:ListItem>16:00</asp:ListItem>
+                                                <asp:ListItem>16:30</asp:ListItem>
+                                                <asp:ListItem>17:00</asp:ListItem>
+                                                <asp:ListItem>17:30</asp:ListItem>
+                                                <asp:ListItem>18:00</asp:ListItem>
+                                                <asp:ListItem>18:30</asp:ListItem>
+                                                <asp:ListItem>19:00</asp:ListItem>
+                                                <asp:ListItem>19:30</asp:ListItem>
+                                                <asp:ListItem>20:00</asp:ListItem>
+                                                <asp:ListItem>20:30</asp:ListItem>
+                                                <asp:ListItem>21:00</asp:ListItem>
+                                                <asp:ListItem>21:30</asp:ListItem>
+                                                <asp:ListItem>22:00</asp:ListItem>
+                                                <asp:ListItem>22:30</asp:ListItem>
+                                                <asp:ListItem>23:00</asp:ListItem>
+                                                <asp:ListItem>23:30</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator69" runat="server" ControlToValidate="DropDownList32" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style9">Salida:</td>
+                                        <td class="auto-style22">
+
+                                            <asp:DropDownList ID="DropDownList33" runat="server" Width="80px">
+                                                <asp:ListItem Value="0">-</asp:ListItem>
+                                                <asp:ListItem>00:00</asp:ListItem>
+                                                <asp:ListItem>00:30</asp:ListItem>
+                                                <asp:ListItem>01:00</asp:ListItem>
+                                                <asp:ListItem>01:30</asp:ListItem>
+                                                <asp:ListItem>02:00</asp:ListItem>
+                                                <asp:ListItem>02:30</asp:ListItem>
+                                                <asp:ListItem>03:00</asp:ListItem>
+                                                <asp:ListItem>03:30</asp:ListItem>
+                                                <asp:ListItem>04:00</asp:ListItem>
+                                                <asp:ListItem>04:30</asp:ListItem>
+                                                <asp:ListItem>05:00</asp:ListItem>
+                                                <asp:ListItem>05:30</asp:ListItem>
+                                                <asp:ListItem>06:00</asp:ListItem>
+                                                <asp:ListItem>06:30</asp:ListItem>
+                                                <asp:ListItem>07:00</asp:ListItem>
+                                                <asp:ListItem>07:30</asp:ListItem>
+                                                <asp:ListItem>08:00</asp:ListItem>
+                                                <asp:ListItem>08:30</asp:ListItem>
+                                                <asp:ListItem>09:00</asp:ListItem>
+                                                <asp:ListItem>09:30</asp:ListItem>
+                                                <asp:ListItem>10:00</asp:ListItem>
+                                                <asp:ListItem>10:30</asp:ListItem>
+                                                <asp:ListItem>11:00</asp:ListItem>
+                                                <asp:ListItem>11:30</asp:ListItem>
+                                                <asp:ListItem>12:00</asp:ListItem>
+                                                <asp:ListItem>12:30</asp:ListItem>
+                                                <asp:ListItem>13:00</asp:ListItem>
+                                                <asp:ListItem>13:30</asp:ListItem>
+                                                <asp:ListItem>14:00</asp:ListItem>
+                                                <asp:ListItem>14:30</asp:ListItem>
+                                                <asp:ListItem>15:00</asp:ListItem>
+                                                <asp:ListItem>15:30</asp:ListItem>
+                                                <asp:ListItem>16:00</asp:ListItem>
+                                                <asp:ListItem>16:30</asp:ListItem>
+                                                <asp:ListItem>17:00</asp:ListItem>
+                                                <asp:ListItem>17:30</asp:ListItem>
+                                                <asp:ListItem>18:00</asp:ListItem>
+                                                <asp:ListItem>18:30</asp:ListItem>
+                                                <asp:ListItem>19:00</asp:ListItem>
+                                                <asp:ListItem>19:30</asp:ListItem>
+                                                <asp:ListItem>20:00</asp:ListItem>
+                                                <asp:ListItem>20:30</asp:ListItem>
+                                                <asp:ListItem>21:00</asp:ListItem>
+                                                <asp:ListItem>21:30</asp:ListItem>
+                                                <asp:ListItem>22:00</asp:ListItem>
+                                                <asp:ListItem>22:30</asp:ListItem>
+                                                <asp:ListItem>23:00</asp:ListItem>
+                                                <asp:ListItem>23:30</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator70" runat="server" ControlToValidate="DropDownList33" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style11">ID ACD:</td>
+                                        <td class="auto-style17">
+                                            <asp:TextBox ID="TextBox61" runat="server" Width="80px" CssClass="textos"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator71" runat="server" ControlToValidate="TextBox61" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Alta:</td>
+                                        <td class="auto-style17">
+                                            <asp:TextBox ID="TextBox62" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
+
+                                            <asp:CalendarExtender ID="TextBox62_CalendarExtender" runat="server" Enabled="True" PopupButtonID="ImageButton10" TargetControlID="TextBox62" Format="dd/MM/yyyy">
+                                            </asp:CalendarExtender>
+
+                                            <asp:ImageButton ID="ImageButton10" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator80" runat="server" ControlToValidate="TextBox62" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style9">Dep. Economicos:</td>
+                                        <td class="auto-style22">
+
+                                            <asp:DropDownList ID="DropDownList34" runat="server" Width="120px">
+                                                <asp:ListItem Value="X">-Selecciona-</asp:ListItem>
+                                                <asp:ListItem Value="0">0</asp:ListItem>
+                                                <asp:ListItem>1</asp:ListItem>
+                                                <asp:ListItem>2</asp:ListItem>
+                                                <asp:ListItem>3</asp:ListItem>
+                                                <asp:ListItem>4</asp:ListItem>
+                                                <asp:ListItem>5</asp:ListItem>
+                                                <asp:ListItem>6</asp:ListItem>
+                                                <asp:ListItem>7</asp:ListItem>
+                                                <asp:ListItem>8</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator72" runat="server" ControlToValidate="DropDownList34" ErrorMessage="*" ForeColor="Red" InitialValue="X" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style11">Escolaridad:</td>
+                                        <td class="auto-style17">
+                                            <asp:DropDownList ID="DropDownList35" runat="server" Width="120px">
+                                                <asp:ListItem Value="0">-Selecciona-</asp:ListItem>
+                                                <asp:ListItem Value="Secundaria">Secundaria</asp:ListItem>
+                                                <asp:ListItem>Bachillerato Trunco</asp:ListItem>
+                                                <asp:ListItem Value="Bachillerato">Bachillerato</asp:ListItem>
+                                                <asp:ListItem Value="Licenciatura Trunca">Licenciatura Trunca</asp:ListItem>
+                                                <asp:ListItem Value="Licenciatura">Licenciatura</asp:ListItem>
+                                                <asp:ListItem>Carrera Tecnica</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator73" runat="server" ControlToValidate="DropDownList35" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                </table>
 
 
-                            <tr>
-                                <td colspan="4">
-                                    <asp:Button ID="Button24" runat="server" Font-Bold="True" Font-Size="Smaller" Style="text-align: center; margin-right: 25px;" Text="Limpiar" CssClass="Button" Height="22px" Width="85px" />
-                                    <asp:Button ID="Button25" runat="server" Font-Bold="True" Font-Size="Smaller" Style="text-align: center" Text="Guardar" ValidationGroup="ValidaCambios" CssClass="Button" Height="22px" Width="85px" />
-                                </td>
-                            </tr>
+                                <table class="auto-style58">
+
+                                    <tr>
+                                        <td class="auto-style67">Status:</td>
+                                        <td class="auto-style51">
+                                            <asp:DropDownList ID="DropDownList39" runat="server" Width="140px"></asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator81" runat="server" ErrorMessage="*" ControlToValidate="DropDownList39" ForeColor="Red" ValidationGroup="ValidaCambios" InitialValue="X"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style52">Mail CCS:</td>
+                                        <td class="auto-style53">
+                                            <asp:TextBox ID="TextBox69" runat="server" Width="140px" Height="20px"></asp:TextBox>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="auto-style67">Telefono Casa:</td>
+                                        <td class="auto-style51">
+                                            <asp:TextBox ID="TextBox63" CssClass="Textos " runat="server" Width="140px" Height="20px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator74" runat="server" ErrorMessage="*" ControlToValidate="TextBox63" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style52">Telefono Móvil:</td>
+                                        <td class="auto-style53">
+                                            <asp:TextBox ID="TextBox64" runat="server" Width="140px" Height="20px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator75" runat="server" ErrorMessage="*" ControlToValidate="TextBox64" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="auto-style63">Calle y Número:</td>
+                                        <td class="auto-style64">
+                                            <asp:TextBox ID="TextBox65" runat="server" CssClass="Textos " Height="20px" Width="140px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator76" runat="server" ControlToValidate="TextBox65" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style65">Estado:</td>
+                                        <td class="auto-style66">
+                                            <asp:DropDownList ID="DropDownList36" runat="server" Width="140px" AutoPostBack="True" Height="20px">
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator77" runat="server" ControlToValidate="DropDownList36" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="auto-style59">Delegacion/Municipio:</td>
+                                        <td class="auto-style60">
+                                            <asp:DropDownList ID="DropDownList37" runat="server" Width="140px" Height="20px">
+                                                <asp:ListItem Value="0">-</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator78" runat="server" ErrorMessage="*" ControlToValidate="DropDownList37" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                        <td class="auto-style61">CP:</td>
+                                        <td class="auto-style62">
+                                            <asp:TextBox ID="TextBox66" runat="server" Width="50px" Height="20px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator79" runat="server" ControlToValidate="TextBox66" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaCambios"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="4"></td>
+                                    </tr>
 
 
-                        </table>
-                    </asp:Panel>
+                                    <tr>
+                                        <td colspan="4">
+                                            <asp:Button ID="Button24" runat="server" Font-Bold="True" Font-Size="Smaller" Style="text-align: center; margin-right: 25px;" Text="Limpiar" CssClass="Button" Height="22px" Width="85px" />
+                                            <asp:Button ID="Button25" runat="server" Font-Bold="True" Font-Size="Smaller" Style="text-align: center" Text="Guardar" ValidationGroup="ValidaCambios" CssClass="Button" Height="22px" Width="85px" />
+                                        </td>
+                                    </tr>
 
 
-                                      </ContentTemplate>
+                                </table>
+                            </asp:Panel>
+
+
+                        </ContentTemplate>
                     </asp:UpdatePanel>
 
                 </ContentTemplate>
@@ -2359,451 +2355,28 @@
                 </ContentTemplate>
             </asp:UpdatePanel>
 
-            <asp:UpdatePanel ID="UpdatePanel10" runat="server">
+            <br />
+
+
+
+            <asp:UpdatePanel ID="UpdatePanel15" runat="server">
                 <ContentTemplate>
-
-
-
-
                     <asp:Panel ID="Panel10" runat="server" CssClass="Panel">
-
                         <h2>
-                            <asp:Label ID="Label13" runat="server" Text="Captura de Aspirantes"></asp:Label></h2>
+                            <asp:Label ID="Label13" runat="server" Text="Captura de Aspirantes"></asp:Label>
+                        </h2>
 
                         <br />
 
-                        
-                        <table style="width: 100%;" class="Buscador">
-
-                            <tr>
-                                <td class="auto-style82">Nombres:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox74" runat="server" Wrap="True" CssClass="textos" Width="140px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator88" runat="server" ErrorMessage="*" ControlToValidate="TextBox8" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator></td>
-                                <td class="auto-style81">Apellido Paterno:</td>
-                                <td class="auto-style10">
-                                    <asp:TextBox ID="TextBox75" runat="server" CssClass="textos" Wrap="True" Width="150px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator89" runat="server" ErrorMessage="*" ControlToValidate="TextBox11" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator></td>
-                                <td class="auto-style16">Apellido Materno:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox76" runat="server" CssClass="textos" Wrap="True" Width="140px"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator90" runat="server" ErrorMessage="*" ControlToValidate="TextBox12" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator></td>
-                            </tr>
-
-                            <tr>
-                               <td class="auto-style82"></td>
-                                <td class="auto-style17">
-                                   <!--  <asp:TextBox ID="TextBox77" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator91" runat="server" ErrorMessage="*" ControlToValidate="TextBox19" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>-->
-                                </td>
-                                <td class="auto-style81"></td>
-                                <td class="auto-style10">
-                                    <!-- <asp:DropDownList ID="DropDownList24" runat="server" AutoPostBack="True" Width="140px">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator57" runat="server" ControlToValidate="DropDownList17" InitialValue="0" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>-->
-                                </td>
-                                <td class="auto-style11">Campaña:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList42" runat="server" AutoPostBack="True" Width="140px">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator93" runat="server" ControlToValidate="DropDownList17" InitialValue="0" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style82">CURP:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox79" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator94" runat="server" ControlToValidate="TextBox20" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style81">RFC:</td>
-                                <td class="auto-style19">
-                                    <asp:TextBox ID="TextBox80" runat="server" CssClass="textos" Width="150px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator95" runat="server" ControlToValidate="TextBox15" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">NSS:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox81" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator96" runat="server" ControlToValidate="TextBox16" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style82">Sexo:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList43" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem Value="1">M</asp:ListItem>
-                                        <asp:ListItem Value="2">F</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator97" runat="server" ControlToValidate="DropDownList14" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style81">Fecha de Nacimiento:</td>
-                                <td class="auto-style19">
-                                    <asp:TextBox ID="TextBox82" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
-                                    <asp:CalendarExtender ID="CalendarExtender3" runat="server" Enabled="True" PopupButtonID="ImageButton5" TargetControlID="TextBox82" Format="dd/MM/yyyy">
-                                    </asp:CalendarExtender>
-                                    <asp:ImageButton ID="ImageButton13" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator98" runat="server" ControlToValidate="TextBox21" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">Estado Civil:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList44" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem Value="1">Soltero</asp:ListItem>
-                                        <asp:ListItem Value="2">Casado</asp:ListItem>
-                                        <asp:ListItem Value="3">Viudo</asp:ListItem>
-                                        <asp:ListItem Value="4">Divorciado</asp:ListItem>
-                                        <asp:ListItem Value="5">Union Libre</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator99" runat="server" ControlToValidate="DropDownList15" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style82">Entrada:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList45" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem>00:00</asp:ListItem>
-                                        <asp:ListItem>00:30</asp:ListItem>
-                                        <asp:ListItem>01:00</asp:ListItem>
-                                        <asp:ListItem>01:30</asp:ListItem>
-                                        <asp:ListItem>02:00</asp:ListItem>
-                                        <asp:ListItem>02:30</asp:ListItem>
-                                        <asp:ListItem>03:00</asp:ListItem>
-                                        <asp:ListItem>03:30</asp:ListItem>
-                                        <asp:ListItem>04:00</asp:ListItem>
-                                        <asp:ListItem>04:30</asp:ListItem>
-                                        <asp:ListItem>05:00</asp:ListItem>
-                                        <asp:ListItem>05:30</asp:ListItem>
-                                        <asp:ListItem>06:00</asp:ListItem>
-                                        <asp:ListItem>06:30</asp:ListItem>
-                                        <asp:ListItem>07:00</asp:ListItem>
-                                        <asp:ListItem>07:30</asp:ListItem>
-                                        <asp:ListItem>08:00</asp:ListItem>
-                                        <asp:ListItem>08:30</asp:ListItem>
-                                        <asp:ListItem>09:00</asp:ListItem>
-                                        <asp:ListItem>09:30</asp:ListItem>
-                                        <asp:ListItem>10:00</asp:ListItem>
-                                        <asp:ListItem>10:30</asp:ListItem>
-                                        <asp:ListItem>11:00</asp:ListItem>
-                                        <asp:ListItem>11:30</asp:ListItem>
-                                        <asp:ListItem>12:00</asp:ListItem>
-                                        <asp:ListItem>12:30</asp:ListItem>
-                                        <asp:ListItem>13:00</asp:ListItem>
-                                        <asp:ListItem>13:30</asp:ListItem>
-                                        <asp:ListItem>14:00</asp:ListItem>
-                                        <asp:ListItem>14:30</asp:ListItem>
-                                        <asp:ListItem>15:00</asp:ListItem>
-                                        <asp:ListItem>15:30</asp:ListItem>
-                                        <asp:ListItem>16:00</asp:ListItem>
-                                        <asp:ListItem>16:30</asp:ListItem>
-                                        <asp:ListItem>17:00</asp:ListItem>
-                                        <asp:ListItem>17:30</asp:ListItem>
-                                        <asp:ListItem>18:00</asp:ListItem>
-                                        <asp:ListItem>18:30</asp:ListItem>
-                                        <asp:ListItem>19:00</asp:ListItem>
-                                        <asp:ListItem>19:30</asp:ListItem>
-                                        <asp:ListItem>20:00</asp:ListItem>
-                                        <asp:ListItem>20:30</asp:ListItem>
-                                        <asp:ListItem>21:00</asp:ListItem>
-                                        <asp:ListItem>21:30</asp:ListItem>
-                                        <asp:ListItem>22:00</asp:ListItem>
-                                        <asp:ListItem>22:30</asp:ListItem>
-                                        <asp:ListItem>23:00</asp:ListItem>
-                                        <asp:ListItem>23:30</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator100" runat="server" ControlToValidate="DropDownList9" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style81">Salida:</td>
-                                <td class="auto-style22">
-
-                                    <asp:DropDownList ID="DropDownList46" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem>00:00</asp:ListItem>
-                                        <asp:ListItem>00:30</asp:ListItem>
-                                        <asp:ListItem>01:00</asp:ListItem>
-                                        <asp:ListItem>01:30</asp:ListItem>
-                                        <asp:ListItem>02:00</asp:ListItem>
-                                        <asp:ListItem>02:30</asp:ListItem>
-                                        <asp:ListItem>03:00</asp:ListItem>
-                                        <asp:ListItem>03:30</asp:ListItem>
-                                        <asp:ListItem>04:00</asp:ListItem>
-                                        <asp:ListItem>04:30</asp:ListItem>
-                                        <asp:ListItem>05:00</asp:ListItem>
-                                        <asp:ListItem>05:30</asp:ListItem>
-                                        <asp:ListItem>06:00</asp:ListItem>
-                                        <asp:ListItem>06:30</asp:ListItem>
-                                        <asp:ListItem>07:00</asp:ListItem>
-                                        <asp:ListItem>07:30</asp:ListItem>
-                                        <asp:ListItem>08:00</asp:ListItem>
-                                        <asp:ListItem>08:30</asp:ListItem>
-                                        <asp:ListItem>09:00</asp:ListItem>
-                                        <asp:ListItem>09:30</asp:ListItem>
-                                        <asp:ListItem>10:00</asp:ListItem>
-                                        <asp:ListItem>10:30</asp:ListItem>
-                                        <asp:ListItem>11:00</asp:ListItem>
-                                        <asp:ListItem>11:30</asp:ListItem>
-                                        <asp:ListItem>12:00</asp:ListItem>
-                                        <asp:ListItem>12:30</asp:ListItem>
-                                        <asp:ListItem>13:00</asp:ListItem>
-                                        <asp:ListItem>13:30</asp:ListItem>
-                                        <asp:ListItem>14:00</asp:ListItem>
-                                        <asp:ListItem>14:30</asp:ListItem>
-                                        <asp:ListItem>15:00</asp:ListItem>
-                                        <asp:ListItem>15:30</asp:ListItem>
-                                        <asp:ListItem>16:00</asp:ListItem>
-                                        <asp:ListItem>16:30</asp:ListItem>
-                                        <asp:ListItem>17:00</asp:ListItem>
-                                        <asp:ListItem>17:30</asp:ListItem>
-                                        <asp:ListItem>18:00</asp:ListItem>
-                                        <asp:ListItem>18:30</asp:ListItem>
-                                        <asp:ListItem>19:00</asp:ListItem>
-                                        <asp:ListItem>19:30</asp:ListItem>
-                                        <asp:ListItem>20:00</asp:ListItem>
-                                        <asp:ListItem>20:30</asp:ListItem>
-                                        <asp:ListItem>21:00</asp:ListItem>
-                                        <asp:ListItem>21:30</asp:ListItem>
-                                        <asp:ListItem>22:00</asp:ListItem>
-                                        <asp:ListItem>22:30</asp:ListItem>
-                                        <asp:ListItem>23:00</asp:ListItem>
-                                        <asp:ListItem>23:30</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator101" runat="server" ControlToValidate="DropDownList10" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">Jornada:</td>
-                           
-                            </tr>
-
-                             <tr>
-                                <td class="auto-style82">Entrada Capa:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList51" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem>00:00</asp:ListItem>
-                                        <asp:ListItem>00:30</asp:ListItem>
-                                        <asp:ListItem>01:00</asp:ListItem>
-                                        <asp:ListItem>01:30</asp:ListItem>
-                                        <asp:ListItem>02:00</asp:ListItem>
-                                        <asp:ListItem>02:30</asp:ListItem>
-                                        <asp:ListItem>03:00</asp:ListItem>
-                                        <asp:ListItem>03:30</asp:ListItem>
-                                        <asp:ListItem>04:00</asp:ListItem>
-                                        <asp:ListItem>04:30</asp:ListItem>
-                                        <asp:ListItem>05:00</asp:ListItem>
-                                        <asp:ListItem>05:30</asp:ListItem>
-                                        <asp:ListItem>06:00</asp:ListItem>
-                                        <asp:ListItem>06:30</asp:ListItem>
-                                        <asp:ListItem>07:00</asp:ListItem>
-                                        <asp:ListItem>07:30</asp:ListItem>
-                                        <asp:ListItem>08:00</asp:ListItem>
-                                        <asp:ListItem>08:30</asp:ListItem>
-                                        <asp:ListItem>09:00</asp:ListItem>
-                                        <asp:ListItem>09:30</asp:ListItem>
-                                        <asp:ListItem>10:00</asp:ListItem>
-                                        <asp:ListItem>10:30</asp:ListItem>
-                                        <asp:ListItem>11:00</asp:ListItem>
-                                        <asp:ListItem>11:30</asp:ListItem>
-                                        <asp:ListItem>12:00</asp:ListItem>
-                                        <asp:ListItem>12:30</asp:ListItem>
-                                        <asp:ListItem>13:00</asp:ListItem>
-                                        <asp:ListItem>13:30</asp:ListItem>
-                                        <asp:ListItem>14:00</asp:ListItem>
-                                        <asp:ListItem>14:30</asp:ListItem>
-                                        <asp:ListItem>15:00</asp:ListItem>
-                                        <asp:ListItem>15:30</asp:ListItem>
-                                        <asp:ListItem>16:00</asp:ListItem>
-                                        <asp:ListItem>16:30</asp:ListItem>
-                                        <asp:ListItem>17:00</asp:ListItem>
-                                        <asp:ListItem>17:30</asp:ListItem>
-                                        <asp:ListItem>18:00</asp:ListItem>
-                                        <asp:ListItem>18:30</asp:ListItem>
-                                        <asp:ListItem>19:00</asp:ListItem>
-                                        <asp:ListItem>19:30</asp:ListItem>
-                                        <asp:ListItem>20:00</asp:ListItem>
-                                        <asp:ListItem>20:30</asp:ListItem>
-                                        <asp:ListItem>21:00</asp:ListItem>
-                                        <asp:ListItem>21:30</asp:ListItem>
-                                        <asp:ListItem>22:00</asp:ListItem>
-                                        <asp:ListItem>22:30</asp:ListItem>
-                                        <asp:ListItem>23:00</asp:ListItem>
-                                        <asp:ListItem>23:30</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator111" runat="server" ControlToValidate="DropDownList9" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style81">Salida Capa:</td>
-                                <td class="auto-style22">
-
-                                    <asp:DropDownList ID="DropDownList52" runat="server" Width="80px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                        <asp:ListItem>00:00</asp:ListItem>
-                                        <asp:ListItem>00:30</asp:ListItem>
-                                        <asp:ListItem>01:00</asp:ListItem>
-                                        <asp:ListItem>01:30</asp:ListItem>
-                                        <asp:ListItem>02:00</asp:ListItem>
-                                        <asp:ListItem>02:30</asp:ListItem>
-                                        <asp:ListItem>03:00</asp:ListItem>
-                                        <asp:ListItem>03:30</asp:ListItem>
-                                        <asp:ListItem>04:00</asp:ListItem>
-                                        <asp:ListItem>04:30</asp:ListItem>
-                                        <asp:ListItem>05:00</asp:ListItem>
-                                        <asp:ListItem>05:30</asp:ListItem>
-                                        <asp:ListItem>06:00</asp:ListItem>
-                                        <asp:ListItem>06:30</asp:ListItem>
-                                        <asp:ListItem>07:00</asp:ListItem>
-                                        <asp:ListItem>07:30</asp:ListItem>
-                                        <asp:ListItem>08:00</asp:ListItem>
-                                        <asp:ListItem>08:30</asp:ListItem>
-                                        <asp:ListItem>09:00</asp:ListItem>
-                                        <asp:ListItem>09:30</asp:ListItem>
-                                        <asp:ListItem>10:00</asp:ListItem>
-                                        <asp:ListItem>10:30</asp:ListItem>
-                                        <asp:ListItem>11:00</asp:ListItem>
-                                        <asp:ListItem>11:30</asp:ListItem>
-                                        <asp:ListItem>12:00</asp:ListItem>
-                                        <asp:ListItem>12:30</asp:ListItem>
-                                        <asp:ListItem>13:00</asp:ListItem>
-                                        <asp:ListItem>13:30</asp:ListItem>
-                                        <asp:ListItem>14:00</asp:ListItem>
-                                        <asp:ListItem>14:30</asp:ListItem>
-                                        <asp:ListItem>15:00</asp:ListItem>
-                                        <asp:ListItem>15:30</asp:ListItem>
-                                        <asp:ListItem>16:00</asp:ListItem>
-                                        <asp:ListItem>16:30</asp:ListItem>
-                                        <asp:ListItem>17:00</asp:ListItem>
-                                        <asp:ListItem>17:30</asp:ListItem>
-                                        <asp:ListItem>18:00</asp:ListItem>
-                                        <asp:ListItem>18:30</asp:ListItem>
-                                        <asp:ListItem>19:00</asp:ListItem>
-                                        <asp:ListItem>19:30</asp:ListItem>
-                                        <asp:ListItem>20:00</asp:ListItem>
-                                        <asp:ListItem>20:30</asp:ListItem>
-                                        <asp:ListItem>21:00</asp:ListItem>
-                                        <asp:ListItem>21:30</asp:ListItem>
-                                        <asp:ListItem>22:00</asp:ListItem>
-                                        <asp:ListItem>22:30</asp:ListItem>
-                                        <asp:ListItem>23:00</asp:ListItem>
-                                        <asp:ListItem>23:30</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator112" runat="server" ControlToValidate="DropDownList10" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">Fecha Tronco:</td>
-                                <td class="auto-style17">
-                                    <asp:TextBox ID="TextBox78" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
-                                    <asp:CalendarExtender ID="CalendarExtender5" runat="server" Enabled="True" PopupButtonID="ImageButton5" TargetControlID="TextBox78" Format="dd/MM/yyyy">
-                                    </asp:CalendarExtender>
-                                    <asp:ImageButton ID="ImageButton14" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator113" runat="server" ControlToValidate="TextBox21" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style82"></td>
-                                <td class="auto-style17">
-                                    <!--<asp:TextBox ID="TextBox44" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
-                                    <asp:CalendarExtender ID="CalendarExtender4" runat="server" Enabled="True" PopupButtonID="ImageButton5" TargetControlID="TextBox44" Format="dd/MM/yyyy">
-                                    </asp:CalendarExtender>
-                                    <asp:ImageButton ID="ImageButton9" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator92" runat="server" ControlToValidate="TextBox21" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>-->
-                                </td>
-                                <td class="auto-style81">Dep. Economicos:</td>
-                                <td class="auto-style22">
-
-                                    <asp:DropDownList ID="DropDownList47" runat="server" Width="120px">
-                                        <asp:ListItem Value="0">-Selecciona-</asp:ListItem>
-                                        <asp:ListItem Value="x">0</asp:ListItem>
-                                        <asp:ListItem>1</asp:ListItem>
-                                        <asp:ListItem>2</asp:ListItem>
-                                        <asp:ListItem>3</asp:ListItem>
-                                        <asp:ListItem>4</asp:ListItem>
-                                        <asp:ListItem>5</asp:ListItem>
-                                        <asp:ListItem>6</asp:ListItem>
-                                        <asp:ListItem>7</asp:ListItem>
-                                        <asp:ListItem>8</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator103" runat="server" ControlToValidate="DropDownList21" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style11">Escolaridad:</td>
-                                <td class="auto-style17">
-                                    <asp:DropDownList ID="DropDownList48" runat="server" Width="120px">
-                                        <asp:ListItem Value="0">-Selecciona-</asp:ListItem>
-                                        <asp:ListItem Value="Secundaria">Secundaria</asp:ListItem>
-                                        <asp:ListItem Value="Bachillerato Trunco">Bachillerato Trunco</asp:ListItem>
-                                        <asp:ListItem Value="Bachillerato">Bachillerato</asp:ListItem>
-                                        <asp:ListItem Value="Licenciatura Trunca">Licenciatura Trunca</asp:ListItem>
-                                        <asp:ListItem>Licenciatura</asp:ListItem>
-                                        <asp:ListItem>Carrera Tecnica</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator104" runat="server" ControlToValidate="DropDownList22" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
+                        <table class="Buscador" style="width: 100%;">
                         </table>
 
 
-                        <table class="auto-style42">
-
-                            <tr>
-                                <td class="auto-style43">Telefono Casa:</td>
-                                <td class="auto-style37">
-                                    <asp:TextBox ID="TextBox85" CssClass="Textos " runat="server" Width="120px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator105" runat="server" ErrorMessage="*" ControlToValidate="TextBox17" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style41">Telefono Móvil:</td>
-                                <td class="auto-style39">
-                                    <asp:TextBox ID="TextBox86" runat="server" Width="120px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator106" runat="server" ErrorMessage="*" ControlToValidate="TextBox18" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style43">Calle y Número:</td>
-                                <td class="auto-style37">
-                                    <asp:TextBox ID="TextBox87" runat="server" CssClass="Textos "></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator107" runat="server" ControlToValidate="TextBox23" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style41">Estado:</td>
-                                <td class="auto-style39">
-                                    <asp:DropDownList ID="DropDownList49" runat="server" Width="150px" AutoPostBack="True">
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator108" runat="server" ControlToValidate="DropDownList16" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style43">Delegacion/Municipio:</td>
-                                <td class="auto-style37">
-                                    <asp:DropDownList ID="DropDownList50" runat="server" Width="150px">
-                                        <asp:ListItem Value="0">-</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator109" runat="server" ErrorMessage="*" ControlToValidate="DropDownList13" ForeColor="Red" InitialValue="0" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                                <td class="auto-style41">CP:</td>
-                                <td class="auto-style39">
-                                    <asp:TextBox ID="TextBox88" runat="server" Width="50px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator110" runat="server" ControlToValidate="TextBox24" ErrorMessage="*" ForeColor="Red" ValidationGroup="ValidaRH"></asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
+                 
 
 
 
-
-                            <tr>
-                                <td colspan="4"></td>
-                            </tr>
-
-
-                            <tr>
-                                <td colspan="4">
-                                    <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="Smaller" Style="text-align: center; margin-right: 25px;" Text="Limpiar" CssClass="Button" Height="22px" Width="85px" />
-                                    <asp:Button ID="Button3" runat="server" Font-Bold="True" Font-Size="Smaller" Style="text-align: center" Text="Guardar" ValidationGroup="ValidaRH" CssClass="Button" Height="22px" Width="85px" />
-                                </td>
-                            </tr>
-
-
-                        </table>
-
-
-<%--                        <table style="width: 100%; margin-left: 45px;" class="Buscador">
+                        <%--                        <table style="width: 100%; margin-left: 45px;" class="Buscador">
                             <tr>
                                 <td class="auto-style46">Fecha Tronco Común:</td>
                                 <td>
@@ -2889,12 +2462,430 @@
 
 
                         </table>--%>
-
                     </asp:Panel>
-
-
                 </ContentTemplate>
             </asp:UpdatePanel>
+
+            <asp:UpdatePanel ID="UpdatePanel10" runat="server">
+                <ContentTemplate>
+                    <asp:Panel ID="Panel16" runat="server" CssClass="Panel">
+                        <h2>
+                            <asp:Label ID="Label16" runat="server" Text="Captura de Aspirantes"></asp:Label>
+                        </h2>
+                        <table class="Buscador" style="width: 100%;">
+
+                            <tr>
+                                <td class="auto-style82">Nombres:</td>
+                                <td class="auto-style17">
+                                    <asp:TextBox ID="TextBox74" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator88" runat="server" ControlToValidate="TextBox74" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style81">Apellido Paterno:</td>
+                                <td class="auto-style10">
+                                    <asp:TextBox ID="TextBox75" runat="server" CssClass="textos" Width="150px" Wrap="True"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator89" runat="server" ControlToValidate="TextBox75" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style16">Apellido Materno:</td>
+                                <td class="auto-style17">
+                                    <asp:TextBox ID="TextBox76" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator90" runat="server" ControlToValidate="TextBox76" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style82"></td>
+                                <td class="auto-style17">
+                                    
+                                </td>
+                                <td class="auto-style81"></td>
+                                <td class="auto-style10">
+                                    
+                                </td>
+                                <td class="auto-style11">Campaña:</td>
+                                <td class="auto-style17">
+                                    <asp:DropDownList ID="DropDownList42" runat="server" AutoPostBack="True" Width="140px">
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator93" runat="server" ControlToValidate="DropDownList42" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style82">CURP:</td>
+                                <td class="auto-style17">
+                                    <asp:TextBox ID="TextBox79" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator94" runat="server" ControlToValidate="TextBox79" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style81">RFC:</td>
+                                <td class="auto-style19">
+                                    <asp:TextBox ID="TextBox80" runat="server" CssClass="textos" Width="150px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator95" runat="server" ControlToValidate="TextBox80" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style11">NSS:</td>
+                                <td class="auto-style17">
+                                    <asp:TextBox ID="TextBox81" runat="server" CssClass="textos" Width="140px" Wrap="True"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator96" runat="server" ControlToValidate="TextBox81" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style82">Sexo:</td>
+                                <td class="auto-style17">
+                                    <asp:DropDownList ID="DropDownList43" runat="server" Width="80px">
+                                        <asp:ListItem Value="0">-</asp:ListItem>
+                                        <asp:ListItem Value="1">M</asp:ListItem>
+                                        <asp:ListItem Value="2">F</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator97" runat="server" ControlToValidate="DropDownList43" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style81">Fecha de Nacimiento:</td>
+                                <td class="auto-style19">
+                                    <asp:TextBox ID="TextBox82" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
+                                    <asp:CalendarExtender ID="CalendarExtender3" runat="server" Enabled="True" Format="dd/MM/yyyy" PopupButtonID="ImageButton13" TargetControlID="TextBox82">
+                                    </asp:CalendarExtender>
+                                    <asp:ImageButton ID="ImageButton13" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator98" runat="server" ControlToValidate="TextBox82" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style11">Estado Civil:</td>
+                                <td class="auto-style17">
+                                    <asp:DropDownList ID="DropDownList44" runat="server" Width="80px">
+                                        <asp:ListItem Value="0">-</asp:ListItem>
+                                        <asp:ListItem Value="1">Soltero</asp:ListItem>
+                                        <asp:ListItem Value="2">Casado</asp:ListItem>
+                                        <asp:ListItem Value="3">Viudo</asp:ListItem>
+                                        <asp:ListItem Value="4">Divorciado</asp:ListItem>
+                                        <asp:ListItem Value="5">Union Libre</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator99" runat="server" ControlToValidate="DropDownList44" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style82">Entrada:</td>
+                                <td class="auto-style17">
+                                    <asp:DropDownList ID="DropDownList45" runat="server" Width="80px">
+                                        <asp:ListItem Value="0">-</asp:ListItem>
+                                        <asp:ListItem>00:00</asp:ListItem>
+                                        <asp:ListItem>00:30</asp:ListItem>
+                                        <asp:ListItem>01:00</asp:ListItem>
+                                        <asp:ListItem>01:30</asp:ListItem>
+                                        <asp:ListItem>02:00</asp:ListItem>
+                                        <asp:ListItem>02:30</asp:ListItem>
+                                        <asp:ListItem>03:00</asp:ListItem>
+                                        <asp:ListItem>03:30</asp:ListItem>
+                                        <asp:ListItem>04:00</asp:ListItem>
+                                        <asp:ListItem>04:30</asp:ListItem>
+                                        <asp:ListItem>05:00</asp:ListItem>
+                                        <asp:ListItem>05:30</asp:ListItem>
+                                        <asp:ListItem>06:00</asp:ListItem>
+                                        <asp:ListItem>06:30</asp:ListItem>
+                                        <asp:ListItem>07:00</asp:ListItem>
+                                        <asp:ListItem>07:30</asp:ListItem>
+                                        <asp:ListItem>08:00</asp:ListItem>
+                                        <asp:ListItem>08:30</asp:ListItem>
+                                        <asp:ListItem>09:00</asp:ListItem>
+                                        <asp:ListItem>09:30</asp:ListItem>
+                                        <asp:ListItem>10:00</asp:ListItem>
+                                        <asp:ListItem>10:30</asp:ListItem>
+                                        <asp:ListItem>11:00</asp:ListItem>
+                                        <asp:ListItem>11:30</asp:ListItem>
+                                        <asp:ListItem>12:00</asp:ListItem>
+                                        <asp:ListItem>12:30</asp:ListItem>
+                                        <asp:ListItem>13:00</asp:ListItem>
+                                        <asp:ListItem>13:30</asp:ListItem>
+                                        <asp:ListItem>14:00</asp:ListItem>
+                                        <asp:ListItem>14:30</asp:ListItem>
+                                        <asp:ListItem>15:00</asp:ListItem>
+                                        <asp:ListItem>15:30</asp:ListItem>
+                                        <asp:ListItem>16:00</asp:ListItem>
+                                        <asp:ListItem>16:30</asp:ListItem>
+                                        <asp:ListItem>17:00</asp:ListItem>
+                                        <asp:ListItem>17:30</asp:ListItem>
+                                        <asp:ListItem>18:00</asp:ListItem>
+                                        <asp:ListItem>18:30</asp:ListItem>
+                                        <asp:ListItem>19:00</asp:ListItem>
+                                        <asp:ListItem>19:30</asp:ListItem>
+                                        <asp:ListItem>20:00</asp:ListItem>
+                                        <asp:ListItem>20:30</asp:ListItem>
+                                        <asp:ListItem>21:00</asp:ListItem>
+                                        <asp:ListItem>21:30</asp:ListItem>
+                                        <asp:ListItem>22:00</asp:ListItem>
+                                        <asp:ListItem>22:30</asp:ListItem>
+                                        <asp:ListItem>23:00</asp:ListItem>
+                                        <asp:ListItem>23:30</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator100" runat="server" ControlToValidate="DropDownList45" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style81">Salida:</td>
+                                <td class="auto-style22">
+                                    <asp:DropDownList ID="DropDownList46" runat="server" Width="80px">
+                                        <asp:ListItem Value="0">-</asp:ListItem>
+                                        <asp:ListItem>00:00</asp:ListItem>
+                                        <asp:ListItem>00:30</asp:ListItem>
+                                        <asp:ListItem>01:00</asp:ListItem>
+                                        <asp:ListItem>01:30</asp:ListItem>
+                                        <asp:ListItem>02:00</asp:ListItem>
+                                        <asp:ListItem>02:30</asp:ListItem>
+                                        <asp:ListItem>03:00</asp:ListItem>
+                                        <asp:ListItem>03:30</asp:ListItem>
+                                        <asp:ListItem>04:00</asp:ListItem>
+                                        <asp:ListItem>04:30</asp:ListItem>
+                                        <asp:ListItem>05:00</asp:ListItem>
+                                        <asp:ListItem>05:30</asp:ListItem>
+                                        <asp:ListItem>06:00</asp:ListItem>
+                                        <asp:ListItem>06:30</asp:ListItem>
+                                        <asp:ListItem>07:00</asp:ListItem>
+                                        <asp:ListItem>07:30</asp:ListItem>
+                                        <asp:ListItem>08:00</asp:ListItem>
+                                        <asp:ListItem>08:30</asp:ListItem>
+                                        <asp:ListItem>09:00</asp:ListItem>
+                                        <asp:ListItem>09:30</asp:ListItem>
+                                        <asp:ListItem>10:00</asp:ListItem>
+                                        <asp:ListItem>10:30</asp:ListItem>
+                                        <asp:ListItem>11:00</asp:ListItem>
+                                        <asp:ListItem>11:30</asp:ListItem>
+                                        <asp:ListItem>12:00</asp:ListItem>
+                                        <asp:ListItem>12:30</asp:ListItem>
+                                        <asp:ListItem>13:00</asp:ListItem>
+                                        <asp:ListItem>13:30</asp:ListItem>
+                                        <asp:ListItem>14:00</asp:ListItem>
+                                        <asp:ListItem>14:30</asp:ListItem>
+                                        <asp:ListItem>15:00</asp:ListItem>
+                                        <asp:ListItem>15:30</asp:ListItem>
+                                        <asp:ListItem>16:00</asp:ListItem>
+                                        <asp:ListItem>16:30</asp:ListItem>
+                                        <asp:ListItem>17:00</asp:ListItem>
+                                        <asp:ListItem>17:30</asp:ListItem>
+                                        <asp:ListItem>18:00</asp:ListItem>
+                                        <asp:ListItem>18:30</asp:ListItem>
+                                        <asp:ListItem>19:00</asp:ListItem>
+                                        <asp:ListItem>19:30</asp:ListItem>
+                                        <asp:ListItem>20:00</asp:ListItem>
+                                        <asp:ListItem>20:30</asp:ListItem>
+                                        <asp:ListItem>21:00</asp:ListItem>
+                                        <asp:ListItem>21:30</asp:ListItem>
+                                        <asp:ListItem>22:00</asp:ListItem>
+                                        <asp:ListItem>22:30</asp:ListItem>
+                                        <asp:ListItem>23:00</asp:ListItem>
+                                        <asp:ListItem>23:30</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator101" runat="server" ControlToValidate="DropDownList46" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style11">Jornada:</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style82">Entrada Capa:</td>
+                                <td class="auto-style17">
+                                    <asp:DropDownList ID="DropDownList51" runat="server" Width="80px">
+                                        <asp:ListItem Value="0">-</asp:ListItem>
+                                        <asp:ListItem>00:00</asp:ListItem>
+                                        <asp:ListItem>00:30</asp:ListItem>
+                                        <asp:ListItem>01:00</asp:ListItem>
+                                        <asp:ListItem>01:30</asp:ListItem>
+                                        <asp:ListItem>02:00</asp:ListItem>
+                                        <asp:ListItem>02:30</asp:ListItem>
+                                        <asp:ListItem>03:00</asp:ListItem>
+                                        <asp:ListItem>03:30</asp:ListItem>
+                                        <asp:ListItem>04:00</asp:ListItem>
+                                        <asp:ListItem>04:30</asp:ListItem>
+                                        <asp:ListItem>05:00</asp:ListItem>
+                                        <asp:ListItem>05:30</asp:ListItem>
+                                        <asp:ListItem>06:00</asp:ListItem>
+                                        <asp:ListItem>06:30</asp:ListItem>
+                                        <asp:ListItem>07:00</asp:ListItem>
+                                        <asp:ListItem>07:30</asp:ListItem>
+                                        <asp:ListItem>08:00</asp:ListItem>
+                                        <asp:ListItem>08:30</asp:ListItem>
+                                        <asp:ListItem>09:00</asp:ListItem>
+                                        <asp:ListItem>09:30</asp:ListItem>
+                                        <asp:ListItem>10:00</asp:ListItem>
+                                        <asp:ListItem>10:30</asp:ListItem>
+                                        <asp:ListItem>11:00</asp:ListItem>
+                                        <asp:ListItem>11:30</asp:ListItem>
+                                        <asp:ListItem>12:00</asp:ListItem>
+                                        <asp:ListItem>12:30</asp:ListItem>
+                                        <asp:ListItem>13:00</asp:ListItem>
+                                        <asp:ListItem>13:30</asp:ListItem>
+                                        <asp:ListItem>14:00</asp:ListItem>
+                                        <asp:ListItem>14:30</asp:ListItem>
+                                        <asp:ListItem>15:00</asp:ListItem>
+                                        <asp:ListItem>15:30</asp:ListItem>
+                                        <asp:ListItem>16:00</asp:ListItem>
+                                        <asp:ListItem>16:30</asp:ListItem>
+                                        <asp:ListItem>17:00</asp:ListItem>
+                                        <asp:ListItem>17:30</asp:ListItem>
+                                        <asp:ListItem>18:00</asp:ListItem>
+                                        <asp:ListItem>18:30</asp:ListItem>
+                                        <asp:ListItem>19:00</asp:ListItem>
+                                        <asp:ListItem>19:30</asp:ListItem>
+                                        <asp:ListItem>20:00</asp:ListItem>
+                                        <asp:ListItem>20:30</asp:ListItem>
+                                        <asp:ListItem>21:00</asp:ListItem>
+                                        <asp:ListItem>21:30</asp:ListItem>
+                                        <asp:ListItem>22:00</asp:ListItem>
+                                        <asp:ListItem>22:30</asp:ListItem>
+                                        <asp:ListItem>23:00</asp:ListItem>
+                                        <asp:ListItem>23:30</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator111" runat="server" ControlToValidate="DropDownList51" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style81">Salida Capa:</td>
+                                <td class="auto-style22">
+                                    <asp:DropDownList ID="DropDownList52" runat="server" Width="80px">
+                                        <asp:ListItem Value="0">-</asp:ListItem>
+                                        <asp:ListItem>00:00</asp:ListItem>
+                                        <asp:ListItem>00:30</asp:ListItem>
+                                        <asp:ListItem>01:00</asp:ListItem>
+                                        <asp:ListItem>01:30</asp:ListItem>
+                                        <asp:ListItem>02:00</asp:ListItem>
+                                        <asp:ListItem>02:30</asp:ListItem>
+                                        <asp:ListItem>03:00</asp:ListItem>
+                                        <asp:ListItem>03:30</asp:ListItem>
+                                        <asp:ListItem>04:00</asp:ListItem>
+                                        <asp:ListItem>04:30</asp:ListItem>
+                                        <asp:ListItem>05:00</asp:ListItem>
+                                        <asp:ListItem>05:30</asp:ListItem>
+                                        <asp:ListItem>06:00</asp:ListItem>
+                                        <asp:ListItem>06:30</asp:ListItem>
+                                        <asp:ListItem>07:00</asp:ListItem>
+                                        <asp:ListItem>07:30</asp:ListItem>
+                                        <asp:ListItem>08:00</asp:ListItem>
+                                        <asp:ListItem>08:30</asp:ListItem>
+                                        <asp:ListItem>09:00</asp:ListItem>
+                                        <asp:ListItem>09:30</asp:ListItem>
+                                        <asp:ListItem>10:00</asp:ListItem>
+                                        <asp:ListItem>10:30</asp:ListItem>
+                                        <asp:ListItem>11:00</asp:ListItem>
+                                        <asp:ListItem>11:30</asp:ListItem>
+                                        <asp:ListItem>12:00</asp:ListItem>
+                                        <asp:ListItem>12:30</asp:ListItem>
+                                        <asp:ListItem>13:00</asp:ListItem>
+                                        <asp:ListItem>13:30</asp:ListItem>
+                                        <asp:ListItem>14:00</asp:ListItem>
+                                        <asp:ListItem>14:30</asp:ListItem>
+                                        <asp:ListItem>15:00</asp:ListItem>
+                                        <asp:ListItem>15:30</asp:ListItem>
+                                        <asp:ListItem>16:00</asp:ListItem>
+                                        <asp:ListItem>16:30</asp:ListItem>
+                                        <asp:ListItem>17:00</asp:ListItem>
+                                        <asp:ListItem>17:30</asp:ListItem>
+                                        <asp:ListItem>18:00</asp:ListItem>
+                                        <asp:ListItem>18:30</asp:ListItem>
+                                        <asp:ListItem>19:00</asp:ListItem>
+                                        <asp:ListItem>19:30</asp:ListItem>
+                                        <asp:ListItem>20:00</asp:ListItem>
+                                        <asp:ListItem>20:30</asp:ListItem>
+                                        <asp:ListItem>21:00</asp:ListItem>
+                                        <asp:ListItem>21:30</asp:ListItem>
+                                        <asp:ListItem>22:00</asp:ListItem>
+                                        <asp:ListItem>22:30</asp:ListItem>
+                                        <asp:ListItem>23:00</asp:ListItem>
+                                        <asp:ListItem>23:30</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator112" runat="server" ControlToValidate="DropDownList52" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style11">Fecha Tronco:</td>
+                                <td class="auto-style17">
+                                    <asp:TextBox ID="TextBox78" runat="server" CssClass="textos" Width="117px" Wrap="True"></asp:TextBox>
+                                    <asp:CalendarExtender ID="CalendarExtender5" runat="server" Enabled="True" Format="dd/MM/yyyy" PopupButtonID="ImageButton14" TargetControlID="TextBox78">
+                                    </asp:CalendarExtender>
+                                    <asp:ImageButton ID="ImageButton14" runat="server" Height="23px" ImageAlign="Middle" ImageUrl="~/Images/calendario.png" Width="23px" />
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator113" runat="server" ControlToValidate="TextBox78" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style82"></td>
+                                <td class="auto-style17"></td>
+                                <td class="auto-style81">Dep. Economicos:</td>
+                                <td class="auto-style22">
+                                    <asp:DropDownList ID="DropDownList47" runat="server" Width="120px">
+                                        <asp:ListItem Value="0">-Selecciona-</asp:ListItem>
+                                        <asp:ListItem Value="x">0</asp:ListItem>
+                                        <asp:ListItem>1</asp:ListItem>
+                                        <asp:ListItem>2</asp:ListItem>
+                                        <asp:ListItem>3</asp:ListItem>
+                                        <asp:ListItem>4</asp:ListItem>
+                                        <asp:ListItem>5</asp:ListItem>
+                                        <asp:ListItem>6</asp:ListItem>
+                                        <asp:ListItem>7</asp:ListItem>
+                                        <asp:ListItem>8</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator103" runat="server" ControlToValidate="DropDownList47" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style11">Escolaridad:</td>
+                                <td class="auto-style17">
+                                    <asp:DropDownList ID="DropDownList48" runat="server" Width="120px">
+                                        <asp:ListItem Value="0">-Selecciona-</asp:ListItem>
+                                        <asp:ListItem Value="Secundaria">Secundaria</asp:ListItem>
+                                        <asp:ListItem Value="Bachillerato Trunco">Bachillerato Trunco</asp:ListItem>
+                                        <asp:ListItem Value="Bachillerato">Bachillerato</asp:ListItem>
+                                        <asp:ListItem Value="Licenciatura Trunca">Licenciatura Trunca</asp:ListItem>
+                                        <asp:ListItem>Licenciatura</asp:ListItem>
+                                        <asp:ListItem>Carrera Tecnica</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator104" runat="server" ControlToValidate="DropDownList48" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+       <table class="auto-style42">
+                            <tr>
+                                <td class="auto-style43">Telefono Casa:</td>
+                                <td class="auto-style37">
+                                    <asp:TextBox ID="TextBox85" runat="server" CssClass="Textos " Width="120px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator105" runat="server" ControlToValidate="TextBox85" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style41">Telefono Móvil:</td>
+                                <td class="auto-style39">
+                                    <asp:TextBox ID="TextBox86" runat="server" Width="120px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator106" runat="server" ControlToValidate="TextBox86" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style43">Calle y Número:</td>
+                                <td class="auto-style37">
+                                    <asp:TextBox ID="TextBox87" runat="server" CssClass="Textos "></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator107" runat="server" ControlToValidate="TextBox87" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style41">Estado:</td>
+                                <td class="auto-style39">
+                                    <asp:DropDownList ID="DropDownList49" runat="server" AutoPostBack="True" Width="150px">
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator108" runat="server" ControlToValidate="DropDownList49" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style43">Delegacion/Municipio:</td>
+                                <td class="auto-style37">
+                                    <asp:DropDownList ID="DropDownList50" runat="server" Width="150px">
+                                        <asp:ListItem Value="0">-</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator109" runat="server" ControlToValidate="DropDownList50" ErrorMessage="*" ForeColor="Red" InitialValue="0" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                                <td class="auto-style41">CP:</td>
+                                <td class="auto-style39">
+                                    <asp:TextBox ID="TextBox88" runat="server" Width="50px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator110" runat="server" ControlToValidate="TextBox88" ErrorMessage="*" ForeColor="Red" ValidationGroup="AltaAspirantes"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <asp:Button ID="Button1" runat="server" CssClass="Button" Font-Bold="True" Font-Size="Smaller" Height="22px" Style="text-align: center; margin-right: 25px;" Text="Limpiar" Width="85px" />
+                                    <asp:Button ID="Button3" runat="server" CssClass="Button" Font-Bold="True" Font-Size="Smaller" Height="22px" Style="text-align: center" Text="Guardar" ValidationGroup="AltaAspirantes" Width="85px" />
+                                    
+                                </td>
+                            </tr>
+                          
+                        </table>
+
+                        
+
+
+                    </asp:Panel>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
+
 
             <asp:UpdatePanel ID="UpdatePanel11" runat="server">
                 <ContentTemplate>

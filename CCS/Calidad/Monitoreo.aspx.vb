@@ -573,13 +573,25 @@ Public Class Monitoreo
                     Label21.Text = 4 - x.GetMonitoreosAgente(Session("IDAgente"), 5)
                 End If
             Else
-                If x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5) < 0 Then
-                    Label21.Text = 0
-                    msgtipo(0) = 2
-                    msgmensaje(0) = "¡Ya está cubierta la cuota de este agente!"
-                    Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+
+                If Session("CampaniaSeleccionada") = "Viajes Palacio" Then
+                    If 5 - x.GetMonitoreosAgente(Session("IDAgente"), 5) < 0 Then
+                        Label21.Text = 0
+                        msgtipo(0) = 2
+                        msgmensaje(0) = "¡Ya está cubierta la cuota de este agente!"
+                        Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+                    Else
+                        Label21.Text = 5 - x.GetMonitoreosAgente(Session("IDAgente"), 5)
+                    End If
                 Else
-                    Label21.Text = x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5)
+                    If x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5) < 0 Then
+                        Label21.Text = 0
+                        msgtipo(0) = 2
+                        msgmensaje(0) = "¡Ya está cubierta la cuota de este agente!"
+                        Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+                    Else
+                        Label21.Text = x.GetObjetivoAgente(Session("IDAgente"), Session("GrupoABC"), x.GetAntiguedadAgente(Session("IDAgente"))) - x.GetMonitoreosAgente(Session("IDAgente"), 5)
+                    End If
                 End If
             End If
 

@@ -180,6 +180,7 @@ Public Class Administracion
         UpdatePanel11.Visible = False
         UpdatePanel13.Visible = False
         UpdatePanel14.Visible = False
+        UpdatePanel15.Visible = False
 
 
         If Session("HI") = 1 Then
@@ -409,6 +410,12 @@ Public Class Administracion
     End Sub
     Sub CampaniaAspirantes()
 
+
+
+
+
+
+
         Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
         Dim strQuery As String = "SELECT id,campania FROM SYS_campanias WHERE status=1 ORDER BY campania ASC"
         Dim con As New SqlConnection(strConnString)
@@ -423,7 +430,7 @@ Public Class Administracion
             cmd.CommandType = CommandType.Text
             cmd.CommandText = strQuery
             cmd.Connection = con
-
+            con.Close()
             con.Open()
 
             DropDownList42.DataSource = cmd.ExecuteReader()
@@ -521,19 +528,19 @@ Public Class Administracion
         TextBox74.Text = ""
         TextBox75.Text = ""
         TextBox76.Text = ""
-        TextBox77.Text = ""
+
         TextBox79.Text = ""
         TextBox80.Text = ""
         TextBox81.Text = ""
         TextBox82.Text = ""
         TextBox78.Text = ""
-        'TextBox44.Text = ""
+
         TextBox85.Text = ""
         TextBox86.Text = ""
         TextBox87.Text = ""
         TextBox88.Text = ""
 
-        'DropDownList24.SelectedValue = 0
+
         DropDownList42.SelectedValue = 0
         DropDownList43.SelectedValue = 0
         DropDownList44.SelectedValue = 0
@@ -546,32 +553,30 @@ Public Class Administracion
         DropDownList49.SelectedValue = 0
         DropDownList50.SelectedValue = 0
 
-        'TextBox44.Text = Nothing
-
-        'Dim ctrl As Aspirante1
-        'For x = 0 To DropDownList24.SelectedValue - 1
-        '    Session("CuentaCosaesta") = x + 1
-
-        '    ctrl = CType(Aspirante1.Parent.FindControl("Aspirante" & Session("CuentaCosaesta")), Aspirante1)
-
-        '    ctrl.Nombre.Text = Nothing
-        '    ctrl.Paterno.Text = Nothing
-        '    ctrl.Materno.Text = Nothing
-        '    ctrl.Entrada.SelectedValue = 0
-        '    ctrl.Salida.SelectedValue = 0
-        '    ctrl.EntradaCAP.SelectedValue = 0
-        '    ctrl.SalidaCAP.SelectedValue = 0
-        '    ctrl.Telefono.Text = Nothing
-        '    ctrl.Campania.SelectedValue = 0
-
-        ' Next
     End Sub
 
     Sub GuardarReclutamiento()
         Dim Funcion As New Funciones
         Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        Dim veces As Integer = 99
+        Dim nombre As Integer = 0, paterno As Integer = 3, materno As Integer = 2
+        Dim user As String
+        Do While veces > 0
+            materno = materno + 1
+            paterno = paterno + 1
+            nombre = nombre + 1
+            user = StrConv(Mid(Replace(TextBox74.Text, " ", ""), 1, nombre) & Mid(Replace(TextBox75.Text, " ", ""), 1, paterno) & Mid(Replace(TextBox76.Text, " ", ""), 1, materno), vbLowerCase)
+            user = User.Replace("ñ", "n")
+            veces = Funcion.ExisteIDCCS(User)
+        Loop
 
-        Dim User = StrConv(Mid(Replace(TextBox74.Text, " ", ""), 1, 1) & Mid(Replace(TextBox75.Text, " ", ""), 1, 4) & Mid(Replace(TextBox76.Text, " ", ""), 1, 3), vbLowerCase)
+        Session("miusuarioes") = user
+
+
+        'Dim User = StrConv(Mid(Replace(TextBox74.Text, " ", ""), 1, 1) & Mid(Replace(TextBox75.Text, " ", ""), 1, 4) & Mid(Replace(TextBox76.Text, " ", ""), 1, 3), vbLowerCase)
+
+
+
 
         Dim strQuery As String = "INSERT INTO SYS_empleados (
                 [status],
@@ -618,8 +623,8 @@ Public Class Administracion
                 '" & DropDownList49.SelectedItem.Text & "', 
                 '" & DropDownList50.SelectedItem.Text & "', 
                 '" & TextBox88.Text & "',
-                '" & User & "',
-                '" & Funcion.Passcrypt(User) & "' ,
+                '" & user & "',
+                '" & Funcion.Passcrypt(user) & "' ,
                 '" & Request.Cookies("Usersettings")("Username") & "', 
                 '" & CDate(TextBox78.Text) & "',
                 '" & DropDownList51.SelectedItem.Value & "', 
@@ -632,7 +637,7 @@ Public Class Administracion
                 '" & StrConv(TextBox75.Text, vbUpperCase) & "', 
                 '" & StrConv(TextBox76.Text, vbUpperCase) & "', 
                 '" & TextBox86.Text & "',
-                '" & DropDownList42.SelectedItem.Value & "')"
+                '" & DropDownList42.SelectedItem.Value & "')" 'Se cambio 45 x 42 para prueba
 
         Dim con As New SqlConnection(strConnString)
         Dim cmd As New SqlCommand()
@@ -646,13 +651,18 @@ Public Class Administracion
         con.Close()
         con.Dispose()
 
-
+        Dim mimsj As String = "Proporcione este ID al usuario " & Session("miusuarioes")
         msgtipo(0) = 1
-        msgmensaje(0) = "¡Aspirantes Ingresados Correctamente!"
+        msgmensaje(0) = "¡Aspirantes Registrado Correctamente!"
+        msgtipo(1) = 1
+        msgmensaje(1) = mimsj
 
         Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
 
+
+
         CleanControls()
+
     End Sub
     Sub GuardarReclu()
 
@@ -2060,6 +2070,8 @@ Public Class Administracion
         msgmensaje(1) = "!Notificación Enviada!"
         Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
 
+
+
         EnviarMail(GetCorreoSupervisor(TextBox13.Text), "***Nueva Alta Aplicada***", MensajeHTML)
 
         LimpiarRH()
@@ -2222,7 +2234,7 @@ Public Class Administracion
 
 
         Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-        Dim strQuery As String = "UPDATE SYS_empleados SET [status] = 3, fecha_baja = '" & TextBox53.Text & "', motivo_baja = '" & DropDownList23.SelectedItem.Text & "', comentario_baja = '" & TextBox52.Text & "' WHERE id = '" & Session("idSeleccionRHBaja") & "'"
+        Dim strQuery As String = "UPDATE SYS_empleados SET [status] = 3, id_ccs=id_ccs + '" & "_" & "', fecha_baja = '" & TextBox53.Text & "', motivo_baja = '" & DropDownList23.SelectedItem.Text & "', comentario_baja = '" & TextBox52.Text & "' WHERE id = '" & Session("idSeleccionRHBaja") & "'"
         Dim con As New SqlConnection(strConnString)
         Dim cmd As New SqlCommand()
         cmd.CommandType = CommandType.Text
@@ -2316,7 +2328,7 @@ Public Class Administracion
         End If
 
         Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-        Dim strQueryEmp As String = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "')"
+        Dim strQueryEmp As String = "SELECT a.ID,a.no_empleado as 'No. Empleado',a.id_acd1 as 'ID ACD',a.paterno+' '+a.materno+' '+a.nombres as Nombre,b.Status,c.Area,d.Puesto,f.campania as Campaña,e.nombres+' '+e.paterno+' '+e.materno as Supervisor,a.fecha_alta 'Fecha Alta',a.Entrada,a.Salida,a.fecha_nacimiento as 'Fecha de Naciemiento',a.CURP,a.RFC,a.NSS,a.dependientes_economicos as Dependientes,a.Escolaridad,a.Calle,a.delegacion_municipio as Delegacion,a.Estado,a.CP,a.Celular,a.Telefono FROM SYS_empleados a LEFT JOIN SYS_status b ON a.status = b.id LEFT JOIN SYS_areas c ON a.area = c.id LEFT JOIN SYS_puestos d ON a.puesto = d.id LEFT JOIN SYS_empleados e ON a.jefe_directo = e.id LEFT JOIN SYS_campanias f ON a.campaña = f.id WHERE (a.status = 2 or a.STATUS = 3 OR a.STATUS = 4 OR a.status = 7) AND (a.id_acd1 = '" & TextBox67.Text & "' OR a.no_empleado = '" & TextBox67.Text & "' OR a.nombres + ' ' + a.paterno + ' ' + a.materno LIKE '" & nombresearch & "') order by a.paterno, a.materno, a.nombres"
         Dim strConnStringEmp As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
 
         If TextBox68.Text = "" Then
@@ -2904,7 +2916,7 @@ Public Class Administracion
             'LimpiarEdicion()
         Else
             Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-            Dim strQuery As String = "UPDATE SYS_empleados Set nombres = '" & TextBox46.Text & "', paterno = '" & TextBox47.Text & "', materno = '" & TextBox54.Text & "', jefe_directo = '" & DropDownList38.SelectedItem.Value & "', campaña = '" & DropDownList6.SelectedItem.Value & "', area = '" & DropDownList30.SelectedItem.Value & "', puesto = '" & DropDownList31.SelectedItem.Value & "', entrada = '" & DropDownList32.SelectedItem.Text & "', salida = '" & DropDownList33.SelectedItem.Value & "', id_acd1 = '" & TextBox61.Text & "', fecha_alta = '" & TextBox62.Text & "', status = '" & DropDownList39.SelectedItem.Value & "', telefono = '" & TextBox63.Text & "', celular = '" & TextBox64.Text & "' WHERE id = " & Session("UpdateAgente")
+            Dim strQuery As String = "UPDATE SYS_empleados Set nombres = '" & TextBox46.Text & "', paterno = '" & TextBox47.Text & "', materno = '" & TextBox54.Text & "', jefe_directo = '" & DropDownList38.SelectedItem.Value & "', campaña = '" & DropDownList6.SelectedItem.Value & "', curp = '" & TextBox57.Text & "' , rfc = '" & TextBox58.Text & "', nss = '" & TextBox59.Text & "', area = '" & DropDownList30.SelectedItem.Value & "', fecha_nacimiento = '" & TextBox60.Text & "', puesto = '" & DropDownList31.SelectedItem.Value & "', entrada = '" & DropDownList32.SelectedItem.Text & "', salida = '" & DropDownList33.SelectedItem.Value & "', id_acd1 = '" & TextBox61.Text & "', fecha_alta = '" & TextBox62.Text & "', dependientes_economicos = '" & DropDownList34.SelectedItem.Text & "', escolaridad = '" & DropDownList35.SelectedItem.Text & "', status = '" & DropDownList39.SelectedItem.Value & "', mail_ccs = '" & TextBox69.Text & "', telefono = '" & TextBox63.Text & "', celular = '" & TextBox64.Text & "', calle = '" & TextBox65.Text & "', estado = '" & DropDownList36.SelectedItem.Text & "', delegacion_municipio = '" & DropDownList37.SelectedItem.Value & "', cp = '" & TextBox66.Text & "' WHERE id = " & Session("UpdateAgente")
             Dim con As New SqlConnection(strConnString)
             Dim cmd As New SqlCommand()
             cmd.CommandType = CommandType.Text
@@ -3282,6 +3294,10 @@ Public Class Administracion
     Protected Sub GridView7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView7.SelectedIndexChanged
 
     End Sub
+
+
+
+
 
 
 End Class

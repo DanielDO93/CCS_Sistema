@@ -1362,6 +1362,24 @@ Public Class Funciones
         Return ds.Tables(0).Rows(0).Item(0).ToString
 
     End Function
+    Public Function ExisteIDCCS(ByVal id As String) As Integer
+
+        Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
+        Dim conexion As New SqlConnection(strConnString)
+        Dim da As New System.Data.SqlClient.SqlDataAdapter
+        Dim res As Integer
+
+        Dim cmd As SqlCommand = New SqlCommand("select count(id_ccs) from sys_empleados where id_ccs='" & id & "'", conexion)
+        cmd.CommandType = CommandType.Text
+        conexion.Close()
+        conexion.Open()
+        da.SelectCommand = cmd
+        res = cmd.ExecuteScalar
+        conexion.Close()
+
+        Return res
+
+    End Function
 
 
 
