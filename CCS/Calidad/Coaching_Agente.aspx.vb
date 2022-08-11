@@ -164,7 +164,7 @@ Public Class Coaching_Agente
             GridView1.DataSource = cmd.ExecuteReader()
             GridView1.DataBind()
 
-            con.Close()
+        con.Close()
             con.Dispose()
         'Else
         'Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
@@ -229,15 +229,15 @@ Public Class Coaching_Agente
         LoadAdicionales()
         GetAdicionales()
 
-        Try
-            Dim script As String = "<script type='text/javascript'> cambiarTrack('" & x.BuildString(Valor4.Text, x.GetServidorCampania(Session("CampaniaSelect")), Session("Segmento")) & "'); </script>"
-            ScriptManager.RegisterStartupScript(Me, GetType(Page), "cambiarTrack('" & x.BuildString(Valor4.Text, x.GetServidorCampania(Session("CampaniaSelect")), Session("Segmento")) & "');", script, False)
+        'Try
+        '    Dim script As String = "<script type='text/javascript'> cambiarTrack('" & x.BuildString(Valor4.Text, x.GetServidorCampania(Session("CampaniaSelect")), Session("Segmento")) & "'); </script>"
+        '    ScriptManager.RegisterStartupScript(Me, GetType(Page), "cambiarTrack('" & x.BuildString(Valor4.Text, x.GetServidorCampania(Session("CampaniaSelect")), Session("Segmento")) & "');", script, False)
 
-        Catch ex As Exception
-            msgtipo(0) = 3
-            msgmensaje(0) = "¡El ID no existe o no pertenece a la campaña seleccionada!"
-            Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
-        End Try
+        'Catch ex As Exception
+        '    msgtipo(0) = 3
+        '    msgmensaje(0) = "¡El ID no existe o no pertenece a la campaña seleccionada!"
+        '    Alerta.NewShowAlert(msgtipo, msgmensaje, Me)
+        'End Try
 
     End Sub
 
@@ -531,17 +531,17 @@ Public Class Coaching_Agente
 
 
             Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-                Dim strQuery As String = "UPDATE QA.dbo.SYS_monitoreos SET compromisos_agente = '" & TextBox3.Text & "', Q1= '" & TextBox20.Text & "',  Q2= '" & TextBox21.Text & "', retro = 2 WHERE id = " & Session("idSeleccion")
-                Dim con As New SqlConnection(strConnString)
-                Dim cmd As New SqlCommand()
-                cmd.CommandType = CommandType.Text
-                cmd.CommandText = strQuery
-                cmd.Connection = con
+            Dim strQuery As String = "UPDATE QA.dbo.SYS_monitoreos SET compromisos_agente = '" & TextBox3.Text & "', Q1= '" & TextBox20.Text & "',  Q2= '" & TextBox21.Text & "', retro = 2 WHERE id = " & Session("idSeleccion")
+            Dim con As New SqlConnection(strConnString)
+            Dim cmd As New SqlCommand()
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = strQuery
+            cmd.Connection = con
 
-                con.Open()
-                cmd.ExecuteNonQuery()
-                con.Close()
-                con.Dispose()
+            con.Open()
+            cmd.ExecuteNonQuery()
+            con.Close()
+            con.Dispose()
 
             'Alerta.EnviarMail(Alerta.GetCorreoSupervisor(Valor6.Text), Alerta.GetListaNotificacion(1, x.GetUserIDACD(Valor6.Text)), "***Retroalimentación: Coaching***", MensajeCoaching)
 
@@ -578,5 +578,7 @@ Public Class Coaching_Agente
 
     End Sub
 
+    Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
 
+    End Sub
 End Class
