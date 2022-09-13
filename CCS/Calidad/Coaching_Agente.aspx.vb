@@ -531,7 +531,7 @@ Public Class Coaching_Agente
 
 
             Dim strConnString As String = ConfigurationManager.ConnectionStrings("db").ConnectionString
-            Dim strQuery As String = "UPDATE QA.dbo.SYS_monitoreos SET compromisos_agente = '" & TextBox3.Text & "', Q1= '" & TextBox20.Text & "',  Q2= '" & TextBox21.Text & "', retro = 2 WHERE id = " & Session("idSeleccion")
+            Dim strQuery As String = "UPDATE QA.dbo.SYS_monitoreos SET fecha_retro_qa=getdate(), compromisos_agente = '" & TextBox3.Text & "', Q1= '" & TextBox20.Text & "',  Q2= '" & TextBox21.Text & "', retro = 2 WHERE id = " & Session("idSeleccion")
             Dim con As New SqlConnection(strConnString)
             Dim cmd As New SqlCommand()
             cmd.CommandType = CommandType.Text
