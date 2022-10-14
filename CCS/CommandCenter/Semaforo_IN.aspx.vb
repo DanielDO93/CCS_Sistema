@@ -150,7 +150,7 @@ Public Class Semaforo
 
 
         If (dsbases.Tables(0).Rows(0).Item(5).ToString / dsbases.Tables(0).Rows(0).Item(3).ToString) > 0.05 Then
-            Label5.BackColor = Drawing.ColorTranslator.FromHtml("#C00327")
+            Label5.BackColor = Drawing.ColorTranslator.FromHtml("#68CDB2")
             Label5.ForeColor = Drawing.ColorTranslator.FromHtml("#FFFFFF")
         Else
             Label5.BackColor = Drawing.ColorTranslator.FromHtml("#FFFFFF")
@@ -168,7 +168,7 @@ Public Class Semaforo
 
 
         If (dsbases.Tables(0).Rows(0).Item(6).ToString / dsbases.Tables(0).Rows(0).Item(4).ToString) < 0.8 Then
-            Label6.BackColor = Drawing.ColorTranslator.FromHtml("#C00327")
+            Label6.BackColor = Drawing.ColorTranslator.FromHtml("#68CDB2")
             Label6.ForeColor = Drawing.ColorTranslator.FromHtml("#FFFFFF")
         Else
             Label6.BackColor = Drawing.ColorTranslator.FromHtml("#FFFFFF")
@@ -200,7 +200,7 @@ Public Class Semaforo
         Chart1.Series("Series1").Points(0).LegendText = "Atendidas"
         Chart1.Series("Series1").Points(1).LegendText = "Abandonadas"
         Chart1.Series("Series1").Points(0).Color = Drawing.ColorTranslator.FromHtml("#999")
-        Chart1.Series("Series1").Points(1).Color = Drawing.ColorTranslator.FromHtml("#C00327")
+        Chart1.Series("Series1").Points(1).Color = Drawing.ColorTranslator.FromHtml("#68CDB2")
         Chart1.Series("Series1").ChartArea = "ChartArea1"
 
         Chart2.Series.Add("Series1")
@@ -214,7 +214,7 @@ Public Class Semaforo
         Chart2.Series("Series1").Points(0).AxisLabel = "% ABA"
         Chart2.Series("Series1").Points(1).AxisLabel = "% SLV"
         Chart2.Series("Series1").Points(0).Color = Drawing.ColorTranslator.FromHtml("#999")
-        Chart2.Series("Series1").Points(1).Color = Drawing.ColorTranslator.FromHtml("#C00327")
+        Chart2.Series("Series1").Points(1).Color = Drawing.ColorTranslator.FromHtml("#68CDB2")
         Chart2.Series("Series1").ChartArea = "ChartArea1"
 
 
@@ -229,7 +229,7 @@ Public Class Semaforo
         Chart3.Series("Series1").Points(0).AxisLabel = "ASA"
         Chart3.Series("Series1").Points(1).AxisLabel = "AHT"
         Chart3.Series("Series1").Points(0).Color = Drawing.ColorTranslator.FromHtml("#999")
-        Chart3.Series("Series1").Points(1).Color = Drawing.ColorTranslator.FromHtml("#C00327")
+        Chart3.Series("Series1").Points(1).Color = Drawing.ColorTranslator.FromHtml("#68CDB2")
         Chart3.Series("Series1").ChartArea = "ChartArea1"
 
 

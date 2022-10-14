@@ -9,7 +9,7 @@
 
 <head runat="server">
 
-    <title>CCS</title>
+    <title>Binomia</title>
 
 
     <script src="../JS/jquery-1.6.3.js"></script>
@@ -64,7 +64,7 @@
 
                         <br />
 
-                        <asp:Image ID="Image1" runat="server" ImageUrl="../images/ccs_logo.png" Height="66px" Width="127px" ImageAlign="Middle" />
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/binomia_logo.png" Height="66px" Width="127px" ImageAlign="Middle" />
 
                         <h2>Sistema Integral de Administración</h2>
 
@@ -205,7 +205,7 @@
                     <a href=".././Calidad/Default.aspx">Inicio</a> | <a href="#">Sistema de Asistencia</a>  | <a href="#">Reportes</a> | <a href=".././Calidad/Password.aspx">Cambio de Contraseña</a> |
                     <asp:LoginStatus ID="LoginStatus2" runat="server" />
                 </p>
-                <p>Isaac Contreras 2019 &copy; </p>
+                <p>Binomia 2022 &copy; </p>
             </footer>
         </div>
 

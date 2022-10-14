@@ -13,7 +13,7 @@
         <div class="center">
          
 
-            <asp:Image ID="Image1" runat="server"  ImageUrl="../images/ccs_logo.png" />
+            <asp:Image ID="Image1" runat="server"  ImageUrl="~/Images/binomia_logo.png" Height="400px" />
 
         </div>
       </div>

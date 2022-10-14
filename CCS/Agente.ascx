@@ -2,20 +2,20 @@
 
         <asp:Table ID="Table1" runat="server" Font-Names="Arial">
             <asp:TableRow Visible="false">
-                <asp:TableCell runat="server" Width="50px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">ID</asp:TableCell>
-                <asp:TableCell runat="server" Width="300px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Nombre</asp:TableCell>
-                <asp:TableCell runat="server" Width="70px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Conexión</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">A</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">F</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">FJ</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">D</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">I</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">PC</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">PS</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">V</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">DL</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">HE</asp:TableCell>
-                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Comentarios</asp:TableCell>
+                <asp:TableCell runat="server" Width="50px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">ID</asp:TableCell>
+                <asp:TableCell runat="server" Width="300px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Nombre</asp:TableCell>
+                <asp:TableCell runat="server" Width="70px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Conexión</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">A</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">F</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">FJ</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">D</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">I</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">PC</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">PS</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">V</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">DL</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">HE</asp:TableCell>
+                <asp:TableCell runat="server" Width="35px" HorizontalAlign="Center" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Comentarios</asp:TableCell>
             </asp:TableRow>
 
 

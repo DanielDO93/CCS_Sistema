@@ -30,7 +30,7 @@ function On(GridView)
     if(GridView != null)
     {
        GridView.originalBgColor = GridView.style.backgroundColor;
-       GridView.style.backgroundColor = "#C00327";
+       GridView.style.backgroundColor = "#68CDB2";
        GridView.style.Color = "#FFFFFF";
 
     }
@@ -78,7 +78,7 @@ function Off(GridView)
                                                 <AlternatingRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                                 <EditRowStyle HorizontalAlign="Center" VerticalAlign="Middle" Width="100px" />
                                                 <EmptyDataRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                <HeaderStyle BackColor="#C00327" Font-Bold="True" ForeColor="White" />
+                                                <HeaderStyle BackColor="#68CDB2" Font-Bold="True" ForeColor="White" />
                                                 <RowStyle Height="15px" HorizontalAlign="Center" VerticalAlign="Middle" Wrap="false" />
                                             </asp:GridView>
                                         </div>

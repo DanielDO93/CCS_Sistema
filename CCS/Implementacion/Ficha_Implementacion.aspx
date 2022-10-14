@@ -139,7 +139,7 @@
 
         .auto-style12 {
             text-align: center;
-            background-color: #C00327;
+            background-color: #68CDB2;
             color: white;
             height: 15px;
         }
@@ -172,7 +172,7 @@
 
         .auto-style20 {
             text-align: center;
-            background-color: #C00327;
+            background-color: #68CDB2;
             color: white;
             height: 18px;
         }
@@ -182,7 +182,7 @@
         }
         .auto-style22 {
             text-align: center;
-            background-color: #C00327;
+            background-color: #68CDB2;
             color: white;
             height: 21px;
         }

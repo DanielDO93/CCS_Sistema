@@ -152,6 +152,7 @@
     <Content Include="Capacitacion\HO.aspx" />
     <Content Include="Capacitacion\Secundarias.aspx" />
     <Content Include="Capacitacion\X.aspx" />
+    <Content Include="Images\binomia_logo.png" />
     <Content Include="Implementacion\Consulta.aspx" />
     <Content Include="Images\brisa_hernandez.png" />
     <Content Include="Images\check.jpg" />

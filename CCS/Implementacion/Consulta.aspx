@@ -33,7 +33,7 @@
 
         .auto-style12 {
             text-align: center;
-            background-color: #C00327;
+            background-color: #68CDB2;
             color: white;
             height: 15px;
         }

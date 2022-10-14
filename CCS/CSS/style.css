@@ -31,10 +31,11 @@ img {
 
 
 
-h1, h2, h3, h4, h5, h6 { 
-  color: #362C20;
-  letter-spacing: 0em;
-  padding: 0 0 5px 0;
+h1, h2, h3, h4, h5, h6 {
+    /*color: #003E52;*/
+    color: #003E52;
+    letter-spacing: 0em;
+    padding: 0 0 5px 0;
 }
 
 h1, h2, h3 { 
@@ -53,7 +54,7 @@ h1, h2, h3 {
   font-size:19px;
   padding-top:10px;
   padding-bottom:8px;
-  background-color: #C00327;
+  background-color: #68CDB2;
   color:#FFFFFF;
   text-align:center;
   vertical-align:top;
@@ -71,7 +72,7 @@ h3 {
 }
 
 h4, h6 { 
-  color: #C00327;
+  color: #68CDB2;
   padding: 0 0 5px 0;
   font: normal 110% arial;
   text-transform: uppercase;
@@ -87,7 +88,7 @@ h5, h6 {
 a, a:hover { 
   outline: none;
   text-decoration: underline;
-  color: #C00327;
+  color: #68CDB2;
 }
 
 a:hover { 
@@ -145,9 +146,10 @@ ol li {
   margin-right: auto;
 }
 
-header { 
-  background: #323534 url(../images/back.png) repeat-x;
-  height: 153px;
+header {
+    /*background: #323534 url(../images/back.png) repeat-x;*/
+    background: #003E52;/* url(../images/back.png) repeat-x;*/
+    height: 153px;
 }
 
 #logo { 
@@ -155,7 +157,7 @@ header {
   position: relative;
   height: 95px;
   padding-top: 20px;
-  background: transparent;
+  background: #003E52;
 }
 
 #logo #logo_text { 
@@ -179,7 +181,8 @@ header {
 }
 
 #logo_text h1 a .logo_colour { 
-  color: #C00327;
+  color: #68CDB2;
+  /*color: #003E52;*/
 }
 
 #logo_text a:hover .logo_colour { 
@@ -290,20 +293,20 @@ nav {
 .TablaRubros2{
     text-align:center;
     width:700px;
-    background-color:#C00327 !important;
+    background-color:#68CDB2 !important;
     color:white;
 }
 
 .TituloGuia{
     text-align:center;
-    background-color:#C00327 !important;
+    background-color:#68CDB2 !important;
     color:white;
 
 }
 
 .TituloGuiaCal{
     text-align:center;
-    background-color:#C00327 !important;
+    background-color:#68CDB2 !important;
     color:white;
     width:45px;
 }
@@ -393,15 +396,14 @@ border-color:#74706E;
     height:400px;
 }
 
-.Button{
-
-border-style:none;
-background-color:#545454;
-color:white;
- border-radius:7px;
--moz-border-radius: 7px;
--webkit-border: 7px;
-
+.Button {
+    border-style: none;
+    /*background-color:#545454;*/
+    background-color: #003E52;
+    color: white;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border: 7px;
 }
 
 .validacion{
@@ -453,7 +455,8 @@ footer {
   padding: 20px 0 5px 0;
   text-align: center; 
   border-top: 1px solid #000;
-  background: #545454;
+  /*background: #545454;*/
+  background: #003E52;
   color: #A8AA94;
   margin: 0 0 0 0;
   text-transform: uppercase;
@@ -544,7 +547,7 @@ footer a:hover {
 
 
 table tr th, table tr td { 
-  background: #C00327;
+  background: #68CDB2;
   color: #FFF;
  
 
@@ -699,7 +702,7 @@ ul#nav li.current a {
   color: #FFF;}
 
 ul#nav ul {
-  background: #C00327;
+  background: #68CDB2;
 }
 
 ul#nav li a {
@@ -707,7 +710,7 @@ ul#nav li a {
   font-family: 'trebuchet ms',helvetica,arial,verdana,sans;
   text-decoration: none;
   color: #111;
-  background: #C00327;
+  background: #68CDB2;
   margin-right: 2px;
   border-radius: 7px 7px 0 0;
   -moz-border-radius: 7px 7px 0 0;

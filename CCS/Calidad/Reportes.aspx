@@ -143,12 +143,12 @@
             <br />
 
             <div class="contenedor">
-                <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" ProcessingMode="Remote" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="950px" Style="text-align: center" Visible="False" PageCountMode="Actual">
+                <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" ProcessingMode="Remote" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="800px" Style="text-align: center" Visible="False" PageCountMode="Actual" Height="300px" ZoomPercent="75">
                     <ServerReport ReportPath="/Calidad/ABC" ReportServerUrl="http://10.0.0.40/reportss" />
                 </rsweb:ReportViewer>
             </div>
             
-            <br />
+            
             <br />
 
 

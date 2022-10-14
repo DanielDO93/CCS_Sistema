@@ -3,13 +3,13 @@
 <asp:Table ID="Table1" runat="server" Font-Names="Arial">
             <asp:TableRow Visible="false">
 
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="115px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Nombres</asp:TableCell>
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="115px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Paterno</asp:TableCell>
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="115px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Materno</asp:TableCell>
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="150px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Instructor</asp:TableCell>
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="150px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Campaña</asp:TableCell>
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="85px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Grupo</asp:TableCell>
-                <asp:TableCell runat="server" HorizontalAlign="Center" Width="80px" BackColor="#C00327" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Horario</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="115px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Nombres</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="115px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Paterno</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="115px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Materno</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="150px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Instructor</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="150px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Campaña</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="85px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Grupo</asp:TableCell>
+                <asp:TableCell runat="server" HorizontalAlign="Center" Width="80px" BackColor="#68CDB2" ForeColor="White" Font-Names="Arial" Font-Size="Small" Font-Bold="true">Horario</asp:TableCell>
             </asp:TableRow>
 
             <asp:TableRow>

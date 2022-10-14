@@ -56,9 +56,9 @@
                         <br />
 
                         <div class="textos">
-                            <asp:Button ID="Button1" runat="server" Text="Modificar Ponderación" CssClass="Button" Style="margin-right: 100px;" Height="30px" Width="150px" BackColor="#C00327" ValidationGroup="Valida1" />
-                            <asp:Button ID="Button2" runat="server" Text="Quitar Rubros" CssClass="Button" Height="30px" Width="150px" ValidationGroup="Valida1" BackColor="#C00327"  Style="margin-right: 100px;" />
-                            <asp:Button ID="Button3" runat="server" Text="Agregar Rubros" CssClass="Button" Height="30px" Width="150px" ValidationGroup="Valida1" BackColor="#C00327" />
+                            <asp:Button ID="Button1" runat="server" Text="Modificar Ponderación" CssClass="Button" Style="margin-right: 100px;" Height="30px" Width="150px" BackColor="#68CDB2" ValidationGroup="Valida1" />
+                            <asp:Button ID="Button2" runat="server" Text="Quitar Rubros" CssClass="Button" Height="30px" Width="150px" ValidationGroup="Valida1" BackColor="#68CDB2"  Style="margin-right: 100px;" />
+                            <asp:Button ID="Button3" runat="server" Text="Agregar Rubros" CssClass="Button" Height="30px" Width="150px" ValidationGroup="Valida1" BackColor="#68CDB2" />
                         </div>
 
                     </asp:Panel>

@@ -238,7 +238,7 @@
                                                         <AlternatingRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                 <EditRowStyle HorizontalAlign="right" VerticalAlign="Middle" Width="100px" />
                                 <EmptyDataRowStyle HorizontalAlign="right" VerticalAlign="Middle" />
-                                <HeaderStyle BackColor="#C00327" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#68CDB2" Font-Bold="True" ForeColor="White" />
                                 <RowStyle Height="15px" Wrap="false" HorizontalAlign="Center" VerticalAlign="Middle" />
                                                     </asp:GridView>
                                                         
